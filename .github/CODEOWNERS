@@ -1,5 +1,7 @@
-# Aula 3: mudar produção exige revisão de quem responde por ela.
-# Troque pelos usuários do seu grupo e ative "Require review from Code Owners"
-# na proteção da branch main (Settings → Branches).
-/gitops/overlays/producao/  @guilherme-argentino
-/agente/prompts/            @guilherme-argentino
+# Aula 1 · Toda mudança pede revisão de um code owner.
+# Em dupla, liste os dois handles: o GitHub nunca pede revisão ao autor do PR.
+* @tiagobrilhante
+
+# Áreas de maior risco têm regra explícita (Aulas 3 e 6)
+/agente/prompts/ @tiagobrilhante
+/gitops/overlays/producao/ @tiagobrilhante
