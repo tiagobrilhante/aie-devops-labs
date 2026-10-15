@@ -40,8 +40,10 @@ A proteção da branch não é copiada pelo template: a cópia nasce sem nenhuma
 
 ## 2. Definir os code owners na `main` (A, pelo navegador, ~5 min)
 
-O GitHub lê o `CODEOWNERS` da **branch de destino** do PR (a `main`), nunca o da branch do PR. Por isso ele precisa
-estar na `main` **antes** do PR: um `CODEOWNERS` que só existe na branch do PR não solicita ninguém.
+Para pedir revisão, o GitHub usa o `CODEOWNERS` da **branch de destino** do PR (a `main`), não o da branch do PR
+([documentação](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners)).
+Por isso ele precisa estar na `main` **antes** do PR: um `CODEOWNERS` que só existe na branch do PR não solicita
+ninguém.
 
 Abra `.github/CODEOWNERS`, clique no lápis (*Edit*) e **substitua o conteúdo inteiro** por (troque pelos *handles*
 de usuário de vocês, não pelo nome):
@@ -158,7 +160,11 @@ com estas diferenças:
 
 - **Passo 2:** `* @seu-handle` (e o mesmo nas duas regras de área de risco).
 - **Passo 4:** nenhum revisor é solicitado, porque o GitHub nunca pede revisão ao autor do PR. Registre isso no PR.
-- **Passo 6:** o merge fica bloqueado de vez: você é o único *code owner* e não pode aprovar o próprio PR.
+- **Passo 5:** a exigência de *code owner* sozinha não segura você: quando quem abre o PR é o único dono dos
+  arquivos, o GitHub não exige outra revisão de *code owner*. Quem bloqueia é **Required approvals: 1**, porque
+  ninguém aprova o próprio PR. Não reduza para 0.
+- **Passo 6:** o merge fica bloqueado de vez (**Review required** e **Merging is blocked**), e o push direto é
+  recusado.
 - **Passo 7:** para fazer merge (agora e no resto da disciplina), edite o ruleset e, em **Bypass list → Add
   bypass**, adicione **Repository admin** no modo **For pull requests only**. O push direto continua proibido, e o
   merge passa a oferecer um *bypass* explícito: marque-o e escreva no PR por que a exceção foi usada.
@@ -183,7 +189,8 @@ No PR (descrição ou comentários):
 
 - *Unknown owner* no `CODEOWNERS`: use o *handle* (usuário), não o nome, e confira se o convite foi aceito.
 - Nenhum revisor solicitado: o `CODEOWNERS` não está na `main` (passo 2) ou o autor do PR é o único dono.
-- O merge continua liberado depois do passo 5: o ruleset está *Disabled* ou sem **Target branches**.
+- O merge continua liberado depois do passo 5: o ruleset está *Disabled*, sem **Target branches** ou com
+  **Required approvals: 0**.
 - O merge continua travado mesmo com aprovação: confira se *Restrict updates* ficou marcada.
 - CI vermelho no **1 · Lint**: rode `ruff format classificador`, faça commit e push.
 - Pediram senha ou token no terminal: não digite nem diga em voz alta; a aula é gravada. Chame o professor.
