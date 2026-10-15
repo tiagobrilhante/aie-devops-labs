@@ -165,9 +165,12 @@ com estas diferenças:
   ninguém aprova o próprio PR. Não reduza para 0.
 - **Passo 6:** o merge fica bloqueado de vez (**Review required** e **Merging is blocked**), e o push direto é
   recusado.
-- **Passo 7:** para fazer merge (agora e no resto da disciplina), edite o ruleset e, em **Bypass list → Add
-  bypass**, adicione **Repository admin** no modo **For pull requests only**. O push direto continua proibido, e o
-  merge passa a oferecer um *bypass* explícito: marque-o e escreva no PR por que a exceção foi usada.
+- **Passo 7:** para fazer merge (agora e no resto da disciplina), edite o ruleset:
+  1. **Bypass list → Add bypass → Repository admin**. Ele entra como **Always allow**, que libera até o push direto.
+  2. Nos **⋯** à direita, troque para **Allow for pull requests only** e clique em **Save changes**. O push direto
+     continua recusado (`GH013`).
+  3. No PR, marque **Merge without waiting for requirements to be met (bypass rules)**, faça **Squash and merge** e
+     escreva no PR por que a exceção foi usada.
 
 ## Entrega
 
