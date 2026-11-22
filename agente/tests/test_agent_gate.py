@@ -73,7 +73,8 @@ def test_golden_de_roteamento_mede_so_o_roteamento():
     taxas = agent_gate.taxas_por_categoria(resultado, ["roteamento"])
     assert taxas == {"entrega": {"roteamento": 0.5}, "falsificado": {"roteamento": 1.0}}
     limites = LIMITES["golden_roteamento"]
-    assert agent_gate.avaliar(taxas, {}, limites) == ["entrega/roteamento: 50% abaixo do piso de 60%"]
+    piso = limites["piso"]["roteamento"]
+    assert agent_gate.avaliar(taxas, {}, limites) == [f"entrega/roteamento: 50% abaixo do piso de {piso:.0%}"]
     texto = agent_gate.resumo(taxas, {}, [], "", "Agent gate · roteamento")
     assert "| Categoria | Roteamento |" in texto and "Recuperação" not in texto
 
