@@ -15,7 +15,7 @@ from pathlib import Path
 import pandas as pd
 import pytest
 
-from texto import so_emojis
+from texto import limpar, so_emojis
 
 PASTA = Path(__file__).parent.parent / "dados"
 CLASSES = {"positiva", "negativa", "neutra"}
@@ -25,6 +25,13 @@ REFERENCIA = {"positiva": 0.40, "negativa": 0.35, "neutra": 0.25}
 DESVIO_ALERTA = 0.05  # classe 5 p.p. fora da referência → alerta
 DESVIO_BLOQUEIO = 0.10  # classe 10 p.p. fora → bloqueia
 MAX_SO_EMOJIS = 0.10  # mais de 10% de textos sem palavra → bloqueia
+
+# Tamanho do texto: média de palavras (depois da mesma limpeza do modelo) na base de treino
+# avaliacoes.csv. O ruído da média num lote de 300 linhas (bootstrap da base) fica abaixo de 7%
+# em 99% dos casos; o lote-novo.csv está a −28%. O ±30% do enunciado deixaria esse lote passar.
+MEDIA_PALAVRAS_REFERENCIA = 11.15
+DESVIO_TAMANHO_ALERTA = 0.10  # média 10% fora da referência → alerta
+DESVIO_TAMANHO_BLOQUEIO = 0.20  # média 20% fora → bloqueia
 
 
 @pytest.fixture(scope="module")
@@ -61,4 +68,15 @@ def test_distribuicao_das_classes(dados, classe):
         warnings.warn(f"classe '{classe}' em {frac:.0%} (referência {REFERENCIA[classe]:.0%})")
     assert desvio <= DESVIO_BLOQUEIO, (
         f"classe '{classe}' em {frac:.0%}, referência {REFERENCIA[classe]:.0%} — drift de rótulo"
+    )
+
+
+def test_tamanho_medio_do_texto(dados):
+    media = dados["texto"].map(lambda t: len(limpar(t).split())).mean()
+    desvio = media / MEDIA_PALAVRAS_REFERENCIA - 1
+    if abs(desvio) > DESVIO_TAMANHO_ALERTA:
+        warnings.warn(f"média de {media:.1f} palavras por texto ({desvio:+.0%} da referência)")
+    assert abs(desvio) <= DESVIO_TAMANHO_BLOQUEIO, (
+        f"média de {media:.1f} palavras por texto, referência {MEDIA_PALAVRAS_REFERENCIA} "
+        f"({desvio:+.0%}) — drift de tamanho"
     )
