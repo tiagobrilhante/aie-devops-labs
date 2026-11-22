@@ -22,9 +22,9 @@ juiz:
 
 # Golden de roteamento (--golden roteamento): 180 reclamações reais do Quantum Atende (dados/chamados-200.csv do
 # grupo, sem a classe "outros"), 30 por categoria: cada caso vale ~3,3 p.p., então dá para apertar mais que no golden
-# de 6 casos. Medido localmente (qwen2.5:3b, Apple Silicon): pior categoria 83% e média 91%. O piso de 60% deixa folga
-# para a diferença entre o Mac e o runner do GitHub (ver a Aula 6); a tolerância de 15 p.p. é ~5 casos.
-# A calibrar com a primeira baseline medida no runner, depois do merge.
+# de 6 casos. Medido no runner do GitHub, 3 execuções do mesmo código (runs 45048329304, 45050007716 e 45055797316):
+# média de 89% a 92%, pior categoria 77% (devolucao_ressarcimento) e variação máxima de 2 casos (7 p.p.) numa categoria.
+# O piso de 60% e a tolerância de 15 p.p. (~5 casos) deixam folga de ~2x sobre esse ruído.
 golden_roteamento:
   piso:
     roteamento: 0.6

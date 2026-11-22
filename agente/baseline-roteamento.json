@@ -1,0 +1,20 @@
+{
+  "artigo_proibido": {
+    "roteamento": 0.967
+  },
+  "devolucao_ressarcimento": {
+    "roteamento": 0.767
+  },
+  "divergente_defeito": {
+    "roteamento": 0.9
+  },
+  "entrega": {
+    "roteamento": 1.0
+  },
+  "falsificado": {
+    "roteamento": 0.833
+  },
+  "fraude_vendedor": {
+    "roteamento": 0.9
+  }
+}
