@@ -5,8 +5,9 @@
 # Start Lab (teste de 12/10/2026): ligue o lab, cole credenciais novas e rode o deploy de novo (1 a 2 min).
 #
 # LLM do agente em produção (Settings → Secrets and variables → Actions); sem nada, usa o provedor simulado:
-#   variável AGENTE_LLM_PROVEDOR  bedrock (se o seu Learner Lab liberar) | openai | simulado
+#   variável AGENTE_LLM_PROVEDOR  bedrock (se o seu Learner Lab liberar) | openai | anthropic | simulado
 #   variáveis AGENTE_LLM_BASE_URL e AGENTE_LLM_MODELO, secret AGENTE_LLM_API_KEY  (para "openai")
+#   variável AGENTE_LLM_MODELO e secret ANTHROPIC_API_KEY (o mesmo do agent gate)  (para "anthropic")
 name: "Aula 6 · Deploy do agente (AWS Lambda)"
 
 on:
@@ -56,6 +57,8 @@ jobs:
           LLM_BASE_URL: ${{ vars.AGENTE_LLM_BASE_URL }}
           LLM_MODELO: ${{ vars.AGENTE_LLM_MODELO }}
           LLM_API_KEY: ${{ secrets.AGENTE_LLM_API_KEY }}
+          LLM_ESFORCO: ${{ vars.LLM_ESFORCO }}
+          ANTHROPIC_API_KEY: ${{ vars.AGENTE_LLM_PROVEDOR == 'anthropic' && secrets.ANTHROPIC_API_KEY || '' }}
         run: echo "versao=$(agente/deploy/publicar.sh | tail -1)" >> "$GITHUB_OUTPUT"
 
       - name: Apontar 100% do tráfego para a nova versão
