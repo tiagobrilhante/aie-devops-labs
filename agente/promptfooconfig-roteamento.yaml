@@ -1,0 +1,27 @@
+# Agent gate · golden de roteamento: 180 reclamações reais do Quantum Atende (30 por categoria).
+#
+#   npx promptfoo@0.123.1 eval -c agente/promptfooconfig-roteamento.yaml -o resultado-roteamento.json
+#   python agente/agent_gate.py resultado-roteamento.json --golden roteamento
+#
+# O golden de políticas (promptfooconfig.yaml, 36 dúvidas) mede as três camadas; este mede só o roteador,
+# no tipo de chamado que chega de verdade ao atendimento. Os dois juntos decidem: um roteador pode ir bem
+# em dúvidas e mal em reclamações (é o caso do roteador do template: 86% e 76%).
+description: "Agent gate · roteamento (Quantum Atende, 180 reclamações)"
+
+prompts:
+  - "{{chamado}}"
+
+providers:
+  - id: "file://provedor_roteamento.py"
+    label: roteador
+
+tests: file://golden/roteamento.csv
+
+evaluateOptions:
+  maxConcurrency: 2
+
+defaultTest:
+  assert:
+    - type: javascript
+      metric: roteamento
+      value: JSON.parse(output).categoria === context.vars.categoria

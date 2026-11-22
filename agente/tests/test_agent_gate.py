@@ -58,3 +58,33 @@ def test_erro_de_execucao_conta_como_reprovado():
     """Timeout ou limite do provedor não pode virar aprovação silenciosa."""
     resultado = {"results": {"results": [{"vars": {"categoria": "a"}, "namedScores": None}]}}
     assert agent_gate.taxas_por_categoria(resultado)["a"] == categoria(0, 0, 0)
+
+
+def test_golden_de_roteamento_mede_so_o_roteamento():
+    resultado = {
+        "results": {
+            "results": [
+                {"vars": {"categoria": "entrega"}, "namedScores": {"roteamento": 1}},
+                {"vars": {"categoria": "entrega"}, "namedScores": {"roteamento": 0}},
+                {"vars": {"categoria": "falsificado"}, "namedScores": {"roteamento": 1}},
+            ]
+        }
+    }
+    taxas = agent_gate.taxas_por_categoria(resultado, ["roteamento"])
+    assert taxas == {"entrega": {"roteamento": 0.5}, "falsificado": {"roteamento": 1.0}}
+    limites = LIMITES["golden_roteamento"]
+    assert agent_gate.avaliar(taxas, {}, limites) == ["entrega/roteamento: 50% abaixo do piso de 60%"]
+    texto = agent_gate.resumo(taxas, {}, [], "", "Agent gate · roteamento")
+    assert "| Categoria | Roteamento |" in texto and "Recuperação" not in texto
+
+
+def test_golden_de_roteamento_tem_30_casos_por_categoria():
+    import csv
+    from collections import Counter
+
+    import atendimento
+
+    with open(agent_gate.PASTA / "golden" / "roteamento.csv", encoding="utf-8") as f:
+        linhas = list(csv.DictReader(f))
+    assert Counter(linha["categoria"] for linha in linhas) == {c: 30 for c in atendimento.CATEGORIAS}
+    assert len({linha["id"] for linha in linhas}) == 180

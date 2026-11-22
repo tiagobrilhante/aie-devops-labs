@@ -19,3 +19,13 @@ tolerancia_ruido: 0.34  # cair até 2 casos de 6 pode ser variação do LLM; cai
 # um modelo juiz maior, defina JUIZ_BLOQUEIA=true para ele valer como critério de bloqueio.
 juiz:
   piso_fidelidade: 0.66
+
+# Golden de roteamento (--golden roteamento): 180 reclamações reais do Quantum Atende (dados/chamados-200.csv do
+# grupo, sem a classe "outros"), 30 por categoria: cada caso vale ~3,3 p.p., então dá para apertar mais que no golden
+# de 6 casos. Medido localmente (qwen2.5:3b, Apple Silicon): pior categoria 83% e média 91%. O piso de 60% deixa folga
+# para a diferença entre o Mac e o runner do GitHub (ver a Aula 6); a tolerância de 15 p.p. é ~5 casos.
+# A calibrar com a primeira baseline medida no runner, depois do merge.
+golden_roteamento:
+  piso:
+    roteamento: 0.6
+  tolerancia_ruido: 0.15

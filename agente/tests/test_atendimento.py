@@ -34,7 +34,7 @@ def test_recuperacao_encontra_a_politica_certa():
     assert trecho["documento"] == "devolucao_ressarcimento.md"
 
 
-@pytest.mark.parametrize("saida", ['{"categoria": "xyz"}', "não sei", ""])
+@pytest.mark.parametrize("saida", ['{"categoria": "xyz"}', '{"categoria": "outros"}', "não sei", ""])
 def test_categoria_invalida_vira_indefinida(monkeypatch, saida):
     monkeypatch.setattr(llm, "completar", lambda *a, **k: saida)
     assert atendimento.classificar("qualquer coisa") == "indefinida"
