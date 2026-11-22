@@ -135,6 +135,17 @@ az webapp config appsettings set -g $GRUPO -n $APP --settings \
 
 > A configuração de `LLM_BASE_URL` para Azure OpenAI segue a documentação, mas **não foi testada** aqui.
 
+**Alternativa: Claude, pela API da Anthropic** (cobrado na conta Anthropic de quem gerou a chave, não no crédito do
+Azure). O agente usa o SDK oficial da Anthropic; os modelos atuais não aceitam `temperature`:
+
+```bash
+az webapp config appsettings set -g $GRUPO -n $APP --settings \
+  LLM_PROVEDOR=anthropic LLM_MODELO=claude-haiku-5-5 LLM_ESFORCO=low ANTHROPIC_API_KEY=<chave>
+```
+
+Para o agent gate testar o mesmo modelo, configure no GitHub a variável `LLM_PROVEDOR=anthropic` (e `LLM_MODELO`) e o
+secret `ANTHROPIC_API_KEY`. Ponha um limite de gasto na chave, no Console da Anthropic.
+
 ## 6. Conferir
 
 ```bash

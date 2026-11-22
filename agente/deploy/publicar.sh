@@ -4,6 +4,7 @@
 #   agente/deploy/publicar.sh                       # usa o SHA do commit como versão do prompt
 #   LLM_PROVEDOR=bedrock agente/deploy/publicar.sh  # LLM pelo Bedrock, se o seu Learner Lab liberar
 #   LLM_PROVEDOR=openai LLM_BASE_URL=... LLM_MODELO=... LLM_API_KEY=... agente/deploy/publicar.sh
+#   LLM_PROVEDOR=anthropic LLM_MODELO=... ANTHROPIC_API_KEY=... agente/deploy/publicar.sh
 #
 # Pré-requisitos: credenciais do Learner Lab no ambiente (roteiros/setup-aws-academy.md), Docker.
 # Imprime o número da versão publicada na última linha. As chaves de LLM ficam nas variáveis de
@@ -29,6 +30,8 @@ variaveis = {
     "LLM_BASE_URL": os.environ.get("LLM_BASE_URL", ""),
     "LLM_MODELO": os.environ.get("LLM_MODELO", ""),
     "LLM_API_KEY": os.environ.get("LLM_API_KEY", ""),
+    "LLM_ESFORCO": os.environ.get("LLM_ESFORCO", ""),
+    "ANTHROPIC_API_KEY": os.environ.get("ANTHROPIC_API_KEY", ""),
 }
 json.dump({"Variables": {k: v for k, v in variaveis.items() if v}}, open(sys.argv[1], "w"))
 PY

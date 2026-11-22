@@ -5,6 +5,10 @@
 #   sem nada configurado     → Ollama no próprio runner (100% gratuito, ~5–10 min)
 #   LLM_PROVEDOR=bedrock     → AWS Academy (secrets AWS_* da sessão do Learner Lab)
 #   LLM_BASE_URL + secret LLM_API_KEY → Microsoft Foundry / Azure OpenAI ou outra API compatível
+#                            (OpenAI: LLM_BASE_URL=https://api.openai.com/v1, LLM_MODELO=gpt-4o-mini e o
+#                             secret OPENAI_API_KEY ou LLM_API_KEY)
+#   LLM_PROVEDOR=anthropic + secret ANTHROPIC_API_KEY → Claude, pela API da Anthropic
+#                            (LLM_MODELO, padrão claude-opus-5-5; LLM_ESFORCO, padrão low)
 #
 # Override: o rótulo "override-agent-gate" no PR libera uma reprovação,
 # e a exceção fica registrada no resumo da execução.
@@ -47,7 +51,9 @@ jobs:
       LLM_PROVEDOR: ${{ vars.LLM_PROVEDOR || 'openai' }}
       LLM_MODELO: ${{ vars.LLM_MODELO }}
       LLM_BASE_URL: ${{ vars.LLM_BASE_URL || 'http://localhost:11434/v1' }}
-      LLM_API_KEY: ${{ secrets.LLM_API_KEY || 'ollama' }}
+      LLM_API_KEY: ${{ secrets.LLM_API_KEY || secrets.OPENAI_API_KEY || 'ollama' }}
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      LLM_ESFORCO: ${{ vars.LLM_ESFORCO || 'low' }}
       OLLAMA_MODELO: ${{ vars.LLM_MODELO || 'qwen2.5:3b' }}
       PROMPTFOO_DISABLE_TELEMETRY: "1"
     steps:
@@ -73,6 +79,25 @@ jobs:
           sleep 5
           OLLAMA_MODELS=~/.ollama/models ollama pull "$OLLAMA_MODELO"
           echo "LLM_MODELO=$OLLAMA_MODELO" >> "$GITHUB_ENV"
+
+      # --- Anthropic: sem a chave, todos os casos falhariam e o gate mostraria 0% sem dizer por quê ---
+      - name: Conferir a chave da Anthropic
+        if: env.LLM_PROVEDOR == 'anthropic'
+        run: |
+          if [ -z "$ANTHROPIC_API_KEY" ]; then
+            echo "::error::LLM_PROVEDOR=anthropic, mas o secret ANTHROPIC_API_KEY não está configurado"
+            exit 1
+          fi
+          echo "Claude via API da Anthropic: modelo ${LLM_MODELO:-claude-opus-5-5}, esforço $LLM_ESFORCO"
+
+      - name: Conferir a chave da OpenAI
+        if: env.LLM_PROVEDOR == 'openai' && contains(env.LLM_BASE_URL, 'api.openai.com')
+        run: |
+          if [ "$LLM_API_KEY" = "ollama" ]; then
+            echo "::error::LLM_BASE_URL aponta para a OpenAI, mas não há secret OPENAI_API_KEY nem LLM_API_KEY"
+            exit 1
+          fi
+          echo "OpenAI: modelo ${LLM_MODELO:?defina a variável LLM_MODELO, por exemplo gpt-4o-mini}"
 
       # --- Bedrock: credenciais da sessão do AWS Academy ---
       - name: Credenciais do AWS Academy

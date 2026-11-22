@@ -8,6 +8,13 @@ LLM_PROVEDOR (na ordem de preferência da disciplina):
                 LLM_BASE_URL=https://<recurso>.openai.azure.com/openai/v1/
              3º Ollama — 100% gratuito, roda no runner do Actions e no Codespaces
                 (é o padrão: LLM_BASE_URL=http://localhost:11434/v1)
+             4º A própria OpenAI: LLM_BASE_URL=https://api.openai.com/v1, LLM_MODELO=gpt-4o-mini (ou
+                outro que aceite temperature e max_tokens) e a chave em OPENAI_API_KEY ou LLM_API_KEY
+- anthropic  API da Anthropic (Claude), com o SDK oficial; a chave vem de ANTHROPIC_API_KEY.
+             LLM_MODELO padrão: claude-opus-5-5. Para um gate barato: LLM_MODELO=claude-haiku-5-5.
+             LLM_ESFORCO (low|medium|high|xhigh|max, padrão low): quanto o modelo pensa antes de
+             responder. Os modelos atuais não aceitam temperature nem seed, então parte da variação
+             entre execuções vem do próprio modelo.
 - simulado   Sem rede: regras por palavra-chave. Serve para testes e para ver um
              "modelo ruim" sendo barrado pelo agent gate.
 
@@ -18,14 +25,20 @@ import json
 import os
 import re
 
-PROVEDOR = os.environ.get("LLM_PROVEDOR", "openai")
+# "or": no Actions a variável chega VAZIA quando não foi configurada, e vazio vale o padrão
+PROVEDOR = os.environ.get("LLM_PROVEDOR") or "openai"
 _PADRAO = {
     "bedrock": "amazon.nova-micro-v1:0",
     "openai": "qwen2.5:3b",
+    "anthropic": "claude-opus-5-5",
     "simulado": "regras-v1",
 }
-MODELO = os.environ.get("LLM_MODELO", _PADRAO.get(PROVEDOR, ""))
+MODELO = os.environ.get("LLM_MODELO") or _PADRAO.get(PROVEDOR, "")
+# O pensamento do Claude conta dentro do max_tokens: os limites curtos do agente (30 tokens no
+# roteador) cortariam a resposta antes do texto. A resposta continua curta pelo próprio prompt.
+MAX_TOKENS_ANTHROPIC = 2048
 _cliente = None
+_cliente_anthropic = None
 
 
 def completar(prompt: str, temperatura: float = 0.0, max_tokens: int = 400) -> str:
@@ -35,7 +48,26 @@ def completar(prompt: str, temperatura: float = 0.0, max_tokens: int = 400) -> s
         return _bedrock(prompt, temperatura, max_tokens)
     if PROVEDOR == "openai":
         return _openai(prompt, temperatura, max_tokens)
+    if PROVEDOR == "anthropic":
+        return _anthropic(prompt, max_tokens)
     raise ValueError(f"LLM_PROVEDOR desconhecido: {PROVEDOR}")
+
+
+def _anthropic(prompt: str, max_tokens: int) -> str:
+    global _cliente_anthropic
+    if _cliente_anthropic is None:
+        from anthropic import Anthropic
+
+        _cliente_anthropic = Anthropic()  # ANTHROPIC_API_KEY do ambiente (secret no GitHub)
+    resposta = _cliente_anthropic.messages.create(
+        model=MODELO,
+        max_tokens=max(max_tokens, MAX_TOKENS_ANTHROPIC),
+        output_config={"effort": os.environ.get("LLM_ESFORCO", "low")},
+        messages=[{"role": "user", "content": prompt}],
+    )
+    if resposta.stop_reason == "refusal":
+        return ""  # recusa vira resposta vazia: o roteador marca "indefinida" e o gate conta como erro
+    return "".join(bloco.text for bloco in resposta.content if bloco.type == "text")
 
 
 def _openai(prompt: str, temperatura: float, max_tokens: int) -> str:
@@ -45,7 +77,7 @@ def _openai(prompt: str, temperatura: float, max_tokens: int) -> str:
 
         _cliente = OpenAI(
             base_url=os.environ.get("LLM_BASE_URL", "http://localhost:11434/v1"),
-            api_key=os.environ.get("LLM_API_KEY", "ollama"),
+            api_key=os.environ.get("LLM_API_KEY") or os.environ.get("OPENAI_API_KEY") or "ollama",
         )
     resposta = _cliente.chat.completions.create(
         model=MODELO,
