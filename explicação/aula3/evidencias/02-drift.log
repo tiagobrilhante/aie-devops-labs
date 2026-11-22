@@ -1,0 +1,13 @@
+$ kubectl -n agente-producao scale deploy/agente-suporte --replicas=5
+deployment.apps/agente-suporte scaled
+$ kubectl -n agente-staging scale deploy/agente-suporte --replicas=4
+deployment.apps/agente-suporte scaled
+t=0s produção: OutOfSync réplicas=5 | staging: OutOfSync réplicas=4
+t=3s produção: OutOfSync réplicas=5 | staging: Synced réplicas=1
+$ gitops/scripts/consultar.sh
+agente-staging   ambiente=staging modelo=openai/gpt-4.1-mini prompt=v12 temperatura=0.2 rag=politicas-2026-09
+agente-producao  ambiente=producao modelo=openai/gpt-4.1-mini prompt=v11 temperatura=0.2 rag=politicas-2026-09
+
+APP               SYNC        SAÚDE     REVISÃO
+agente-producao   OutOfSync   Healthy   334dc7a6e07e572ab688029b20f53539fde7155f
+agente-staging    Synced      Healthy   334dc7a6e07e572ab688029b20f53539fde7155f

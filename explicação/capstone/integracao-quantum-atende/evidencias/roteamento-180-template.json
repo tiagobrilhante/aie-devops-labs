@@ -1,0 +1,933 @@
+{
+ "roteador": "<scratchpad>/roteador-template.txt",
+ "segundos": 27.7,
+ "acuracia": 0.761,
+ "por_categoria": {
+  "artigo_proibido": 0.9,
+  "devolucao_ressarcimento": 0.733,
+  "divergente_defeito": 0.967,
+  "entrega": 0.8,
+  "falsificado": 0.433,
+  "fraude_vendedor": 0.733
+ },
+ "confusoes": {
+  "falsificado → divergente_defeito": 11,
+  "entrega → indefinida": 6,
+  "fraude_vendedor → divergente_defeito": 5,
+  "devolucao_ressarcimento → fraude_vendedor": 5,
+  "falsificado → fraude_vendedor": 4,
+  "devolucao_ressarcimento → indefinida": 2,
+  "fraude_vendedor → indefinida": 1,
+  "artigo_proibido → divergente_defeito": 1,
+  "fraude_vendedor → entrega": 1,
+  "devolucao_ressarcimento → entrega": 1,
+  "divergente_defeito → falsificado": 1,
+  "falsificado → indefinida": 1,
+  "fraude_vendedor → devolucao_ressarcimento": 1,
+  "falsificado → devolucao_ressarcimento": 1,
+  "artigo_proibido → falsificado": 1,
+  "artigo_proibido → fraude_vendedor": 1
+ },
+ "casos": [
+  {
+   "id": "R00144",
+   "esperada": "artigo_proibido",
+   "prevista": "artigo_proibido"
+  },
+  {
+   "id": "R00093",
+   "esperada": "falsificado",
+   "prevista": "divergente_defeito"
+  },
+  {
+   "id": "R00159",
+   "esperada": "devolucao_ressarcimento",
+   "prevista": "indefinida"
+  },
+  {
+   "id": "R00118",
+   "esperada": "falsificado",
+   "prevista": "divergente_defeito"
+  },
+  {
+   "id": "R00174",
+   "esperada": "devolucao_ressarcimento",
+   "prevista": "devolucao_ressarcimento"
+  },
+  {
+   "id": "R00140",
+   "esperada": "artigo_proibido",
+   "prevista": "artigo_proibido"
+  },
+  {
+   "id": "R00143",
+   "esperada": "artigo_proibido",
+   "prevista": "artigo_proibido"
+  },
+  {
+   "id": "R00011",
+   "esperada": "entrega",
+   "prevista": "indefinida"
+  },
+  {
+   "id": "R00064",
+   "esperada": "fraude_vendedor",
+   "prevista": "fraude_vendedor"
+  },
+  {
+   "id": "R00077",
+   "esperada": "fraude_vendedor",
+   "prevista": "indefinida"
+  },
+  {
+   "id": "R00141",
+   "esperada": "artigo_proibido",
+   "prevista": "artigo_proibido"
+  },
+  {
+   "id": "R00081",
+   "esperada": "fraude_vendedor",
+   "prevista": "divergente_defeito"
+  },
+  {
+   "id": "R00070",
+   "esperada": "fraude_vendedor",
+   "prevista": "divergente_defeito"
+  },
+  {
+   "id": "R00080",
+   "esperada": "fraude_vendedor",
+   "prevista": "fraude_vendedor"
+  },
+  {
+   "id": "R00165",
+   "esperada": "devolucao_ressarcimento",
+   "prevista": "devolucao_ressarcimento"
+  },
+  {
+   "id": "R00147",
+   "esperada": "artigo_proibido",
+   "prevista": "artigo_proibido"
+  },
+  {
+   "id": "R00161",
+   "esperada": "devolucao_ressarcimento",
+   "prevista": "devolucao_ressarcimento"
+  },
+  {
+   "id": "R00009",
+   "esperada": "entrega",
+   "prevista": "entrega"
+  },
+  {
+   "id": "R00078",
+   "esperada": "fraude_vendedor",
+   "prevista": "fraude_vendedor"
+  },
+  {
+   "id": "R00082",
+   "esperada": "fraude_vendedor",
+   "prevista": "fraude_vendedor"
+  },
+  {
+   "id": "R00114",
+   "esperada": "falsificado",
+   "prevista": "falsificado"
+  },
+  {
+   "id": "R00008",
+   "esperada": "entrega",
+   "prevista": "indefinida"
+  },
+  {
+   "id": "R00128",
+   "esperada": "artigo_proibido",
+   "prevista": "divergente_defeito"
+  },
+  {
+   "id": "R00133",
+   "esperada": "artigo_proibido",
+   "prevista": "artigo_proibido"
+  },
+  {
+   "id": "R00125",
+   "esperada": "artigo_proibido",
+   "prevista": "artigo_proibido"
+  },
+  {
+   "id": "R00138",
+   "esperada": "artigo_proibido",
+   "prevista": "artigo_proibido"
+  },
+  {
+   "id": "R00085",
+   "esperada": "fraude_vendedor",
+   "prevista": "fraude_vendedor"
+  },
+  {
+   "id": "R00094",
+   "esperada": "falsificado",
+   "prevista": "falsificado"
+  },
+  {
+   "id": "R00038",
+   "esperada": "divergente_defeito",
+   "prevista": "divergente_defeito"
+  },
+  {
+   "id": "R00163",
+   "esperada": "devolucao_ressarcimento",
+   "prevista": "devolucao_ressarcimento"
+  },
+  {
+   "id": "R00087",
+   "esperada": "fraude_vendedor",
+   "prevista": "fraude_vendedor"
+  },
+  {
+   "id": "R00120",
+   "esperada": "falsificado",
+   "prevista": "falsificado"
+  },
+  {
+   "id": "R00029",
+   "esperada": "entrega",
+   "prevista": "indefinida"
+  },
+  {
+   "id": "R00032",
+   "esperada": "divergente_defeito",
+   "prevista": "divergente_defeito"
+  },
+  {
+   "id": "R00113",
+   "esperada": "falsificado",
+   "prevista": "divergente_defeito"
+  },
+  {
+   "id": "R00101",
+   "esperada": "falsificado",
+   "prevista": "divergente_defeito"
+  },
+  {
+   "id": "R00004",
+   "esperada": "entrega",
+   "prevista": "indefinida"
+  },
+  {
+   "id": "R00054",
+   "esperada": "divergente_defeito",
+   "prevista": "divergente_defeito"
+  },
+  {
+   "id": "R00065",
+   "esperada": "fraude_vendedor",
+   "prevista": "fraude_vendedor"
+  },
+  {
+   "id": "R00104",
+   "esperada": "falsificado",
+   "prevista": "falsificado"
+  },
+  {
+   "id": "R00042",
+   "esperada": "divergente_defeito",
+   "prevista": "divergente_defeito"
+  },
+  {
+   "id": "R00107",
+   "esperada": "falsificado",
+   "prevista": "falsificado"
+  },
+  {
+   "id": "R00178",
+   "esperada": "devolucao_ressarcimento",
+   "prevista": "devolucao_ressarcimento"
+  },
+  {
+   "id": "R00164",
+   "esperada": "devolucao_ressarcimento",
+   "prevista": "devolucao_ressarcimento"
+  },
+  {
+   "id": "R00100",
+   "esperada": "falsificado",
+   "prevista": "divergente_defeito"
+  },
+  {
+   "id": "R00003",
+   "esperada": "entrega",
+   "prevista": "entrega"
+  },
+  {
+   "id": "R00086",
+   "esperada": "fraude_vendedor",
+   "prevista": "entrega"
+  },
+  {
+   "id": "R00063",
+   "esperada": "fraude_vendedor",
+   "prevista": "fraude_vendedor"
+  },
+  {
+   "id": "R00155",
+   "esperada": "devolucao_ressarcimento",
+   "prevista": "devolucao_ressarcimento"
+  },
+  {
+   "id": "R00015",
+   "esperada": "entrega",
+   "prevista": "entrega"
+  },
+  {
+   "id": "R00017",
+   "esperada": "entrega",
+   "prevista": "entrega"
+  },
+  {
+   "id": "R00171",
+   "esperada": "devolucao_ressarcimento",
+   "prevista": "devolucao_ressarcimento"
+  },
+  {
+   "id": "R00006",
+   "esperada": "entrega",
+   "prevista": "entrega"
+  },
+  {
+   "id": "R00083",
+   "esperada": "fraude_vendedor",
+   "prevista": "fraude_vendedor"
+  },
+  {
+   "id": "R00166",
+   "esperada": "devolucao_ressarcimento",
+   "prevista": "devolucao_ressarcimento"
+  },
+  {
+   "id": "R00149",
+   "esperada": "artigo_proibido",
+   "prevista": "artigo_proibido"
+  },
+  {
+   "id": "R00061",
+   "esperada": "fraude_vendedor",
+   "prevista": "fraude_vendedor"
+  },
+  {
+   "id": "R00019",
+   "esperada": "entrega",
+   "prevista": "entrega"
+  },
+  {
+   "id": "R00146",
+   "esperada": "artigo_proibido",
+   "prevista": "artigo_proibido"
+  },
+  {
+   "id": "R00119",
+   "esperada": "falsificado",
+   "prevista": "divergente_defeito"
+  },
+  {
+   "id": "R00050",
+   "esperada": "divergente_defeito",
+   "prevista": "divergente_defeito"
+  },
+  {
+   "id": "R00076",
+   "esperada": "fraude_vendedor",
+   "prevista": "divergente_defeito"
+  },
+  {
+   "id": "R00007",
+   "esperada": "entrega",
+   "prevista": "entrega"
+  },
+  {
+   "id": "R00170",
+   "esperada": "devolucao_ressarcimento",
+   "prevista": "devolucao_ressarcimento"
+  },
+  {
+   "id": "R00168",
+   "esperada": "devolucao_ressarcimento",
+   "prevista": "entrega"
+  },
+  {
+   "id": "R00172",
+   "esperada": "devolucao_ressarcimento",
+   "prevista": "indefinida"
+  },
+  {
+   "id": "R00013",
+   "esperada": "entrega",
+   "prevista": "entrega"
+  },
+  {
+   "id": "R00021",
+   "esperada": "entrega",
+   "prevista": "entrega"
+  },
+  {
+   "id": "R00058",
+   "esperada": "divergente_defeito",
+   "prevista": "divergente_defeito"
+  },
+  {
+   "id": "R00030",
+   "esperada": "entrega",
+   "prevista": "indefinida"
+  },
+  {
+   "id": "R00177",
+   "esperada": "devolucao_ressarcimento",
+   "prevista": "devolucao_ressarcimento"
+  },
+  {
+   "id": "R00126",
+   "esperada": "artigo_proibido",
+   "prevista": "artigo_proibido"
+  },
+  {
+   "id": "R00045",
+   "esperada": "divergente_defeito",
+   "prevista": "divergente_defeito"
+  },
+  {
+   "id": "R00135",
+   "esperada": "artigo_proibido",
+   "prevista": "artigo_proibido"
+  },
+  {
+   "id": "R00040",
+   "esperada": "divergente_defeito",
+   "prevista": "divergente_defeito"
+  },
+  {
+   "id": "R00127",
+   "esperada": "artigo_proibido",
+   "prevista": "artigo_proibido"
+  },
+  {
+   "id": "R00175",
+   "esperada": "devolucao_ressarcimento",
+   "prevista": "devolucao_ressarcimento"
+  },
+  {
+   "id": "R00092",
+   "esperada": "falsificado",
+   "prevista": "divergente_defeito"
+  },
+  {
+   "id": "R00048",
+   "esperada": "divergente_defeito",
+   "prevista": "falsificado"
+  },
+  {
+   "id": "R00023",
+   "esperada": "entrega",
+   "prevista": "indefinida"
+  },
+  {
+   "id": "R00062",
+   "esperada": "fraude_vendedor",
+   "prevista": "fraude_vendedor"
+  },
+  {
+   "id": "R00072",
+   "esperada": "fraude_vendedor",
+   "prevista": "fraude_vendedor"
+  },
+  {
+   "id": "R00071",
+   "esperada": "fraude_vendedor",
+   "prevista": "divergente_defeito"
+  },
+  {
+   "id": "R00112",
+   "esperada": "falsificado",
+   "prevista": "fraude_vendedor"
+  },
+  {
+   "id": "R00116",
+   "esperada": "falsificado",
+   "prevista": "divergente_defeito"
+  },
+  {
+   "id": "R00051",
+   "esperada": "divergente_defeito",
+   "prevista": "divergente_defeito"
+  },
+  {
+   "id": "R00036",
+   "esperada": "divergente_defeito",
+   "prevista": "divergente_defeito"
+  },
+  {
+   "id": "R00079",
+   "esperada": "fraude_vendedor",
+   "prevista": "fraude_vendedor"
+  },
+  {
+   "id": "R00132",
+   "esperada": "artigo_proibido",
+   "prevista": "artigo_proibido"
+  },
+  {
+   "id": "R00148",
+   "esperada": "artigo_proibido",
+   "prevista": "artigo_proibido"
+  },
+  {
+   "id": "R00069",
+   "esperada": "fraude_vendedor",
+   "prevista": "fraude_vendedor"
+  },
+  {
+   "id": "R00179",
+   "esperada": "devolucao_ressarcimento",
+   "prevista": "fraude_vendedor"
+  },
+  {
+   "id": "R00033",
+   "esperada": "divergente_defeito",
+   "prevista": "divergente_defeito"
+  },
+  {
+   "id": "R00075",
+   "esperada": "fraude_vendedor",
+   "prevista": "fraude_vendedor"
+  },
+  {
+   "id": "R00180",
+   "esperada": "devolucao_ressarcimento",
+   "prevista": "fraude_vendedor"
+  },
+  {
+   "id": "R00055",
+   "esperada": "divergente_defeito",
+   "prevista": "divergente_defeito"
+  },
+  {
+   "id": "R00020",
+   "esperada": "entrega",
+   "prevista": "entrega"
+  },
+  {
+   "id": "R00014",
+   "esperada": "entrega",
+   "prevista": "entrega"
+  },
+  {
+   "id": "R00053",
+   "esperada": "divergente_defeito",
+   "prevista": "divergente_defeito"
+  },
+  {
+   "id": "R00041",
+   "esperada": "divergente_defeito",
+   "prevista": "divergente_defeito"
+  },
+  {
+   "id": "R00103",
+   "esperada": "falsificado",
+   "prevista": "divergente_defeito"
+  },
+  {
+   "id": "R00089",
+   "esperada": "fraude_vendedor",
+   "prevista": "fraude_vendedor"
+  },
+  {
+   "id": "R00027",
+   "esperada": "entrega",
+   "prevista": "entrega"
+  },
+  {
+   "id": "R00084",
+   "esperada": "fraude_vendedor",
+   "prevista": "fraude_vendedor"
+  },
+  {
+   "id": "R00157",
+   "esperada": "devolucao_ressarcimento",
+   "prevista": "devolucao_ressarcimento"
+  },
+  {
+   "id": "R00142",
+   "esperada": "artigo_proibido",
+   "prevista": "artigo_proibido"
+  },
+  {
+   "id": "R00162",
+   "esperada": "devolucao_ressarcimento",
+   "prevista": "devolucao_ressarcimento"
+  },
+  {
+   "id": "R00016",
+   "esperada": "entrega",
+   "prevista": "entrega"
+  },
+  {
+   "id": "R00067",
+   "esperada": "fraude_vendedor",
+   "prevista": "fraude_vendedor"
+  },
+  {
+   "id": "R00074",
+   "esperada": "fraude_vendedor",
+   "prevista": "fraude_vendedor"
+  },
+  {
+   "id": "R00151",
+   "esperada": "devolucao_ressarcimento",
+   "prevista": "devolucao_ressarcimento"
+  },
+  {
+   "id": "R00102",
+   "esperada": "falsificado",
+   "prevista": "indefinida"
+  },
+  {
+   "id": "R00096",
+   "esperada": "falsificado",
+   "prevista": "fraude_vendedor"
+  },
+  {
+   "id": "R00091",
+   "esperada": "falsificado",
+   "prevista": "falsificado"
+  },
+  {
+   "id": "R00002",
+   "esperada": "entrega",
+   "prevista": "entrega"
+  },
+  {
+   "id": "R00049",
+   "esperada": "divergente_defeito",
+   "prevista": "divergente_defeito"
+  },
+  {
+   "id": "R00145",
+   "esperada": "artigo_proibido",
+   "prevista": "artigo_proibido"
+  },
+  {
+   "id": "R00105",
+   "esperada": "falsificado",
+   "prevista": "falsificado"
+  },
+  {
+   "id": "R00073",
+   "esperada": "fraude_vendedor",
+   "prevista": "fraude_vendedor"
+  },
+  {
+   "id": "R00060",
+   "esperada": "divergente_defeito",
+   "prevista": "divergente_defeito"
+  },
+  {
+   "id": "R00123",
+   "esperada": "artigo_proibido",
+   "prevista": "artigo_proibido"
+  },
+  {
+   "id": "R00066",
+   "esperada": "fraude_vendedor",
+   "prevista": "devolucao_ressarcimento"
+  },
+  {
+   "id": "R00035",
+   "esperada": "divergente_defeito",
+   "prevista": "divergente_defeito"
+  },
+  {
+   "id": "R00109",
+   "esperada": "falsificado",
+   "prevista": "devolucao_ressarcimento"
+  },
+  {
+   "id": "R00026",
+   "esperada": "entrega",
+   "prevista": "entrega"
+  },
+  {
+   "id": "R00090",
+   "esperada": "fraude_vendedor",
+   "prevista": "divergente_defeito"
+  },
+  {
+   "id": "R00098",
+   "esperada": "falsificado",
+   "prevista": "fraude_vendedor"
+  },
+  {
+   "id": "R00110",
+   "esperada": "falsificado",
+   "prevista": "falsificado"
+  },
+  {
+   "id": "R00136",
+   "esperada": "artigo_proibido",
+   "prevista": "artigo_proibido"
+  },
+  {
+   "id": "R00012",
+   "esperada": "entrega",
+   "prevista": "entrega"
+  },
+  {
+   "id": "R00095",
+   "esperada": "falsificado",
+   "prevista": "falsificado"
+  },
+  {
+   "id": "R00167",
+   "esperada": "devolucao_ressarcimento",
+   "prevista": "devolucao_ressarcimento"
+  },
+  {
+   "id": "R00111",
+   "esperada": "falsificado",
+   "prevista": "divergente_defeito"
+  },
+  {
+   "id": "R00001",
+   "esperada": "entrega",
+   "prevista": "entrega"
+  },
+  {
+   "id": "R00139",
+   "esperada": "artigo_proibido",
+   "prevista": "falsificado"
+  },
+  {
+   "id": "R00173",
+   "esperada": "devolucao_ressarcimento",
+   "prevista": "fraude_vendedor"
+  },
+  {
+   "id": "R00024",
+   "esperada": "entrega",
+   "prevista": "entrega"
+  },
+  {
+   "id": "R00031",
+   "esperada": "divergente_defeito",
+   "prevista": "divergente_defeito"
+  },
+  {
+   "id": "R00129",
+   "esperada": "artigo_proibido",
+   "prevista": "artigo_proibido"
+  },
+  {
+   "id": "R00137",
+   "esperada": "artigo_proibido",
+   "prevista": "artigo_proibido"
+  },
+  {
+   "id": "R00010",
+   "esperada": "entrega",
+   "prevista": "entrega"
+  },
+  {
+   "id": "R00158",
+   "esperada": "devolucao_ressarcimento",
+   "prevista": "devolucao_ressarcimento"
+  },
+  {
+   "id": "R00122",
+   "esperada": "artigo_proibido",
+   "prevista": "artigo_proibido"
+  },
+  {
+   "id": "R00046",
+   "esperada": "divergente_defeito",
+   "prevista": "divergente_defeito"
+  },
+  {
+   "id": "R00025",
+   "esperada": "entrega",
+   "prevista": "entrega"
+  },
+  {
+   "id": "R00039",
+   "esperada": "divergente_defeito",
+   "prevista": "divergente_defeito"
+  },
+  {
+   "id": "R00108",
+   "esperada": "falsificado",
+   "prevista": "falsificado"
+  },
+  {
+   "id": "R00130",
+   "esperada": "artigo_proibido",
+   "prevista": "artigo_proibido"
+  },
+  {
+   "id": "R00134",
+   "esperada": "artigo_proibido",
+   "prevista": "fraude_vendedor"
+  },
+  {
+   "id": "R00052",
+   "esperada": "divergente_defeito",
+   "prevista": "divergente_defeito"
+  },
+  {
+   "id": "R00005",
+   "esperada": "entrega",
+   "prevista": "entrega"
+  },
+  {
+   "id": "R00028",
+   "esperada": "entrega",
+   "prevista": "entrega"
+  },
+  {
+   "id": "R00034",
+   "esperada": "divergente_defeito",
+   "prevista": "divergente_defeito"
+  },
+  {
+   "id": "R00099",
+   "esperada": "falsificado",
+   "prevista": "fraude_vendedor"
+  },
+  {
+   "id": "R00097",
+   "esperada": "falsificado",
+   "prevista": "falsificado"
+  },
+  {
+   "id": "R00059",
+   "esperada": "divergente_defeito",
+   "prevista": "divergente_defeito"
+  },
+  {
+   "id": "R00018",
+   "esperada": "entrega",
+   "prevista": "entrega"
+  },
+  {
+   "id": "R00152",
+   "esperada": "devolucao_ressarcimento",
+   "prevista": "devolucao_ressarcimento"
+  },
+  {
+   "id": "R00153",
+   "esperada": "devolucao_ressarcimento",
+   "prevista": "fraude_vendedor"
+  },
+  {
+   "id": "R00117",
+   "esperada": "falsificado",
+   "prevista": "falsificado"
+  },
+  {
+   "id": "R00088",
+   "esperada": "fraude_vendedor",
+   "prevista": "fraude_vendedor"
+  },
+  {
+   "id": "R00176",
+   "esperada": "devolucao_ressarcimento",
+   "prevista": "devolucao_ressarcimento"
+  },
+  {
+   "id": "R00043",
+   "esperada": "divergente_defeito",
+   "prevista": "divergente_defeito"
+  },
+  {
+   "id": "R00068",
+   "esperada": "fraude_vendedor",
+   "prevista": "fraude_vendedor"
+  },
+  {
+   "id": "R00131",
+   "esperada": "artigo_proibido",
+   "prevista": "artigo_proibido"
+  },
+  {
+   "id": "R00169",
+   "esperada": "devolucao_ressarcimento",
+   "prevista": "devolucao_ressarcimento"
+  },
+  {
+   "id": "R00160",
+   "esperada": "devolucao_ressarcimento",
+   "prevista": "fraude_vendedor"
+  },
+  {
+   "id": "R00047",
+   "esperada": "divergente_defeito",
+   "prevista": "divergente_defeito"
+  },
+  {
+   "id": "R00150",
+   "esperada": "artigo_proibido",
+   "prevista": "artigo_proibido"
+  },
+  {
+   "id": "R00037",
+   "esperada": "divergente_defeito",
+   "prevista": "divergente_defeito"
+  },
+  {
+   "id": "R00154",
+   "esperada": "devolucao_ressarcimento",
+   "prevista": "devolucao_ressarcimento"
+  },
+  {
+   "id": "R00106",
+   "esperada": "falsificado",
+   "prevista": "divergente_defeito"
+  },
+  {
+   "id": "R00057",
+   "esperada": "divergente_defeito",
+   "prevista": "divergente_defeito"
+  },
+  {
+   "id": "R00044",
+   "esperada": "divergente_defeito",
+   "prevista": "divergente_defeito"
+  },
+  {
+   "id": "R00124",
+   "esperada": "artigo_proibido",
+   "prevista": "artigo_proibido"
+  },
+  {
+   "id": "R00121",
+   "esperada": "artigo_proibido",
+   "prevista": "artigo_proibido"
+  },
+  {
+   "id": "R00156",
+   "esperada": "devolucao_ressarcimento",
+   "prevista": "devolucao_ressarcimento"
+  },
+  {
+   "id": "R00115",
+   "esperada": "falsificado",
+   "prevista": "falsificado"
+  },
+  {
+   "id": "R00056",
+   "esperada": "divergente_defeito",
+   "prevista": "divergente_defeito"
+  },
+  {
+   "id": "R00022",
+   "esperada": "entrega",
+   "prevista": "entrega"
+  }
+ ]
+}

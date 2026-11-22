@@ -1,0 +1,13 @@
+# PRs desta execução
+- #4 docs: sync lesson 3 and 4 guides from template · MERGED em 2026-11-22T14:39:36Z por tiagobrilhante · https://github.com/tiagobrilhante/aie-devops-labs/pull/4
+- #5 feat: promote prompt v12 to production · MERGED em 2026-11-22T14:39:56Z por tiagobrilhante · https://github.com/tiagobrilhante/aie-devops-labs/pull/5
+- #6 test: break gitops policy on purpose (do not merge) · CLOSED · https://github.com/tiagobrilhante/aie-devops-labs/pull/6
+- #7 test: drop policy facts from specialist prompt (do not merge) · CLOSED · https://github.com/tiagobrilhante/aie-devops-labs/pull/7
+- #8 feat: enable self-heal in production · MERGED em 2026-11-22T14:42:12Z por tiagobrilhante · https://github.com/tiagobrilhante/aie-devops-labs/pull/8
+- #9 revert: promote prompt v12 to production · MERGED em 2026-11-22T14:48:22Z por tiagobrilhante · https://github.com/tiagobrilhante/aie-devops-labs/pull/9
+- #10 test: check average text length in data tests · MERGED em 2026-11-22T18:33:36Z · https://github.com/tiagobrilhante/aie-devops-labs/pull/10
+- #11 feat: plug Quantum Atende router and BM25 retrieval into the agent · MERGED em 2026-11-22T18:33:49Z (com override-agent-gate) · https://github.com/tiagobrilhante/aie-devops-labs/pull/11
+- #12 chore: recalibrate agent gate baselines on the runner · MERGED em 2026-11-22T19:18:31Z · https://github.com/tiagobrilhante/aie-devops-labs/pull/12
+- #13 feat: add Anthropic as an LLM provider alongside OpenAI-compatible APIs · MERGED em 2026-11-22T19:36:34Z · https://github.com/tiagobrilhante/aie-devops-labs/pull/13
+- #14 chore: recalibrate agent gate for Claude Haiku 5.5 · MERGED em 2026-11-22T20:34:54Z · https://github.com/tiagobrilhante/aie-devops-labs/pull/14
+- #15 docs: add learning report for lessons 1 to 6 · MERGED em 2026-11-22T21:19:10Z · https://github.com/tiagobrilhante/aie-devops-labs/pull/15

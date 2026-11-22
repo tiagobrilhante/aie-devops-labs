@@ -1,0 +1,238 @@
+politicas	UNKNOWN STEP	﻿2026-11-22T14:00:01.6971414Z Current runner version: '2.338.2'
+politicas	UNKNOWN STEP	2026-11-22T14:00:01.6987528Z ##[group]Runner Image Provisioner
+politicas	UNKNOWN STEP	2026-11-22T14:00:01.6988144Z Hosted Compute Agent
+politicas	UNKNOWN STEP	2026-11-22T14:00:01.6988575Z Version: 20261111.635
+politicas	UNKNOWN STEP	2026-11-22T14:00:01.6988957Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+politicas	UNKNOWN STEP	2026-11-22T14:00:01.6989412Z Build Date: 2026-11-11T01:49:01Z
+politicas	UNKNOWN STEP	2026-11-22T14:00:01.6989879Z Worker ID: {fa239ce5-b987-414e-8ff5-db1bf80a8da0}
+politicas	UNKNOWN STEP	2026-11-22T14:00:01.6990300Z Region: westus2
+politicas	UNKNOWN STEP	2026-11-22T14:00:01.6990693Z Cloud: Azure
+politicas	UNKNOWN STEP	2026-11-22T14:00:01.6991024Z ##[endgroup]
+politicas	UNKNOWN STEP	2026-11-22T14:00:01.6991800Z ##[group]Operating System
+politicas	UNKNOWN STEP	2026-11-22T14:00:01.6992209Z Ubuntu
+politicas	UNKNOWN STEP	2026-11-22T14:00:01.6992534Z 26.04.1
+politicas	UNKNOWN STEP	2026-11-22T14:00:01.6992883Z LTS
+politicas	UNKNOWN STEP	2026-11-22T14:00:01.6993199Z ##[endgroup]
+politicas	UNKNOWN STEP	2026-11-22T14:00:01.6993524Z ##[group]Runner Image
+politicas	UNKNOWN STEP	2026-11-22T14:00:01.6993949Z Image: ubuntu-26.04
+politicas	UNKNOWN STEP	2026-11-22T14:00:01.6994294Z Version: 20261116.202.1
+politicas	UNKNOWN STEP	2026-11-22T14:00:01.6995072Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261116.202/images/ubuntu/Ubuntu2604-Readme.md
+politicas	UNKNOWN STEP	2026-11-22T14:00:01.6996053Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261116.202
+politicas	UNKNOWN STEP	2026-11-22T14:00:01.6996687Z ##[endgroup]
+politicas	UNKNOWN STEP	2026-11-22T14:00:01.6997395Z ##[group]GITHUB_TOKEN Permissions
+politicas	UNKNOWN STEP	2026-11-22T14:00:01.6998780Z Contents: read
+politicas	UNKNOWN STEP	2026-11-22T14:00:01.6999130Z Metadata: read
+politicas	UNKNOWN STEP	2026-11-22T14:00:01.6999596Z Packages: read
+politicas	UNKNOWN STEP	2026-11-22T14:00:01.6999936Z ##[endgroup]
+politicas	UNKNOWN STEP	2026-11-22T14:00:01.7001185Z Secret source: Actions
+politicas	UNKNOWN STEP	2026-11-22T14:00:01.7001814Z Cache mode: write
+politicas	UNKNOWN STEP	2026-11-22T14:00:01.7002208Z Prepare workflow directory
+politicas	UNKNOWN STEP	2026-11-22T14:00:01.7213773Z Prepare all required actions
+politicas	UNKNOWN STEP	2026-11-22T14:00:01.7245153Z Getting action download info
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.0387936Z Download action repository 'actions/checkout@v7' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.1407937Z Download action repository 'actions/setup-python@v7' (SHA:6d4fd22b20465ccc0f7354476588e8df7c9ca0e0)
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.3306717Z Complete job name: politicas
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.3858357Z ##[group]Run actions/checkout@v7
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.3858786Z with:
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.3859057Z   repository: tiagobrilhante/aie-devops-labs
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.3861147Z   token: ***
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.3861390Z   ssh-strict: true
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.3861645Z   ssh-user: git
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.3861897Z   persist-credentials: true
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.3862173Z   clean: true
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.3862427Z   sparse-checkout-cone-mode: true
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.3862721Z   fetch-depth: 1
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.3862969Z   fetch-tags: false
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.3863224Z   show-progress: true
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.3863479Z   lfs: false
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.3863712Z   submodules: false
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.3863966Z   set-safe-directory: true
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.3864256Z   allow-unsafe-pr-checkout: false
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.3864622Z ##[endgroup]
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.6313106Z Syncing repository: tiagobrilhante/aie-devops-labs
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.6315026Z ##[group]Getting Git version info
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.6316160Z Working directory is '/home/runner/work/aie-devops-labs/aie-devops-labs'
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.6317289Z [command]/usr/bin/git version
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.6317844Z git version 2.56.1
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.6331837Z ##[endgroup]
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.6336320Z Temporarily overriding HOME='/home/runner/work/_temp/699b202c-6dab-4f2d-97f3-53cea0e58993' before making global git config changes
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.6337596Z Adding repository directory to the temporary git global config as a safe directory
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.6340272Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/aie-devops-labs/aie-devops-labs
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.6407363Z Deleting the contents of '/home/runner/work/aie-devops-labs/aie-devops-labs'
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.6408604Z ##[group]Determining repository object format
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.6409513Z ##[endgroup]
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.6410274Z ##[group]Initializing the repository
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.6411217Z [command]/usr/bin/git init /home/runner/work/aie-devops-labs/aie-devops-labs
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.6510661Z hint: Using 'master' as the name for the initial branch. This default branch name
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.6511831Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.6512939Z hint: to use in all of your new repositories, which will suppress this warning,
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.6513788Z hint: call:
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.6514293Z hint:
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.6514927Z hint: 	git config --global init.defaultBranch <name>
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.6515667Z hint:
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.6516444Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.6517517Z hint: 'development'. The just-created branch can be renamed via this command:
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.6518367Z hint:
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.6518887Z hint: 	git branch -m <name>
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.6519508Z hint:
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.6520256Z hint: Disable this message with "git config set advice.defaultBranchName false"
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.6521534Z Initialized empty Git repository in /home/runner/work/aie-devops-labs/aie-devops-labs/.git/
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.6529684Z [command]/usr/bin/git remote add origin https://github.com/tiagobrilhante/aie-devops-labs
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.6577565Z ##[endgroup]
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.6578484Z ##[group]Disabling automatic garbage collection
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.6579828Z [command]/usr/bin/git config --local gc.auto 0
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.6608617Z ##[endgroup]
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.6609640Z ##[group]Setting up auth
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.6612739Z Removing SSH command configuration
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.6620064Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.6641574Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.7048790Z Removing HTTP extra header
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.7054263Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.7083412Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.7302634Z Removing includeIf entries pointing to credentials config files
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.7306818Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.7336121Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.7557983Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-c8691321-ef83-48d0-b943-c3465967410f.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.7591632Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/aie-devops-labs/aie-devops-labs/.git.path /home/runner/work/_temp/git-credentials-c8691321-ef83-48d0-b943-c3465967410f.config
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.7619864Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/aie-devops-labs/aie-devops-labs/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-c8691321-ef83-48d0-b943-c3465967410f.config
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.7655637Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-c8691321-ef83-48d0-b943-c3465967410f.config
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.7683859Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-c8691321-ef83-48d0-b943-c3465967410f.config
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.7710120Z ##[endgroup]
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.7710888Z ##[group]Fetching the repository
+politicas	UNKNOWN STEP	2026-11-22T14:00:02.7715144Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +942bced7c14c29439d6f5c2032985c84dc38826f:refs/remotes/pull/5/merge
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.0505454Z From https://github.com/tiagobrilhante/aie-devops-labs
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.0506375Z  * [new ref]         942bced7c14c29439d6f5c2032985c84dc38826f -> pull/5/merge
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.0510688Z ##[endgroup]
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.0511234Z ##[group]Determining the checkout info
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.0511740Z ##[endgroup]
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.0516324Z [command]/usr/bin/git sparse-checkout disable
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.0561914Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.0588170Z ##[group]Checking out the ref
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.0590425Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/5/merge
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.0671619Z Note: switching to 'refs/remotes/pull/5/merge'.
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.0672062Z 
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.0672430Z You are in 'detached HEAD' state. You can look around, make experimental
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.0673120Z changes and commit them, and you can discard any commits you make in this
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.0673681Z state without impacting any branches by switching back to a branch.
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.0674006Z 
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.0674218Z If you want to create a new branch to retain commits you create, you may
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.0674722Z do so (now or later) by using -c with the switch command. Example:
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.0675014Z 
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.0675155Z   git switch -c <new-branch-name>
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.0675354Z 
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.0675489Z Or undo this operation with:
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.0675672Z 
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.0675793Z   git switch -
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.0676103Z 
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.0676352Z Turn off this advice by setting config variable advice.detachedHead to false
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.0676708Z 
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.0677102Z HEAD is now at 942bced Merge 1326cd2fd5c1027297e4932720c48a8a6a4490e9 into 334dc7a6e07e572ab688029b20f53539fde7155f
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.0680786Z ##[endgroup]
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.0719597Z [command]/usr/bin/git log -1 --format=%H
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.0740979Z 942bced7c14c29439d6f5c2032985c84dc38826f
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.1027029Z ##[group]Run actions/setup-python@v7
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.1027401Z with:
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.1027672Z   python-version: 3.12
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.1027960Z   check-latest: false
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.1030113Z   token: ***
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.1030493Z   mirror: https://raw.githubusercontent.com/actions/python-versions/main
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.1030955Z   update-environment: true
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.1031262Z   allow-prereleases: false
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.1031564Z   freethreaded: false
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.1031848Z ##[endgroup]
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.1841481Z ##[group]Installed versions
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.1925714Z Successfully set up CPython (3.12.16)
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.1926878Z ##[endgroup]
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.2104148Z ##[group]Run pip install pyyaml==6.0.2
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.2104830Z ^[[36;1mpip install pyyaml==6.0.2^[[0m
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.2169068Z shell: /usr/bin/bash -e {0}
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.2169506Z env:
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.2169959Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.2170511Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.2171005Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.2171550Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.2172009Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.2172464Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.2172943Z ##[endgroup]
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.8553771Z Collecting pyyaml==6.0.2
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.8979771Z   Downloading PyYAML-6.0.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (2.1 kB)
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.9069783Z Downloading PyYAML-6.0.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (767 kB)
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.9398365Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 767.5/767.5 kB 30.0 MB/s  0:00:00
+politicas	UNKNOWN STEP	2026-11-22T14:00:03.9806447Z Installing collected packages: pyyaml
+politicas	UNKNOWN STEP	2026-11-22T14:00:04.0184778Z Successfully installed pyyaml-6.0.2
+politicas	UNKNOWN STEP	2026-11-22T14:00:04.0595190Z ##[group]Run kubectl kustomize gitops/overlays/staging > /dev/null
+politicas	UNKNOWN STEP	2026-11-22T14:00:04.0596707Z ^[[36;1mkubectl kustomize gitops/overlays/staging > /dev/null^[[0m
+politicas	UNKNOWN STEP	2026-11-22T14:00:04.0597973Z ^[[36;1mkubectl kustomize gitops/overlays/producao > /dev/null^[[0m
+politicas	UNKNOWN STEP	2026-11-22T14:00:04.0628001Z shell: /usr/bin/bash -e {0}
+politicas	UNKNOWN STEP	2026-11-22T14:00:04.0628707Z env:
+politicas	UNKNOWN STEP	2026-11-22T14:00:04.0629438Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+politicas	UNKNOWN STEP	2026-11-22T14:00:04.0630662Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+politicas	UNKNOWN STEP	2026-11-22T14:00:04.0631867Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+politicas	UNKNOWN STEP	2026-11-22T14:00:04.0632973Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+politicas	UNKNOWN STEP	2026-11-22T14:00:04.0634098Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+politicas	UNKNOWN STEP	2026-11-22T14:00:04.0635219Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+politicas	UNKNOWN STEP	2026-11-22T14:00:04.0636317Z ##[endgroup]
+politicas	UNKNOWN STEP	2026-11-22T14:00:08.3013456Z ##[group]Run python gitops/politicas/verificar.py
+politicas	UNKNOWN STEP	2026-11-22T14:00:08.3013722Z ^[[36;1mpython gitops/politicas/verificar.py^[[0m
+politicas	UNKNOWN STEP	2026-11-22T14:00:08.3043741Z shell: /usr/bin/bash -e {0}
+politicas	UNKNOWN STEP	2026-11-22T14:00:08.3043892Z env:
+politicas	UNKNOWN STEP	2026-11-22T14:00:08.3044061Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+politicas	UNKNOWN STEP	2026-11-22T14:00:08.3044319Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+politicas	UNKNOWN STEP	2026-11-22T14:00:08.3044569Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+politicas	UNKNOWN STEP	2026-11-22T14:00:08.3044795Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+politicas	UNKNOWN STEP	2026-11-22T14:00:08.3045019Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+politicas	UNKNOWN STEP	2026-11-22T14:00:08.3045250Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+politicas	UNKNOWN STEP	2026-11-22T14:00:08.3045445Z ##[endgroup]
+politicas	UNKNOWN STEP	2026-11-22T14:00:08.4811267Z ✅ Todas as políticas passaram
+politicas	UNKNOWN STEP	2026-11-22T14:00:08.4912520Z ##[group]Run git fetch -q origin "main"
+politicas	UNKNOWN STEP	2026-11-22T14:00:08.4912754Z ^[[36;1mgit fetch -q origin "main"^[[0m
+politicas	UNKNOWN STEP	2026-11-22T14:00:08.4912939Z ^[[36;1mfor amb in staging producao; do^[[0m
+politicas	UNKNOWN STEP	2026-11-22T14:00:08.4913122Z ^[[36;1m  echo "### $amb" >> "$GITHUB_STEP_SUMMARY"^[[0m
+politicas	UNKNOWN STEP	2026-11-22T14:00:08.4913311Z ^[[36;1m  echo '```diff' >> "$GITHUB_STEP_SUMMARY"^[[0m
+politicas	UNKNOWN STEP	2026-11-22T14:00:08.4913589Z ^[[36;1m  diff <(git show "origin/main:gitops/overlays/$amb/inference-config.env" 2>/dev/null) \^[[0m
+politicas	UNKNOWN STEP	2026-11-22T14:00:08.4913928Z ^[[36;1m       "gitops/overlays/$amb/inference-config.env" >> "$GITHUB_STEP_SUMMARY" || true^[[0m
+politicas	UNKNOWN STEP	2026-11-22T14:00:08.4914186Z ^[[36;1m  echo '```' >> "$GITHUB_STEP_SUMMARY"^[[0m
+politicas	UNKNOWN STEP	2026-11-22T14:00:08.4914345Z ^[[36;1mdone^[[0m
+politicas	UNKNOWN STEP	2026-11-22T14:00:08.4943214Z shell: /usr/bin/bash -e {0}
+politicas	UNKNOWN STEP	2026-11-22T14:00:08.4943367Z env:
+politicas	UNKNOWN STEP	2026-11-22T14:00:08.4943527Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+politicas	UNKNOWN STEP	2026-11-22T14:00:08.4943806Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+politicas	UNKNOWN STEP	2026-11-22T14:00:08.4944049Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+politicas	UNKNOWN STEP	2026-11-22T14:00:08.4944271Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+politicas	UNKNOWN STEP	2026-11-22T14:00:08.4944492Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+politicas	UNKNOWN STEP	2026-11-22T14:00:08.4944714Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+politicas	UNKNOWN STEP	2026-11-22T14:00:08.4944902Z ##[endgroup]
+politicas	UNKNOWN STEP	2026-11-22T14:00:08.9650406Z Post job cleanup.
+politicas	UNKNOWN STEP	2026-11-22T14:00:09.0629865Z Post job cleanup.
+politicas	UNKNOWN STEP	2026-11-22T14:00:09.1212967Z [command]/usr/bin/git version
+politicas	UNKNOWN STEP	2026-11-22T14:00:09.1246914Z git version 2.56.1
+politicas	UNKNOWN STEP	2026-11-22T14:00:09.1269326Z Temporarily overriding HOME='/home/runner/work/_temp/9cfda04e-bf64-4ad7-9d83-e5881196a862' before making global git config changes
+politicas	UNKNOWN STEP	2026-11-22T14:00:09.1270098Z Adding repository directory to the temporary git global config as a safe directory
+politicas	UNKNOWN STEP	2026-11-22T14:00:09.1272835Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/aie-devops-labs/aie-devops-labs
+politicas	UNKNOWN STEP	2026-11-22T14:00:09.1302200Z Removing SSH command configuration
+politicas	UNKNOWN STEP	2026-11-22T14:00:09.1307030Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+politicas	UNKNOWN STEP	2026-11-22T14:00:09.1337003Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+politicas	UNKNOWN STEP	2026-11-22T14:00:09.1582339Z Removing HTTP extra header
+politicas	UNKNOWN STEP	2026-11-22T14:00:09.1586871Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+politicas	UNKNOWN STEP	2026-11-22T14:00:09.1683710Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+politicas	UNKNOWN STEP	2026-11-22T14:00:09.1909788Z Removing includeIf entries pointing to credentials config files
+politicas	UNKNOWN STEP	2026-11-22T14:00:09.1916319Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+politicas	UNKNOWN STEP	2026-11-22T14:00:09.1940531Z includeif.gitdir:/home/runner/work/aie-devops-labs/aie-devops-labs/.git.path
+politicas	UNKNOWN STEP	2026-11-22T14:00:09.1941372Z includeif.gitdir:/home/runner/work/aie-devops-labs/aie-devops-labs/.git/worktrees/*.path
+politicas	UNKNOWN STEP	2026-11-22T14:00:09.1942034Z includeif.gitdir:/github/workspace/.git.path
+politicas	UNKNOWN STEP	2026-11-22T14:00:09.1942534Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+politicas	UNKNOWN STEP	2026-11-22T14:00:09.1947149Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/aie-devops-labs/aie-devops-labs/.git.path
+politicas	UNKNOWN STEP	2026-11-22T14:00:09.2003880Z /home/runner/work/_temp/git-credentials-c8691321-ef83-48d0-b943-c3465967410f.config
+politicas	UNKNOWN STEP	2026-11-22T14:00:09.2022925Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/aie-devops-labs/aie-devops-labs/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-c8691321\-ef83\-48d0\-b943\-c3465967410f\.config
+politicas	UNKNOWN STEP	2026-11-22T14:00:09.2059445Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/aie-devops-labs/aie-devops-labs/.git/worktrees/*.path
+politicas	UNKNOWN STEP	2026-11-22T14:00:09.2073914Z /home/runner/work/_temp/git-credentials-c8691321-ef83-48d0-b943-c3465967410f.config
+politicas	UNKNOWN STEP	2026-11-22T14:00:09.2081757Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/aie-devops-labs/aie-devops-labs/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-c8691321\-ef83\-48d0\-b943\-c3465967410f\.config
+politicas	UNKNOWN STEP	2026-11-22T14:00:09.2127195Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+politicas	UNKNOWN STEP	2026-11-22T14:00:09.2149485Z /github/runner_temp/git-credentials-c8691321-ef83-48d0-b943-c3465967410f.config
+politicas	UNKNOWN STEP	2026-11-22T14:00:09.2155003Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-c8691321\-ef83\-48d0\-b943\-c3465967410f\.config
+politicas	UNKNOWN STEP	2026-11-22T14:00:09.2183574Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+politicas	UNKNOWN STEP	2026-11-22T14:00:09.2205241Z /github/runner_temp/git-credentials-c8691321-ef83-48d0-b943-c3465967410f.config
+politicas	UNKNOWN STEP	2026-11-22T14:00:09.2209282Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-c8691321\-ef83\-48d0\-b943\-c3465967410f\.config
+politicas	UNKNOWN STEP	2026-11-22T14:00:09.2240836Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+politicas	UNKNOWN STEP	2026-11-22T14:00:09.2464469Z Removing credentials config '/home/runner/work/_temp/git-credentials-c8691321-ef83-48d0-b943-c3465967410f.config'
+politicas	UNKNOWN STEP	2026-11-22T14:00:09.2581782Z Cleaning up orphan processes

@@ -1,0 +1,18 @@
+$ az group delete -n rg-aie-capstone-brazilsouth --yes   (2026-11-22T15:26:34Z)
+az group delete -n rg-aie-capstone-brazilsouth --yes  0.27s user 0.08s system 0% cpu 1:18.16 total
+exit=0
+
+$ az group list (grupos rg-aie-*)
+
+(vazio = nenhum grupo restante)
+
+$ az resource list (assinatura inteira)
+Nome                        Tipo                               Grupo
+--------------------------  ---------------------------------  ----------------
+cloudfiapi1                 Microsoft.Storage/storageAccounts  FIAP
+NetworkWatcher_brazilsouth  Microsoft.Network/networkWatchers  NetworkWatcherRG
+Nenhum recurso desta sessão restou. Os dois acima são de 2026-07-01 (anteriores à Aula 6) e não foram tocados:
+cloudfiapi1 (storage Standard_LRS, grupo FIAP) e NetworkWatcher_brazilsouth (criado automaticamente pelo Azure, sem custo).
+
+$ curl https://agente-quantum-23771.azurewebsites.net/
+HTTP 000  (sem resposta: o Web App não existe mais)

@@ -1,0 +1,3 @@
+### Latência direta de cada slot, sem roteamento (40 POSTs cada, alternados)   (16:41:01Z)
+producao (v1)                mediana    301 ms · p95    327 ms · máx    515 ms · 5 primeiras [515, 298, 309, 294, 305]
+canary direto (v2-canary)    mediana    303 ms · p95    432 ms · máx    456 ms · 5 primeiras [456, 286, 295, 310, 303]

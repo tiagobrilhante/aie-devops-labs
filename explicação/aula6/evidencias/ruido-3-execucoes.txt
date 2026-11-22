@@ -1,0 +1,2 @@
+execução 1 x 2: 0 de 36 casos diferentes (categoria ou nota de resposta)
+execução 1 x 3: 0 de 36 casos diferentes (categoria ou nota de resposta)

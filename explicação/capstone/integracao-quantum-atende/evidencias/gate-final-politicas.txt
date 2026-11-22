@@ -1,0 +1,16 @@
+## Agent gate
+
+| Categoria | Roteamento | Recuperação | Resposta |
+|---|---|---|---|
+| artigo_proibido | 67% | 67% | 67% |
+| devolucao_ressarcimento | 100% | 100% | 100% (+33%) |
+| divergente_defeito | 83% | 83% | 100% |
+| entrega | 83% | 83% | 83% (-17%) |
+| falsificado | 50% (-50%) | 50% (-50%) | 67% (-33%) |
+| fraude_vendedor | 67% (-17%) | 67% (-17%) | 67% (-17%) |
+| **média** | **75%** | **75%** | **81%** |
+
+**❌ Reprovado**
+- falsificado/roteamento: regrediu de 100% para 50%
+- falsificado/recuperacao: regrediu de 100% para 50%
+

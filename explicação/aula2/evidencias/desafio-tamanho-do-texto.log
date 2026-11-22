@@ -1,0 +1,22 @@
+$ pytest classificador/tests/test_dados.py -q   # base de treino
+.........                                                                [100%]
+9 passed in 0.22s
+
+$ DADOS=classificador/dados/validacao.csv pytest classificador/tests/test_dados.py -q -k tamanho
+1 passed, 8 deselected in 0.19s
+
+$ DADOS=classificador/dados/lote-novo.csv pytest classificador/tests/test_dados.py -q -rw
+E       AssertionError: 28% dos textos só têm emojis (máx. 10%)
+AssertionError
+            f"classe '{classe}' em {frac:.0%}, referência {REFERENCIA[classe]:.0%} — drift de rótulo"
+E       AssertionError: classe 'neutra' em 9%, referência 25% — drift de rótulo
+AssertionError
+            f"classe '{classe}' em {frac:.0%}, referência {REFERENCIA[classe]:.0%} — drift de rótulo"
+E       AssertionError: classe 'positiva' em 52%, referência 40% — drift de rótulo
+AssertionError
+            f"({desvio:+.0%}) — drift de tamanho"
+E       AssertionError: média de 8.1 palavras por texto, referência 11.15 (-28%) — drift de tamanho
+AssertionError
+UserWarning: classe 'neutra' em 9% (referência 25%)
+UserWarning: classe 'positiva' em 52% (referência 40%)
+UserWarning: média de 8.1 palavras por texto (-28% da referência)

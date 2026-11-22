@@ -1,0 +1,18 @@
+### 2. Canary com falha no Azure: v3-canary com ERRO_SIMULADO=0.2, 10% do tráfego   (16:46:25Z)
+$ canary-azure.sh versao canary v3-canary 0.2
+  16:49:14Z classificador-canary-24740-canary: {"status": "ok", "versao": "v3-canary"}
+✅ slot canary: versão v3-canary, erro simulado 0.2
+(aquecendo o slot com 20 GETs diretos, para a latência não pesar)
+$ canary-azure.sh trafego 0.1
+Slot    Percentual
+------  ------------
+canary  10.0
+$ canary-azure.sh analisar 300
+versão        req.   erro %   p95 ms  previsões
+v2-canary      266     0.0%      351  {'positiva': '41%', 'negativa': '33%', 'neutra': '25%'}
+v3-canary       34    17.6%     1253  {'positiva': '61%', 'negativa': '21%', 'neutra': '18%'}
+❌ ROLLBACK: taxa de erro do canary 17.6% (estável 0.0%); latência p95 do canary acima de 1,5× a estável; previsões 'positiva' diferem 19% entre as versões
+exit=1
+$ canary-azure.sh trafego 0   # rollback: 100% de volta na estável
+
+produção depois do rollback: {"status": "ok", "versao": "v2-canary"}

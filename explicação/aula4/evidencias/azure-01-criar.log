@@ -1,0 +1,5 @@
+$ canary-azure.sh criar   (2026-11-22T16:01:11Z)
+WARNING: Creating App Service Plan 'plano-canary-s1' (Linux, SKU: S1).
+WARNING: Webapp 'classificador-canary-24740' created. Deploy your code with: az webapp deploy
+✅ classificador-canary-24740 (S1, brazilsouth) com o slot canary · https://classificador-canary-24740.azurewebsites.net/
+explicação/aula4/azure/canary-azure.sh criar  2.02s user 0.56s system 3% cpu 1:21.34 total

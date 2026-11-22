@@ -1,0 +1,238 @@
+politicas	Set up job	﻿2026-11-22T14:45:30.4358780Z Current runner version: '2.338.2'
+politicas	Set up job	2026-11-22T14:45:30.4384592Z ##[group]Runner Image Provisioner
+politicas	Set up job	2026-11-22T14:45:30.4386006Z Hosted Compute Agent
+politicas	Set up job	2026-11-22T14:45:30.4386728Z Version: 20261111.635
+politicas	Set up job	2026-11-22T14:45:30.4387387Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+politicas	Set up job	2026-11-22T14:45:30.4388164Z Build Date: 2026-11-11T01:49:01Z
+politicas	Set up job	2026-11-22T14:45:30.4388901Z Worker ID: {992f4404-d50d-41c3-8254-e5420a0526b2}
+politicas	Set up job	2026-11-22T14:45:30.4389607Z Region: westus3
+politicas	Set up job	2026-11-22T14:45:30.4390144Z Cloud: Azure
+politicas	Set up job	2026-11-22T14:45:30.4390750Z ##[endgroup]
+politicas	Set up job	2026-11-22T14:45:30.4392631Z ##[group]Operating System
+politicas	Set up job	2026-11-22T14:45:30.4393416Z Ubuntu
+politicas	Set up job	2026-11-22T14:45:30.4393957Z 26.04.1
+politicas	Set up job	2026-11-22T14:45:30.4394450Z LTS
+politicas	Set up job	2026-11-22T14:45:30.4395030Z ##[endgroup]
+politicas	Set up job	2026-11-22T14:45:30.4395882Z ##[group]Runner Image
+politicas	Set up job	2026-11-22T14:45:30.4396534Z Image: ubuntu-26.04
+politicas	Set up job	2026-11-22T14:45:30.4397120Z Version: 20261116.202.1
+politicas	Set up job	2026-11-22T14:45:30.4398190Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261116.202/images/ubuntu/Ubuntu2604-Readme.md
+politicas	Set up job	2026-11-22T14:45:30.4400039Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261116.202
+politicas	Set up job	2026-11-22T14:45:30.4401049Z ##[endgroup]
+politicas	Set up job	2026-11-22T14:45:30.4402274Z ##[group]GITHUB_TOKEN Permissions
+politicas	Set up job	2026-11-22T14:45:30.4404289Z Contents: read
+politicas	Set up job	2026-11-22T14:45:30.4404933Z Metadata: read
+politicas	Set up job	2026-11-22T14:45:30.4405796Z Packages: read
+politicas	Set up job	2026-11-22T14:45:30.4406427Z ##[endgroup]
+politicas	Set up job	2026-11-22T14:45:30.4408531Z Secret source: Actions
+politicas	Set up job	2026-11-22T14:45:30.4409547Z Cache mode: write
+politicas	Set up job	2026-11-22T14:45:30.4410269Z Prepare workflow directory
+politicas	Set up job	2026-11-22T14:45:30.4754845Z Prepare all required actions
+politicas	Set up job	2026-11-22T14:45:30.4803033Z Getting action download info
+politicas	Set up job	2026-11-22T14:45:30.7774420Z Download action repository 'actions/checkout@v7' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+politicas	Set up job	2026-11-22T14:45:30.8811849Z Download action repository 'actions/setup-python@v7' (SHA:6d4fd22b20465ccc0f7354476588e8df7c9ca0e0)
+politicas	Set up job	2026-11-22T14:45:31.0532993Z Complete job name: politicas
+politicas	Run actions/checkout@v7	﻿2026-11-22T14:45:31.1457746Z ##[group]Run actions/checkout@v7
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.1458720Z with:
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.1459238Z   repository: tiagobrilhante/aie-devops-labs
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.1463141Z   token: ***
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.1463602Z   ssh-strict: true
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.1464063Z   ssh-user: git
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.1464534Z   persist-credentials: true
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.1465042Z   clean: true
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.1465683Z   sparse-checkout-cone-mode: true
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.1466221Z   fetch-depth: 1
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.1466678Z   fetch-tags: false
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.1467142Z   show-progress: true
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.1467605Z   lfs: false
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.1468041Z   submodules: false
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.1468511Z   set-safe-directory: true
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.1469045Z   allow-unsafe-pr-checkout: false
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.1469890Z ##[endgroup]
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.4692045Z Syncing repository: tiagobrilhante/aie-devops-labs
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.4694073Z ##[group]Getting Git version info
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.4695494Z Working directory is '/home/runner/work/aie-devops-labs/aie-devops-labs'
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.4696986Z [command]/usr/bin/git version
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.4702140Z git version 2.56.1
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.4725990Z ##[endgroup]
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.4740756Z Temporarily overriding HOME='/home/runner/work/_temp/29d8efee-1322-475d-a73e-25c0644df890' before making global git config changes
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.4743399Z Adding repository directory to the temporary git global config as a safe directory
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.4753867Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/aie-devops-labs/aie-devops-labs
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.4852765Z Deleting the contents of '/home/runner/work/aie-devops-labs/aie-devops-labs'
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.4857211Z ##[group]Determining repository object format
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.4859082Z ##[endgroup]
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.4860441Z ##[group]Initializing the repository
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.4865897Z [command]/usr/bin/git init /home/runner/work/aie-devops-labs/aie-devops-labs
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.5027117Z hint: Using 'master' as the name for the initial branch. This default branch name
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.5029249Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.5031658Z hint: to use in all of your new repositories, which will suppress this warning,
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.5033104Z hint: call:
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.5033868Z hint:
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.5034851Z hint: 	git config --global init.defaultBranch <name>
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.5036300Z hint:
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.5037421Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.5039065Z hint: 'development'. The just-created branch can be renamed via this command:
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.5040504Z hint:
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.5041423Z hint: 	git branch -m <name>
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.5042338Z hint:
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.5043471Z hint: Disable this message with "git config set advice.defaultBranchName false"
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.5046756Z Initialized empty Git repository in /home/runner/work/aie-devops-labs/aie-devops-labs/.git/
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.5060716Z [command]/usr/bin/git remote add origin https://github.com/tiagobrilhante/aie-devops-labs
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.5148250Z ##[endgroup]
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.5149670Z ##[group]Disabling automatic garbage collection
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.5153009Z [command]/usr/bin/git config --local gc.auto 0
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.5200512Z ##[endgroup]
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.5202357Z ##[group]Setting up auth
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.5203951Z Removing SSH command configuration
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.5208819Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.5277019Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.5787852Z Removing HTTP extra header
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.5794374Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.5830526Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.6114577Z Removing includeIf entries pointing to credentials config files
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.6120729Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.6160372Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.6440949Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-38702d29-31f4-4047-aea2-76704629eea2.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.6482441Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/aie-devops-labs/aie-devops-labs/.git.path /home/runner/work/_temp/git-credentials-38702d29-31f4-4047-aea2-76704629eea2.config
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.6516073Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/aie-devops-labs/aie-devops-labs/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-38702d29-31f4-4047-aea2-76704629eea2.config
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.6553247Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-38702d29-31f4-4047-aea2-76704629eea2.config
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.6587634Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-38702d29-31f4-4047-aea2-76704629eea2.config
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.6619656Z ##[endgroup]
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.6621075Z ##[group]Fetching the repository
+politicas	Run actions/checkout@v7	2026-11-22T14:45:31.6628257Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +7b0fd5266d6e0dc7f624fe5c264760c087975220:refs/remotes/pull/9/merge
+politicas	Run actions/checkout@v7	2026-11-22T14:45:32.1750524Z From https://github.com/tiagobrilhante/aie-devops-labs
+politicas	Run actions/checkout@v7	2026-11-22T14:45:32.1752688Z  * [new ref]         7b0fd5266d6e0dc7f624fe5c264760c087975220 -> pull/9/merge
+politicas	Run actions/checkout@v7	2026-11-22T14:45:32.1757677Z ##[endgroup]
+politicas	Run actions/checkout@v7	2026-11-22T14:45:32.1759582Z ##[group]Determining the checkout info
+politicas	Run actions/checkout@v7	2026-11-22T14:45:32.1761456Z ##[endgroup]
+politicas	Run actions/checkout@v7	2026-11-22T14:45:32.1764482Z [command]/usr/bin/git sparse-checkout disable
+politicas	Run actions/checkout@v7	2026-11-22T14:45:32.1832578Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+politicas	Run actions/checkout@v7	2026-11-22T14:45:32.1872950Z ##[group]Checking out the ref
+politicas	Run actions/checkout@v7	2026-11-22T14:45:32.1878238Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/9/merge
+politicas	Run actions/checkout@v7	2026-11-22T14:45:32.2006618Z Note: switching to 'refs/remotes/pull/9/merge'.
+politicas	Run actions/checkout@v7	2026-11-22T14:45:32.2007970Z 
+politicas	Run actions/checkout@v7	2026-11-22T14:45:32.2008892Z You are in 'detached HEAD' state. You can look around, make experimental
+politicas	Run actions/checkout@v7	2026-11-22T14:45:32.2010998Z changes and commit them, and you can discard any commits you make in this
+politicas	Run actions/checkout@v7	2026-11-22T14:45:32.2013122Z state without impacting any branches by switching back to a branch.
+politicas	Run actions/checkout@v7	2026-11-22T14:45:32.2014194Z 
+politicas	Run actions/checkout@v7	2026-11-22T14:45:32.2014834Z If you want to create a new branch to retain commits you create, you may
+politicas	Run actions/checkout@v7	2026-11-22T14:45:32.2017035Z do so (now or later) by using -c with the switch command. Example:
+politicas	Run actions/checkout@v7	2026-11-22T14:45:32.2017879Z 
+politicas	Run actions/checkout@v7	2026-11-22T14:45:32.2018247Z   git switch -c <new-branch-name>
+politicas	Run actions/checkout@v7	2026-11-22T14:45:32.2018862Z 
+politicas	Run actions/checkout@v7	2026-11-22T14:45:32.2019198Z Or undo this operation with:
+politicas	Run actions/checkout@v7	2026-11-22T14:45:32.2019771Z 
+politicas	Run actions/checkout@v7	2026-11-22T14:45:32.2020075Z   git switch -
+politicas	Run actions/checkout@v7	2026-11-22T14:45:32.2020498Z 
+politicas	Run actions/checkout@v7	2026-11-22T14:45:32.2021672Z Turn off this advice by setting config variable advice.detachedHead to false
+politicas	Run actions/checkout@v7	2026-11-22T14:45:32.2023137Z 
+politicas	Run actions/checkout@v7	2026-11-22T14:45:32.2025730Z HEAD is now at 7b0fd52 Merge 5968c6ed3f9ae25568c00d2fb026ba7d0616cc06 into d511d5e43989088e46c8aadf6d22939c5bc8e071
+politicas	Run actions/checkout@v7	2026-11-22T14:45:32.2030995Z ##[endgroup]
+politicas	Run actions/checkout@v7	2026-11-22T14:45:32.2079324Z [command]/usr/bin/git log -1 --format=%H
+politicas	Run actions/checkout@v7	2026-11-22T14:45:32.2108433Z 7b0fd5266d6e0dc7f624fe5c264760c087975220
+politicas	Run actions/setup-python@v7	﻿2026-11-22T14:45:32.2606018Z ##[group]Run actions/setup-python@v7
+politicas	Run actions/setup-python@v7	2026-11-22T14:45:32.2607199Z with:
+politicas	Run actions/setup-python@v7	2026-11-22T14:45:32.2607966Z   python-version: 3.12
+politicas	Run actions/setup-python@v7	2026-11-22T14:45:32.2608853Z   check-latest: false
+politicas	Run actions/setup-python@v7	2026-11-22T14:45:32.2619157Z   token: ***
+politicas	Run actions/setup-python@v7	2026-11-22T14:45:32.2620409Z   mirror: https://raw.githubusercontent.com/actions/python-versions/main
+politicas	Run actions/setup-python@v7	2026-11-22T14:45:32.2621987Z   update-environment: true
+politicas	Run actions/setup-python@v7	2026-11-22T14:45:32.2622969Z   allow-prereleases: false
+politicas	Run actions/setup-python@v7	2026-11-22T14:45:32.2623898Z   freethreaded: false
+politicas	Run actions/setup-python@v7	2026-11-22T14:45:32.2624735Z ##[endgroup]
+politicas	Run actions/setup-python@v7	2026-11-22T14:45:32.3835833Z ##[group]Installed versions
+politicas	Run actions/setup-python@v7	2026-11-22T14:45:32.3982999Z Successfully set up CPython (3.12.16)
+politicas	Run actions/setup-python@v7	2026-11-22T14:45:32.3985107Z ##[endgroup]
+politicas	Run pip install pyyaml==6.0.2	﻿2026-11-22T14:45:32.4187453Z ##[group]Run pip install pyyaml==6.0.2
+politicas	Run pip install pyyaml==6.0.2	2026-11-22T14:45:32.4189348Z ^[[36;1mpip install pyyaml==6.0.2^[[0m
+politicas	Run pip install pyyaml==6.0.2	2026-11-22T14:45:32.4288121Z shell: /usr/bin/bash -e {0}
+politicas	Run pip install pyyaml==6.0.2	2026-11-22T14:45:32.4289121Z env:
+politicas	Run pip install pyyaml==6.0.2	2026-11-22T14:45:32.4290101Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+politicas	Run pip install pyyaml==6.0.2	2026-11-22T14:45:32.4291812Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+politicas	Run pip install pyyaml==6.0.2	2026-11-22T14:45:32.4293496Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+politicas	Run pip install pyyaml==6.0.2	2026-11-22T14:45:32.4294996Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+politicas	Run pip install pyyaml==6.0.2	2026-11-22T14:45:32.4297516Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+politicas	Run pip install pyyaml==6.0.2	2026-11-22T14:45:32.4299446Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+politicas	Run pip install pyyaml==6.0.2	2026-11-22T14:45:32.4300748Z ##[endgroup]
+politicas	Run pip install pyyaml==6.0.2	2026-11-22T14:45:33.3977518Z Collecting pyyaml==6.0.2
+politicas	Run pip install pyyaml==6.0.2	2026-11-22T14:45:33.4402890Z   Downloading PyYAML-6.0.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (2.1 kB)
+politicas	Run pip install pyyaml==6.0.2	2026-11-22T14:45:33.4546552Z Downloading PyYAML-6.0.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (767 kB)
+politicas	Run pip install pyyaml==6.0.2	2026-11-22T14:45:33.4999205Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 767.5/767.5 kB 29.7 MB/s  0:00:00
+politicas	Run pip install pyyaml==6.0.2	2026-11-22T14:45:33.5600838Z Installing collected packages: pyyaml
+politicas	Run pip install pyyaml==6.0.2	2026-11-22T14:45:33.6183521Z Successfully installed pyyaml-6.0.2
+politicas	Os overlays renderizam?	﻿2026-11-22T14:45:33.6692523Z ##[group]Run kubectl kustomize gitops/overlays/staging > /dev/null
+politicas	Os overlays renderizam?	2026-11-22T14:45:33.6693220Z ^[[36;1mkubectl kustomize gitops/overlays/staging > /dev/null^[[0m
+politicas	Os overlays renderizam?	2026-11-22T14:45:33.6693748Z ^[[36;1mkubectl kustomize gitops/overlays/producao > /dev/null^[[0m
+politicas	Os overlays renderizam?	2026-11-22T14:45:33.6730406Z shell: /usr/bin/bash -e {0}
+politicas	Os overlays renderizam?	2026-11-22T14:45:33.6730775Z env:
+politicas	Os overlays renderizam?	2026-11-22T14:45:33.6731135Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+politicas	Os overlays renderizam?	2026-11-22T14:45:33.6731660Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+politicas	Os overlays renderizam?	2026-11-22T14:45:33.6732194Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+politicas	Os overlays renderizam?	2026-11-22T14:45:33.6732677Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+politicas	Os overlays renderizam?	2026-11-22T14:45:33.6733179Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+politicas	Os overlays renderizam?	2026-11-22T14:45:33.6733654Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+politicas	Os overlays renderizam?	2026-11-22T14:45:33.6734067Z ##[endgroup]
+politicas	Políticas (versão explícita, sem segredo, réplicas)	﻿2026-11-22T14:45:36.8112526Z ##[group]Run python gitops/politicas/verificar.py
+politicas	Políticas (versão explícita, sem segredo, réplicas)	2026-11-22T14:45:36.8112968Z ^[[36;1mpython gitops/politicas/verificar.py^[[0m
+politicas	Políticas (versão explícita, sem segredo, réplicas)	2026-11-22T14:45:36.8146492Z shell: /usr/bin/bash -e {0}
+politicas	Políticas (versão explícita, sem segredo, réplicas)	2026-11-22T14:45:36.8146753Z env:
+politicas	Políticas (versão explícita, sem segredo, réplicas)	2026-11-22T14:45:36.8147024Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+politicas	Políticas (versão explícita, sem segredo, réplicas)	2026-11-22T14:45:36.8147470Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+politicas	Políticas (versão explícita, sem segredo, réplicas)	2026-11-22T14:45:36.8147909Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+politicas	Políticas (versão explícita, sem segredo, réplicas)	2026-11-22T14:45:36.8148290Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+politicas	Políticas (versão explícita, sem segredo, réplicas)	2026-11-22T14:45:36.8148671Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+politicas	Políticas (versão explícita, sem segredo, réplicas)	2026-11-22T14:45:36.8149061Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+politicas	Políticas (versão explícita, sem segredo, réplicas)	2026-11-22T14:45:36.8149382Z ##[endgroup]
+politicas	Políticas (versão explícita, sem segredo, réplicas)	2026-11-22T14:45:37.0729355Z ✅ Todas as políticas passaram
+politicas	O que este PR muda em cada ambiente	﻿2026-11-22T14:45:37.0851860Z ##[group]Run git fetch -q origin "main"
+politicas	O que este PR muda em cada ambiente	2026-11-22T14:45:37.0852241Z ^[[36;1mgit fetch -q origin "main"^[[0m
+politicas	O que este PR muda em cada ambiente	2026-11-22T14:45:37.0852542Z ^[[36;1mfor amb in staging producao; do^[[0m
+politicas	O que este PR muda em cada ambiente	2026-11-22T14:45:37.0852863Z ^[[36;1m  echo "### $amb" >> "$GITHUB_STEP_SUMMARY"^[[0m
+politicas	O que este PR muda em cada ambiente	2026-11-22T14:45:37.0853193Z ^[[36;1m  echo '```diff' >> "$GITHUB_STEP_SUMMARY"^[[0m
+politicas	O que este PR muda em cada ambiente	2026-11-22T14:45:37.0853684Z ^[[36;1m  diff <(git show "origin/main:gitops/overlays/$amb/inference-config.env" 2>/dev/null) \^[[0m
+politicas	O que este PR muda em cada ambiente	2026-11-22T14:45:37.0854308Z ^[[36;1m       "gitops/overlays/$amb/inference-config.env" >> "$GITHUB_STEP_SUMMARY" || true^[[0m
+politicas	O que este PR muda em cada ambiente	2026-11-22T14:45:37.0854763Z ^[[36;1m  echo '```' >> "$GITHUB_STEP_SUMMARY"^[[0m
+politicas	O que este PR muda em cada ambiente	2026-11-22T14:45:37.0855040Z ^[[36;1mdone^[[0m
+politicas	O que este PR muda em cada ambiente	2026-11-22T14:45:37.0888708Z shell: /usr/bin/bash -e {0}
+politicas	O que este PR muda em cada ambiente	2026-11-22T14:45:37.0888969Z env:
+politicas	O que este PR muda em cada ambiente	2026-11-22T14:45:37.0889254Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+politicas	O que este PR muda em cada ambiente	2026-11-22T14:45:37.0889714Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+politicas	O que este PR muda em cada ambiente	2026-11-22T14:45:37.0890181Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+politicas	O que este PR muda em cada ambiente	2026-11-22T14:45:37.0890580Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+politicas	O que este PR muda em cada ambiente	2026-11-22T14:45:37.0890970Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+politicas	O que este PR muda em cada ambiente	2026-11-22T14:45:37.0891352Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+politicas	O que este PR muda em cada ambiente	2026-11-22T14:45:37.0891678Z ##[endgroup]
+politicas	Post Run actions/setup-python@v7	﻿2026-11-22T14:45:37.8294718Z Post job cleanup.
+politicas	Post Run actions/checkout@v7	﻿2026-11-22T14:45:37.9747285Z Post job cleanup.
+politicas	Post Run actions/checkout@v7	2026-11-22T14:45:38.0659292Z [command]/usr/bin/git version
+politicas	Post Run actions/checkout@v7	2026-11-22T14:45:38.0709881Z git version 2.56.1
+politicas	Post Run actions/checkout@v7	2026-11-22T14:45:38.0754378Z Temporarily overriding HOME='/home/runner/work/_temp/ae2ec6d2-5f8b-46b6-880c-0896e031d1fb' before making global git config changes
+politicas	Post Run actions/checkout@v7	2026-11-22T14:45:38.0755649Z Adding repository directory to the temporary git global config as a safe directory
+politicas	Post Run actions/checkout@v7	2026-11-22T14:45:38.0760482Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/aie-devops-labs/aie-devops-labs
+politicas	Post Run actions/checkout@v7	2026-11-22T14:45:38.0801192Z Removing SSH command configuration
+politicas	Post Run actions/checkout@v7	2026-11-22T14:45:38.0808238Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+politicas	Post Run actions/checkout@v7	2026-11-22T14:45:38.0852889Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+politicas	Post Run actions/checkout@v7	2026-11-22T14:45:38.1194981Z Removing HTTP extra header
+politicas	Post Run actions/checkout@v7	2026-11-22T14:45:38.1209491Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+politicas	Post Run actions/checkout@v7	2026-11-22T14:45:38.1245359Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+politicas	Post Run actions/checkout@v7	2026-11-22T14:45:38.1566153Z Removing includeIf entries pointing to credentials config files
+politicas	Post Run actions/checkout@v7	2026-11-22T14:45:38.1576383Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+politicas	Post Run actions/checkout@v7	2026-11-22T14:45:38.1604819Z includeif.gitdir:/home/runner/work/aie-devops-labs/aie-devops-labs/.git.path
+politicas	Post Run actions/checkout@v7	2026-11-22T14:45:38.1605999Z includeif.gitdir:/home/runner/work/aie-devops-labs/aie-devops-labs/.git/worktrees/*.path
+politicas	Post Run actions/checkout@v7	2026-11-22T14:45:38.1606555Z includeif.gitdir:/github/workspace/.git.path
+politicas	Post Run actions/checkout@v7	2026-11-22T14:45:38.1606961Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+politicas	Post Run actions/checkout@v7	2026-11-22T14:45:38.1615881Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/aie-devops-labs/aie-devops-labs/.git.path
+politicas	Post Run actions/checkout@v7	2026-11-22T14:45:38.1641759Z /home/runner/work/_temp/git-credentials-38702d29-31f4-4047-aea2-76704629eea2.config
+politicas	Post Run actions/checkout@v7	2026-11-22T14:45:38.1651499Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/aie-devops-labs/aie-devops-labs/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-38702d29\-31f4\-4047\-aea2\-76704629eea2\.config
+politicas	Post Run actions/checkout@v7	2026-11-22T14:45:38.1691532Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/aie-devops-labs/aie-devops-labs/.git/worktrees/*.path
+politicas	Post Run actions/checkout@v7	2026-11-22T14:45:38.1715916Z /home/runner/work/_temp/git-credentials-38702d29-31f4-4047-aea2-76704629eea2.config
+politicas	Post Run actions/checkout@v7	2026-11-22T14:45:38.1725319Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/aie-devops-labs/aie-devops-labs/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-38702d29\-31f4\-4047\-aea2\-76704629eea2\.config
+politicas	Post Run actions/checkout@v7	2026-11-22T14:45:38.1758782Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+politicas	Post Run actions/checkout@v7	2026-11-22T14:45:38.1783047Z /github/runner_temp/git-credentials-38702d29-31f4-4047-aea2-76704629eea2.config
+politicas	Post Run actions/checkout@v7	2026-11-22T14:45:38.1791455Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-38702d29\-31f4\-4047\-aea2\-76704629eea2\.config
+politicas	Post Run actions/checkout@v7	2026-11-22T14:45:38.1827315Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+politicas	Post Run actions/checkout@v7	2026-11-22T14:45:38.1852779Z /github/runner_temp/git-credentials-38702d29-31f4-4047-aea2-76704629eea2.config
+politicas	Post Run actions/checkout@v7	2026-11-22T14:45:38.1863362Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-38702d29\-31f4\-4047\-aea2\-76704629eea2\.config
+politicas	Post Run actions/checkout@v7	2026-11-22T14:45:38.1900288Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+politicas	Post Run actions/checkout@v7	2026-11-22T14:45:38.2183082Z Removing credentials config '/home/runner/work/_temp/git-credentials-38702d29-31f4-4047-aea2-76704629eea2.config'
+politicas	Complete job	﻿2026-11-22T14:45:38.2329612Z Cleaning up orphan processes

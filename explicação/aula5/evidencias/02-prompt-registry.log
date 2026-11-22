@@ -1,0 +1,13 @@
+$ python mlops/registrar_prompts.py -m "versão inicial"
+quantum-roteador versão 1 · commit 334dc7a
+quantum-especialista versão 1 · commit 334dc7a
+$ python mlops/registrar_prompts.py --alias producao --versao 1
+@producao → versão 1 em roteador, especialista
+$ PROMPT_FONTE=mlflow PROMPT_ALIAS=producao LLM_PROVEDOR=simulado python agente/atendimento.py "Comprei um perfume que parece falsificado"
+{
+  "categoria": "falsificado",
+  "documento": "falsificado.md",
+  "resposta": "O cliente que suspeitar de produto falsificado deve abrir a denúncia em até 30 dias após o recebimento, com fotos do produto, da embalagem e do número de série quando houver.",
+  "prompt_versao": "arquivo",
+  "modelo": "simulado:regras-v1"
+}

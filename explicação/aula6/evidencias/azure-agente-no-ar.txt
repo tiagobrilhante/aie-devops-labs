@@ -1,0 +1,25 @@
+# Agente no Azure Web Apps — 2026-11-22T15:26:04Z
+
+$ curl -s https://agente-quantum-23771.azurewebsites.net/
+{"status":"ok","prompt_versao":"arquivo","modelo":"simulado:regras-v1"}
+[HTTP 200 · 0.591629s]
+
+$ curl -s -X POST https://agente-quantum-23771.azurewebsites.net/chamado -d '{"texto": "Meu pedido está atrasado há 6 dias úteis"}'
+{"categoria":"entrega","documento":"entrega.md","resposta":"Se o pedido passar 5 dias úteis do prazo informado, o cliente pode pedir o cancelamento com reembolso integral ou receber um cupom de R$ 30 para manter a compra.","prompt_versao":"arquivo","modelo":"simulado:regras-v1"}
+[HTTP 200 · 0.582862s]
+
+$ curl -s -X POST https://agente-quantum-23771.azurewebsites.net/chamado -d '{"texto": "O vendedor me pediu pra pagar por Pix direto pra ele e sumiu"}'
+{"categoria":"fraude_vendedor","documento":"fraude_vendedor.md","resposta":"A Quantum não reembolsa pagamentos feitos fora da plataforma, mas registra a denúncia, suspende o vendedor e fornece ao cliente o protocolo para o boletim de ocorrência.","prompt_versao":"arquivo","modelo":"simulado:regras-v1"}
+[HTTP 200 · 0.441304s]
+
+$ curl -s -X POST https://agente-quantum-23771.azurewebsites.net/chamado -d '{"texto": "Comprei um perfume que parece falsificado"}'
+{"categoria":"falsificado","documento":"falsificado.md","resposta":"O cliente que suspeitar de produto falsificado deve abrir a denúncia em até 30 dias após o recebimento, com fotos do produto, da embalagem e do número de série quando houver.","prompt_versao":"arquivo","modelo":"simulado:regras-v1"}
+[HTTP 200 · 0.419586s]
+
+$ curl -s -X POST https://agente-quantum-23771.azurewebsites.net/chamado -d '{"texto": "Tem gente vendendo filhote de papagaio no site, isso pode?"}'
+{"categoria":"artigo_proibido","documento":"artigo_proibido.md","resposta":"A equipe de moderação analisa em até 48 horas e remove o anúncio se confirmar a violação.","prompt_versao":"arquivo","modelo":"simulado:regras-v1"}
+[HTTP 200 · 0.400561s]
+
+$ curl -s -X POST https://agente-quantum-23771.azurewebsites.net/chamado -d '{"text": "campo errado"}'
+{"detail":[{"type":"missing","loc":["body","texto"],"msg":"Field required","input":{"text":"campo errado"}}]}
+[HTTP 422]

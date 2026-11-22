@@ -1,0 +1,21 @@
+$ az resource list -g rg-aie-canary-brazilsouth   (16:51:48Z)
+Nome                               Tipo
+---------------------------------  -------------------------
+plano-canary-s1                    Microsoft.Web/serverFarms
+classificador-canary-24740         Microsoft.Web/sites
+classificador-canary-24740/canary  Microsoft.Web/sites/slots
+
+$ canary-azure.sh apagar
+✅ grupo rg-aie-canary-brazilsouth apagado
+explicação/aula4/azure/canary-azure.sh apagar  0.28s user 0.09s system 0% cpu 1:18.38 total
+
+$ az group list (rg-aie-*)
+(vazio = nenhum grupo desta sessão)
+$ az resource list (assinatura inteira)
+Nome                        Grupo
+--------------------------  ----------------
+cloudfiapi1                 FIAP
+NetworkWatcher_brazilsouth  NetworkWatcherRG
+(só os 2 recursos anteriores, de 2026-07-01)
+$ curl https://classificador-canary-24740.azurewebsites.net/
+HTTP 000
