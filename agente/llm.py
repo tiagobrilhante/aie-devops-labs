@@ -8,7 +8,8 @@ LLM_PROVEDOR (na ordem de preferência da disciplina):
                 LLM_BASE_URL=https://<recurso>.openai.azure.com/openai/v1/
              3º Ollama — 100% gratuito, roda no runner do Actions e no Codespaces
                 (é o padrão: LLM_BASE_URL=http://localhost:11434/v1)
-             Também serve para a própria OpenAI: LLM_BASE_URL=https://api.openai.com/v1
+             4º A própria OpenAI: LLM_BASE_URL=https://api.openai.com/v1, LLM_MODELO=gpt-4o-mini (ou
+                outro que aceite temperature e max_tokens) e a chave em OPENAI_API_KEY ou LLM_API_KEY
 - anthropic  API da Anthropic (Claude), com o SDK oficial; a chave vem de ANTHROPIC_API_KEY.
              LLM_MODELO padrão: claude-opus-5-5. Para um gate barato: LLM_MODELO=claude-haiku-5-5.
              LLM_ESFORCO (low|medium|high|xhigh|max, padrão low): quanto o modelo pensa antes de
@@ -76,7 +77,7 @@ def _openai(prompt: str, temperatura: float, max_tokens: int) -> str:
 
         _cliente = OpenAI(
             base_url=os.environ.get("LLM_BASE_URL", "http://localhost:11434/v1"),
-            api_key=os.environ.get("LLM_API_KEY", "ollama"),
+            api_key=os.environ.get("LLM_API_KEY") or os.environ.get("OPENAI_API_KEY") or "ollama",
         )
     resposta = _cliente.chat.completions.create(
         model=MODELO,

@@ -59,3 +59,27 @@ def test_esforco_vem_do_ambiente(anthropic_falso, monkeypatch):
 def test_recusa_vira_resposta_vazia(anthropic_falso):
     anthropic_falso(resposta("refusal"))
     assert llm.completar("oi") == ""
+
+
+def test_openai_usa_openai_api_key_quando_nao_ha_llm_api_key(monkeypatch):
+    capturado = {}
+
+    class OpenAIFalso:
+        def __init__(self, base_url, api_key):
+            capturado.update(base_url=base_url, api_key=api_key)
+            self.chat = SimpleNamespace(completions=self)
+
+        def create(self, **kwargs):
+            mensagem = SimpleNamespace(content="ok")
+            return SimpleNamespace(choices=[SimpleNamespace(message=mensagem)])
+
+    import openai
+
+    monkeypatch.setattr(openai, "OpenAI", OpenAIFalso)
+    monkeypatch.setattr(llm, "PROVEDOR", "openai")
+    monkeypatch.setattr(llm, "_cliente", None)
+    monkeypatch.delenv("LLM_API_KEY", raising=False)
+    monkeypatch.setenv("OPENAI_API_KEY", "sk-teste")
+    monkeypatch.setenv("LLM_BASE_URL", "https://api.openai.com/v1")
+    assert llm.completar("oi") == "ok"
+    assert capturado == {"base_url": "https://api.openai.com/v1", "api_key": "sk-teste"}
