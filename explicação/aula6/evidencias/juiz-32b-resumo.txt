@@ -1,0 +1,13 @@
+## Juiz de fidelidade
+
+| Categoria | Fidelidade |
+|---|---|
+| artigo_proibido | 83% |
+| devolucao_ressarcimento | 100% |
+| divergente_defeito | 83% |
+| entrega | 67% |
+| falsificado | 83% |
+| fraude_vendedor | 67% |
+
+**✅ Aprovado**
+

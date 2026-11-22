@@ -1,0 +1,27 @@
+(node:73218) ExperimentalWarning: DecompressInterceptor is experimental and subject to change
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+========================================================================================================================
+⚠️ The current version of promptfoo 0.123.1 is lower than the latest available version 0.126.0.
+
+Please run npx promptfoo@latest or npm install -g promptfoo@latest to update.
+========================================================================================================================
+
+Cache is disabled.
+Starting evaluation eval-UqH-2026-11-22T19:20:41
+Running 180 test cases (up to 2 at a time)...
+✓ Eval complete (ID: eval-UqH-2026-11-22T19:20:41)
+
+» View results: promptfoo view
+» Share with your team: https://promptfoo.app
+» Feedback: https://promptfoo.dev/feedback
+
+
+Results:
+  ✓ 177 passed (98.33%)
+  ✗ 3 failed (1.67%)
+  0 errors (0%)
+Duration: 1m 43s (concurrency: 2)
+
+Writing output to explicação/capstone/integracao-quantum-atende/evidencias/haiku-local/roteamento.json
+npx -y promptfoo@0.123.1 eval --no-cache -c  -o $D/roteamento.json  --no-tabl  3.89s user 1.30s system 4% cpu 1:44.34 total

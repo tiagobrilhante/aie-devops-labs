@@ -1,0 +1,24 @@
+Regiões a tentar (política Allowed locations da sua conta):
+  - brazilsouth
+  - canadacentral
+  - chilecentral
+  - eastus
+  - northcentralus
+
+→ brazilsouth ... ok
+
+Criando o Web App 'agente-quantum-23771' em brazilsouth ...
+WARNING: Webapp 'agente-quantum-23771' created. Deploy your code with: az webapp deploy
+WARNING: Tip: run 'az webapp troubleshoot config --name agente-quantum-23771 --resource-group rg-aie-capstone-brazilsouth --report' to validate app configuration and see recent runtime errors.
+WARNING: Tip: run 'az webapp troubleshoot status --name agente-quantum-23771 --resource-group rg-aie-capstone-brazilsouth' to see per-instance runtime status and recent startup summary.
+multiple remotes detected. please specify which repo to use by providing the -R, --repo argument
+
+✅ Web App criado
+   Região:   brazilsouth
+   Grupo:    rg-aie-capstone-brazilsouth
+   App:      agente-quantum-23771
+   Site:     https://agente-quantum-23771.azurewebsites.net/
+   Depois do deploy:  curl https://agente-quantum-23771.azurewebsites.net/
+
+   Para apagar tudo no fim:  az group delete -n rg-aie-capstone-brazilsouth --yes
+azure/criar-webapp.sh  3.97s user 1.00s system 8% cpu 57.854 total

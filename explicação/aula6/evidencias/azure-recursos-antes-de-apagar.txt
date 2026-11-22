@@ -1,0 +1,10 @@
+$ az resource list -g rg-aie-capstone-brazilsouth
+Nome                  Tipo                       Regiao
+--------------------  -------------------------  -----------
+plano-aie             Microsoft.Web/serverFarms  brazilsouth
+agente-quantum-23771  Microsoft.Web/sites        brazilsouth
+
+$ az appservice plan show (sku)
+Plano      Sku    Tier    Instancias
+---------  -----  ------  ------------
+plano-aie  B1     Basic   1

@@ -1,0 +1,39 @@
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T14:19:21.5428561Z agente/tests/test_agent_gate.py::test_categoria_piora_mesmo_com_media_melhor PASSED [  3%]
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T14:19:21.5435457Z agente/tests/test_agent_gate.py::test_dois_casos_a_menos_e_ruido PASSED  [  7%]
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T14:19:21.5442462Z agente/tests/test_agent_gate.py::test_tres_casos_a_menos_e_regressao PASSED [ 11%]
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T14:19:21.5449537Z agente/tests/test_agent_gate.py::test_sem_baseline_so_vale_o_piso PASSED [ 14%]
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T14:19:21.5456309Z agente/tests/test_agent_gate.py::test_taxas_por_categoria_agrega_os_casos PASSED [ 18%]
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T14:19:21.5464358Z agente/tests/test_agent_gate.py::test_erro_de_execucao_conta_como_reprovado PASSED [ 22%]
+Testes de comportamento + agent gate	Agent gate	﻿2026-11-22T14:28:38.2031191Z ##[group]Run python agente/agent_gate.py resultado-eval.json
+Testes de comportamento + agent gate	Agent gate	2026-11-22T14:28:38.2031707Z ^[[36;1mpython agente/agent_gate.py resultado-eval.json^[[0m
+Testes de comportamento + agent gate	Agent gate	2026-11-22T14:28:38.2099797Z shell: /usr/bin/bash -e {0}
+Testes de comportamento + agent gate	Agent gate	2026-11-22T14:28:38.2100110Z env:
+Testes de comportamento + agent gate	Agent gate	2026-11-22T14:28:38.2100361Z   LLM_PROVEDOR: openai
+Testes de comportamento + agent gate	Agent gate	2026-11-22T14:28:38.2100632Z   LLM_MODELO: qwen2.5:3b
+Testes de comportamento + agent gate	Agent gate	2026-11-22T14:28:38.2100933Z   LLM_BASE_URL: http://localhost:11434/v1
+Testes de comportamento + agent gate	Agent gate	2026-11-22T14:28:38.2101246Z   LLM_API_KEY: ollama
+Testes de comportamento + agent gate	Agent gate	2026-11-22T14:28:38.2101494Z   OLLAMA_MODELO: qwen2.5:3b
+Testes de comportamento + agent gate	Agent gate	2026-11-22T14:28:38.2101774Z   PROMPTFOO_DISABLE_TELEMETRY: 1
+Testes de comportamento + agent gate	Agent gate	2026-11-22T14:28:38.2102117Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+Testes de comportamento + agent gate	Agent gate	2026-11-22T14:28:38.2102571Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+Testes de comportamento + agent gate	Agent gate	2026-11-22T14:28:38.2103041Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+Testes de comportamento + agent gate	Agent gate	2026-11-22T14:28:38.2103443Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+Testes de comportamento + agent gate	Agent gate	2026-11-22T14:28:38.2103841Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+Testes de comportamento + agent gate	Agent gate	2026-11-22T14:28:38.2104290Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+Testes de comportamento + agent gate	Agent gate	2026-11-22T14:28:38.2104935Z   OVERRIDE_AGENT_GATE: rótulo override-agent-gate no PR #7, aplicado com tiagobrilhante como autor da execução
+Testes de comportamento + agent gate	Agent gate	2026-11-22T14:28:38.2105430Z ##[endgroup]
+Testes de comportamento + agent gate	Agent gate	2026-11-22T14:28:38.2812148Z ## Agent gate
+Testes de comportamento + agent gate	Agent gate	2026-11-22T14:28:38.2812484Z 
+Testes de comportamento + agent gate	Agent gate	2026-11-22T14:28:38.2813081Z | Categoria | Roteamento | Recuperação | Resposta |
+Testes de comportamento + agent gate	Agent gate	2026-11-22T14:28:38.2813487Z |---|---|---|---|
+Testes de comportamento + agent gate	Agent gate	2026-11-22T14:28:38.2813820Z | artigo_proibido | 67% | 67% | 33% (-33%) |
+Testes de comportamento + agent gate	Agent gate	2026-11-22T14:28:38.2814233Z | devolucao_ressarcimento | 100% | 100% | 83% (+17%) |
+Testes de comportamento + agent gate	Agent gate	2026-11-22T14:28:38.2814660Z | divergente_defeito | 83% | 83% | 67% (-33%) |
+Testes de comportamento + agent gate	Agent gate	2026-11-22T14:28:38.2815335Z | entrega | 83% | 83% | 83% (-17%) |
+Testes de comportamento + agent gate	Agent gate	2026-11-22T14:28:38.2815678Z | falsificado | 100% | 100% | 67% (-33%) |
+Testes de comportamento + agent gate	Agent gate	2026-11-22T14:28:38.2816030Z | fraude_vendedor | 83% | 83% | 50% (-33%) |
+Testes de comportamento + agent gate	Agent gate	2026-11-22T14:28:38.2816473Z | **média** | **86%** | **86%** | **64%** |
+Testes de comportamento + agent gate	Agent gate	2026-11-22T14:28:38.2816703Z 
+Testes de comportamento + agent gate	Agent gate	2026-11-22T14:28:38.2817329Z **⚠️ Reprovado, mas liberado por OVERRIDE:** rótulo override-agent-gate no PR #7, aplicado com tiagobrilhante como autor da execução
+Testes de comportamento + agent gate	Agent gate	2026-11-22T14:28:38.2818015Z - artigo_proibido/resposta: 33% abaixo do piso de 50%
+Testes de comportamento + agent gate	Agent gate	2026-11-22T14:28:38.2818255Z 

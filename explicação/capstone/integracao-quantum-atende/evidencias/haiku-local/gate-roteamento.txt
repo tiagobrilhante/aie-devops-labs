@@ -1,0 +1,14 @@
+## Agent gate · roteamento (180 reclamações)
+
+| Categoria | Roteamento |
+|---|---|
+| artigo_proibido | 97% |
+| devolucao_ressarcimento | 97% (+20%) |
+| divergente_defeito | 97% (+7%) |
+| entrega | 100% |
+| falsificado | 100% (+17%) |
+| fraude_vendedor | 100% (+10%) |
+| **média** | **98%** |
+
+**✅ Aprovado**
+

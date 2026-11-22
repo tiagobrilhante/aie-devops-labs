@@ -1,0 +1,3 @@
+saudável,peso=10%: rollback em 15/50 (motivo distribuição: 7 · erro: 0 · só uma versão: 0)
+saudável,peso=30%: rollback em 2/50 (motivo distribuição: 2 · erro: 0 · só uma versão: 0)
+erro=20%,peso=10%: rollback em 50/50 (motivo distribuição: 20 · erro: 50 · só uma versão: 0)

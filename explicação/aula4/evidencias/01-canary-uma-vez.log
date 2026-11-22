@@ -1,0 +1,13 @@
+### 1. Canary saudável (10% do tráfego, 0% de erro), 300 requisições
+versão        req.   erro %   p95 ms  previsões
+v1             266     0.0%        1  {'positiva': '38%', 'negativa': '34%', 'neutra': '28%'}
+v2-canary       34     0.0%        1  {'positiva': '47%', 'negativa': '29%', 'neutra': '24%'}
+✅ CANARY SAUDÁVEL — pode avançar
+exit=0
+
+### 2. Canary com falha (10% do tráfego, 20% de erro), 300 requisições
+versão        req.   erro %   p95 ms  previsões
+v1             259     0.0%        1  {'positiva': '41%', 'negativa': '34%', 'neutra': '25%'}
+v2-canary       41    17.1%        1  {'positiva': '41%', 'neutra': '32%', 'negativa': '26%'}
+❌ ROLLBACK: taxa de erro do canary 17.1% (estável 0.0%)
+exit=1

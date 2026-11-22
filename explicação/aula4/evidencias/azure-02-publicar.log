@@ -1,0 +1,153 @@
+$ canary-azure.sh publicar producao v1 0   (16:02:39Z)
+explicação/aula4/azure/canary-azure.sh: line 52: alvo[@]: unbound variable
+$S publicar producao v1 0  0.00s user 0.00s system 69% cpu 0.008 total
+
+$ canary-azure.sh publicar canary v2-canary 0   (16:02:39Z)
+WARNING: Note: 'az webapp deploy' does not run build automation (dependency installation, compilation, etc.) by default for Linux web apps. If your package is not pre-built, set the app setting SCM_DO_BUILD_DURING_DEPLOYMENT=true to enable builds during deployment.
+WARNING: Initiating deployment
+WARNING: Deploying from local path: /var/folders/vf/xvhm_m_x35j80n7_j1fcrl3r0000gn/T/tmp.AEW3rQ2K8A/pacote.zip
+WARNING: Warming up Kudu before deployment.
+WARNING: Warmed up Kudu instance successfully.
+ERROR: Deployment failed. Visit https://classificador-canary-24740-canary.scm.azurewebsites.net/api/deployments/latest to get more information about your deployment.
+ERROR: 
+========================================================================
+DEPLOYMENT FAILED: Context-Enriched Diagnostics
+========================================================================
+
+Error Code  : HTTP_504
+Stage       : Unknown
+Runtime     : PYTHON|3.12
+Deploy Type : ZipDeploy
+Region      : Brazil South
+Plan SKU    : S1
+Last Step   : HTTP request sent to deployment API
+Kudu Status : 504
+
+Raw Error   : 504.0 GatewayTimeout
+
+Suggested Fixes:
+  - Check deployment logs: 'az webapp log deployment show -n classificador-canary-24740 -g rg-aie-canary-brazilsouth'
+  - Check runtime logs: 'az webapp log tail -n classificador-canary-24740 -g rg-aie-canary-brazilsouth'
+
+------------------------------------------------------------------------
+  Copy the full error output above and paste it into GitHub Copilot Chat
+  with the prompt: 'Why did my Linux App Service deployment fail and how do I fix it?'
+------------------------------------------------------------------------
+$S publicar canary v2-canary 0  0.78s user 0.22s system 0% cpu 9:46.40 total
+
+$ curl https://classificador-canary-24740.azurewebsites.net/
+  [000]
+  [000]
+$ curl https://classificador-canary-24740-canary.azurewebsites.net/
+  [000]
+  [000]
+atus/completo = 1/False
+  16:14:43Z deploy: status/completo = 1/False
+  16:15:09Z deploy: status/completo = 1/False
+  16:15:40Z deploy: status/completo = 1/False
+  16:16:05Z deploy: status/completo = 1/False
+  16:16:31Z deploy: status/completo = 1/False
+  16:16:55Z deploy: status/completo = 1/False
+  16:17:20Z deploy: status/completo = 1/False
+  16:17:43Z deploy: status/completo = 1/False
+  16:18:05Z deploy: status/completo = 1/False
+  16:18:30Z deploy: status/completo = 3/True
+❌ deploy falhou
+
+=== nova tentativa, com deploy antes das configurações ===
+$ canary-azure.sh publicar canary v2-canary 0   (16:19:34Z)
+WARNING: Polling the status of async deployment. Start Time: 2026-11-22 16:19:37.856496+00:00 UTC
+WARNING: Deployment has completed successfully
+WARNING: You can visit your app at: http://classificador-canary-24740-canary.azurewebsites.net
+  16:23:10Z deploy do slot canary: status/completo = 4/true
+  16:23:33Z deploy do slot canary: status/completo = 4/true
+  16:23:56Z deploy do slot canary: status/completo = 4/true
+(laço interrompido: o deploy do canary terminou às 16:23Z, o script esperava 'True' e o az devolve 'true'; corrigido)
+
+  16:24:19Z deploy do slot canary: status/completo = 4/true
+$ canary-azure.sh versao canary v2-canary 0   (16:24:37Z)
+  16:25:31Z classificador-canary-24740-canary: {"status": "ok", "versao": "v2-canary"}
+✅ slot canary: versão v2-canary, erro simulado 0
+
+$ canary-azure.sh publicar producao v1 0   (16:25:31Z)
+WARNING: Status: Building the app... Time: 1(s)
+WARNING: Status: Building the app... Time: 21(s)
+WARNING: Status: Building the app... Time: 38(s)
+WARNING: Status: Building the app... Time: 56(s)
+WARNING: Status: Building the app... Time: 74(s)
+WARNING: Status: Building the app... Time: 90(s)
+WARNING: Status: Building the app... Time: 106(s)
+WARNING: Status: Building the app... Time: 122(s)
+WARNING: Status: Building the app... Time: 138(s)
+WARNING: Status: Building the app... Time: 155(s)
+WARNING: Status: Building the app... Time: 171(s)
+WARNING: Status: Building the app... Time: 187(s)
+WARNING: Status: Building the app... Time: 203(s)
+WARNING: Status: Build successful. Time: 219(s)
+WARNING: Status: Starting the site... Time: 235(s)
+WARNING: Status: Starting the site... Time: 251(s)
+WARNING: Status: Starting the site... Time: 267(s)
+WARNING: Status: Starting the site... Time: 282(s)
+WARNING: Status: Starting the site... Time: 298(s)
+WARNING: Status: Starting the site... Time: 313(s)
+WARNING: Status: Starting the site... Time: 329(s)
+WARNING: Status: Starting the site... Time: 345(s)
+WARNING: Status: Starting the site... Time: 361(s)
+WARNING: Status: Starting the site... Time: 377(s)
+WARNING: Status: Starting the site... Time: 393(s)
+WARNING: Status: Starting the site... Time: 409(s)
+WARNING: Status: Starting the site... Time: 424(s)
+WARNING: Status: Starting the site... Time: 440(s)
+WARNING: Status: Starting the site... Time: 455(s)
+WARNING: Status: Starting the site... Time: 473(s)
+WARNING: Status: Starting the site... Time: 489(s)
+WARNING: Status: Starting the site... Time: 504(s)
+WARNING: Status: Starting the site... Time: 520(s)
+WARNING: Status: Starting the site... Time: 538(s)
+WARNING: Status: Starting the site... Time: 554(s)
+WARNING: Status: Starting the site... Time: 570(s)
+WARNING: Status: Starting the site... Time: 586(s)
+WARNING: Status: Starting the site... Time: 601(s)
+WARNING: Status: Starting the site... Time: 617(s)
+WARNING: Status: Starting the site... Time: 632(s)
+WARNING: Status: Starting the site... Time: 648(s)
+WARNING: Status: Starting the site... Time: 664(s)
+WARNING: Status: Starting the site... Time: 679(s)
+WARNING: Status: Starting the site... Time: 695(s)
+(16:40Z: processos de espera encerrados à mão — o 'az webapp deploy' continuava em 'Starting the site', mas o deploy de produção terminou às 16:29:59Z (status 4) e as duas URLs já respondiam: produção v1, canary v2-canary)
+WARNING: Status: Starting the site... Time: 710(s)
+WARNING: Status: Starting the site... Time: 726(s)
+WARNING: Status: Starting the site... Time: 742(s)
+WARNING: Status: Starting the site... Time: 757(s)
+WARNING: Status: Starting the site... Time: 773(s)
+WARNING: Status: Starting the site... Time: 789(s)
+WARNING: Status: Starting the site... Time: 804(s)
+WARNING: Status: Starting the site... Time: 820(s)
+WARNING: Status: Site failed to start. Time: 836(s)
+ERROR: 
+========================================================================
+DEPLOYMENT FAILED: Context-Enriched Diagnostics
+========================================================================
+
+Error Code  : UnknownDeploymentError
+Stage       : Unknown
+Runtime     : PYTHON|3.12
+Deploy Type : ZipDeploy
+Region      : Brazil South
+Plan SKU    : S1
+Last Step   : Deployment request
+
+Raw Error   : Deployment failed because the site failed to start within 10 mins.
+InprogressInstances: 0, SuccessfulInstances: 0, FailedInstances: 1
+Error: Deployment for site 'classificador-canary-24740' with DeploymentId '68379cf2-66a1-4f68-81e4-3c957985a22a' failed because the worker proccess failed to start within the allotted time.
+Please check the runtime logs for more info: https://classificador-canary-24740.scm.azurewebsites.net/api/logs/docker
+TIP: Run 'az webapp log startup show -n classificador-cana... [truncated]
+
+Suggested Fixes:
+  - Check deployment logs: 'az webapp log deployment show -n classificador-canary-24740 -g rg-aie-canary-brazilsouth'
+  - Check runtime logs: 'az webapp log tail -n classificador-canary-24740 -g rg-aie-canary-brazilsouth'
+
+------------------------------------------------------------------------
+  Copy the full error output above and paste it into GitHub Copilot Chat
+  with the prompt: 'Why did my Linux App Service deployment fail and how do I fix it?'
+------------------------------------------------------------------------

@@ -1,0 +1,34 @@
+Mesmo código, três execuções no runner do GitHub (qwen2.5:3b, 2 vCPU)
+
+### políticas (36)  — colunas: PR #11, 1ª (45048329304) | PR #11, override (45050007716) | main e2535a8 (45055797316)
+  roteamento:
+    artigo_proibido           83%   83%   83%   amplitude 0%
+    devolucao_ressarcimento  100%  100%  100%   amplitude 0%
+    divergente_defeito        83%   83%   83%   amplitude 0%
+    entrega                  100%  100%   83%   amplitude 17%
+    falsificado               50%   50%   50%   amplitude 0%
+    fraude_vendedor           83%   83%   83%   amplitude 0%
+  recuperacao:
+    artigo_proibido           83%   83%   83%   amplitude 0%
+    devolucao_ressarcimento  100%  100%  100%   amplitude 0%
+    divergente_defeito        83%   83%   83%   amplitude 0%
+    entrega                  100%  100%   83%   amplitude 17%
+    falsificado               50%   50%   50%   amplitude 0%
+    fraude_vendedor           83%   83%   83%   amplitude 0%
+  resposta:
+    artigo_proibido           67%   83%   50%   amplitude 33%
+    devolucao_ressarcimento   83%  100%  100%   amplitude 17%
+    divergente_defeito        83%   83%  100%   amplitude 17%
+    entrega                   83%  100%   83%   amplitude 17%
+    falsificado               67%   50%   50%   amplitude 17%
+    fraude_vendedor           67%   83%   67%   amplitude 17%
+
+### roteamento (180)  — colunas: PR #11, 1ª (45048329304) | PR #11, override (45050007716) | main e2535a8 (45055797316)
+  roteamento:
+    artigo_proibido           97%   97%   97%   amplitude 0%
+    devolucao_ressarcimento   83%   83%   77%   amplitude 7%
+    divergente_defeito        93%   87%   90%   amplitude 7%
+    entrega                  100%  100%  100%   amplitude 0%
+    falsificado               87%   87%   83%   amplitude 3%
+    fraude_vendedor           90%   90%   90%   amplitude 0%
+

@@ -1,0 +1,27 @@
+(node:68424) ExperimentalWarning: DecompressInterceptor is experimental and subject to change
+(Use `node --trace-warnings ...` to show where the warning was created)
+
+========================================================================================================================
+⚠️ The current version of promptfoo 0.123.1 is lower than the latest available version 0.126.0.
+
+Please run npx promptfoo@latest or npm install -g promptfoo@latest to update.
+========================================================================================================================
+
+Cache is disabled.
+Starting evaluation eval-efy-2026-11-22T17:13:04
+Running 180 test cases (up to 2 at a time)...
+✓ Eval complete (ID: eval-efy-2026-11-22T17:13:04)
+
+» View results: promptfoo view
+» Share with your team: https://promptfoo.app
+» Feedback: https://promptfoo.dev/feedback
+
+
+Results:
+  ✓ 164 passed (91.11%)
+  ✗ 16 failed (8.89%)
+  0 errors (0%)
+Duration: 29s (concurrency: 2)
+
+Writing output to explicação/capstone/integracao-quantum-atende/evidencias/final-roteamento.json
+npx -y promptfoo@0.123.1 eval --no-cache -c  -o $D/final-roteamento.json    3.28s user 1.13s system 13% cpu 32.465 total

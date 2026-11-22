@@ -1,0 +1,10 @@
+aliases do modelo: {'anterior': 1, 'candidato': 3, 'producao': 1}
+v1: commit=334dc7a dados=avaliacoes.csv dados_sha256=bc2d526021ed tags={'aprovado_por': 'tiagobrilhante', 'promovido_em': '2026-11-22T13:58:34.357941+00:00'}
+v2: commit=334dc7a dados=lote-novo.csv dados_sha256=d23de78585e5 tags={}
+v3: commit=334dc7a dados=avaliacoes.csv dados_sha256=bc2d526021ed tags={'aprovado_por': 'tiagobrilhante', 'promovido_em': '2026-11-22T13:58:43.709725+00:00'}
+sha256 (12) dos arquivos de dados:
+  avaliacoes.csv: bc2d526021ed
+  lote-novo.csv: d23de78585e5
+  validacao.csv: 360abd446518
+quantum-especialista@producao → versão 1 · tags={'git_commit': '334dc7a'} · última linha: Chamado do cliente: {{chamado}}
+quantum-especialista@staging → versão 2 · tags={'git_commit': '334dc7a'} · última linha: Sempre termine oferecendo o protocolo do atendimento.

@@ -1,0 +1,35 @@
+1) Depois do merge do #8, sem reaplicar os apps:
+  t=2s produção: OutOfSync réplicas=5
+  t=4s produção: OutOfSync réplicas=5
+  t=6s produção: OutOfSync réplicas=5
+  t=8s produção: OutOfSync réplicas=5
+  t=10s produção: OutOfSync réplicas=5
+  t=12s produção: OutOfSync réplicas=5
+  t=14s produção: Synced réplicas=3
+  t=16s produção: Synced réplicas=3
+  t=19s produção: Synced réplicas=3
+  t=21s produção: Synced réplicas=3
+2) Reaplicando os Application, como o subir-cluster.sh faz:
+application.argoproj.io/agente-producao configured
+application.argoproj.io/agente-staging unchanged
+   selfHeal no cluster agora: true
+3) Drift de novo:
+  t=2s produção: Synced réplicas=3
+  t=4s produção: Synced réplicas=3
+  t=6s produção: Synced réplicas=3
+  t=8s produção: Synced réplicas=3
+  t=10s produção: Synced réplicas=3
+  t=13s produção: Synced réplicas=3
+  t=15s produção: Synced réplicas=3
+  t=17s produção: Synced réplicas=3
+  t=19s produção: Synced réplicas=3
+  t=21s produção: Synced réplicas=3
+4) Controle: selfHeal=false no cluster, com d511d5e já sincronizada:
+  t=2s produção: OutOfSync réplicas=5
+  t=10s produção: OutOfSync réplicas=5
+  t=20s produção: OutOfSync réplicas=5
+  t=31s produção: OutOfSync réplicas=5
+5) De volta ao que o Git diz (selfHeal=true):
+application.argoproj.io/agente-producao configured
+   selfHeal=true sync=Synced
+   réplicas=3

@@ -1,0 +1,18 @@
+$ gitops/scripts/consultar.sh
+agente-staging   ambiente=staging modelo=openai/gpt-4.1-mini prompt=v12 temperatura=0.2 rag=politicas-2026-09
+agente-producao  ambiente=producao modelo=openai/gpt-4.1-mini prompt=v11 temperatura=0.2 rag=politicas-2026-09
+
+APP               SYNC     SAÚDE     REVISÃO
+agente-producao   Synced   Healthy   e08a285ab258965ac82c9390fa2cf8e51f11f205
+agente-staging    Synced   Healthy   e08a285ab258965ac82c9390fa2cf8e51f11f205
+
+$ histórico de deploys do Argo CD (produção)
+2026-11-22T14:01:24Z rev=334dc7a6e07e572ab688029b20f53539fde7155f
+2026-11-22T14:40:12Z rev=a8f7524df29f4b5da2628b68b01ed2fa4a9c0ee6
+2026-11-22T14:43:40Z rev=d511d5e43989088e46c8aadf6d22939c5bc8e071
+2026-11-22T14:48:42Z rev=e08a285ab258965ac82c9390fa2cf8e51f11f205
+
+$ apps e o que observam
+APP               PATH                       SELFHEAL
+agente-producao   gitops/overlays/producao   true
+agente-staging    gitops/overlays/staging    true

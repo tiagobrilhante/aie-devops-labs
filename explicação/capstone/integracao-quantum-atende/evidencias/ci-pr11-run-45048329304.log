@@ -1,0 +1,1268 @@
+Lint e testes unitários	Set up job	﻿2026-11-22T17:14:41.9520228Z Current runner version: '2.338.2'
+Lint e testes unitários	Set up job	2026-11-22T17:14:41.9557716Z ##[group]Runner Image Provisioner
+Lint e testes unitários	Set up job	2026-11-22T17:14:41.9559034Z Hosted Compute Agent
+Lint e testes unitários	Set up job	2026-11-22T17:14:41.9560043Z Version: 20261111.635
+Lint e testes unitários	Set up job	2026-11-22T17:14:41.9561400Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+Lint e testes unitários	Set up job	2026-11-22T17:14:41.9562868Z Build Date: 2026-11-11T01:49:01Z
+Lint e testes unitários	Set up job	2026-11-22T17:14:41.9564174Z Worker ID: {990daa5b-5aa0-4c52-b9c0-429dcf41e63e}
+Lint e testes unitários	Set up job	2026-11-22T17:14:41.9565427Z Region: eastus
+Lint e testes unitários	Set up job	2026-11-22T17:14:41.9566458Z Cloud: Azure
+Lint e testes unitários	Set up job	2026-11-22T17:14:41.9567500Z ##[endgroup]
+Lint e testes unitários	Set up job	2026-11-22T17:14:41.9570039Z ##[group]Operating System
+Lint e testes unitários	Set up job	2026-11-22T17:14:41.9571146Z Ubuntu
+Lint e testes unitários	Set up job	2026-11-22T17:14:41.9572217Z 26.04.1
+Lint e testes unitários	Set up job	2026-11-22T17:14:41.9573315Z LTS
+Lint e testes unitários	Set up job	2026-11-22T17:14:41.9574302Z ##[endgroup]
+Lint e testes unitários	Set up job	2026-11-22T17:14:41.9575337Z ##[group]Runner Image
+Lint e testes unitários	Set up job	2026-11-22T17:14:41.9576388Z Image: ubuntu-26.04
+Lint e testes unitários	Set up job	2026-11-22T17:14:41.9577444Z Version: 20261116.202.1
+Lint e testes unitários	Set up job	2026-11-22T17:14:41.9579372Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261116.202/images/ubuntu/Ubuntu2604-Readme.md
+Lint e testes unitários	Set up job	2026-11-22T17:14:41.9582745Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261116.202
+Lint e testes unitários	Set up job	2026-11-22T17:14:41.9584450Z ##[endgroup]
+Lint e testes unitários	Set up job	2026-11-22T17:14:41.9586643Z ##[group]GITHUB_TOKEN Permissions
+Lint e testes unitários	Set up job	2026-11-22T17:14:41.9589347Z Contents: read
+Lint e testes unitários	Set up job	2026-11-22T17:14:41.9590563Z Metadata: read
+Lint e testes unitários	Set up job	2026-11-22T17:14:41.9591607Z Packages: read
+Lint e testes unitários	Set up job	2026-11-22T17:14:41.9592869Z ##[endgroup]
+Lint e testes unitários	Set up job	2026-11-22T17:14:41.9595877Z Secret source: Actions
+Lint e testes unitários	Set up job	2026-11-22T17:14:41.9597622Z Cache mode: write
+Lint e testes unitários	Set up job	2026-11-22T17:14:41.9598913Z Prepare workflow directory
+Lint e testes unitários	Set up job	2026-11-22T17:14:42.0103949Z Prepare all required actions
+Lint e testes unitários	Set up job	2026-11-22T17:14:42.0177667Z Getting action download info
+Lint e testes unitários	Set up job	2026-11-22T17:14:42.1806474Z Download action repository 'actions/checkout@v7' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+Lint e testes unitários	Set up job	2026-11-22T17:14:42.2746849Z Download action repository 'actions/setup-python@v7' (SHA:6d4fd22b20465ccc0f7354476588e8df7c9ca0e0)
+Lint e testes unitários	Set up job	2026-11-22T17:14:42.4357599Z Complete job name: Lint e testes unitários
+Lint e testes unitários	Run actions/checkout@v7	﻿2026-11-22T17:14:42.5305079Z ##[group]Run actions/checkout@v7
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.5306330Z with:
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.5306846Z   repository: tiagobrilhante/aie-devops-labs
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.5310466Z   token: ***
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.5310907Z   ssh-strict: true
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.5311343Z   ssh-user: git
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.5311785Z   persist-credentials: true
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.5312555Z   clean: true
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.5313005Z   sparse-checkout-cone-mode: true
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.5313594Z   fetch-depth: 1
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.5314047Z   fetch-tags: false
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.5314480Z   show-progress: true
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.5314918Z   lfs: false
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.5315340Z   submodules: false
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.5315798Z   set-safe-directory: true
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.5316302Z   allow-unsafe-pr-checkout: false
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.5317153Z ##[endgroup]
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.7985259Z Syncing repository: tiagobrilhante/aie-devops-labs
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.7988851Z ##[group]Getting Git version info
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.7990693Z Working directory is '/home/runner/work/aie-devops-labs/aie-devops-labs'
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.7993634Z [command]/usr/bin/git version
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.7994761Z git version 2.56.1
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.7998887Z ##[endgroup]
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.8011479Z Temporarily overriding HOME='/home/runner/work/_temp/def2d83f-4d27-43e2-b536-3ebc51023b71' before making global git config changes
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.8013907Z Adding repository directory to the temporary git global config as a safe directory
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.8016912Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/aie-devops-labs/aie-devops-labs
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.8087810Z Deleting the contents of '/home/runner/work/aie-devops-labs/aie-devops-labs'
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.8090881Z ##[group]Determining repository object format
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.8092956Z ##[endgroup]
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.8094188Z ##[group]Initializing the repository
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.8097833Z [command]/usr/bin/git init /home/runner/work/aie-devops-labs/aie-devops-labs
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.8206207Z hint: Using 'master' as the name for the initial branch. This default branch name
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.8208161Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.8209248Z hint: to use in all of your new repositories, which will suppress this warning,
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.8210076Z hint: call:
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.8210846Z hint:
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.8211462Z hint: 	git config --global init.defaultBranch <name>
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.8212689Z hint:
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.8213496Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.8214523Z hint: 'development'. The just-created branch can be renamed via this command:
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.8216095Z hint:
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.8216993Z hint: 	git branch -m <name>
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.8217911Z hint:
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.8219219Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.8221050Z Initialized empty Git repository in /home/runner/work/aie-devops-labs/aie-devops-labs/.git/
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.8243050Z [command]/usr/bin/git remote add origin https://github.com/tiagobrilhante/aie-devops-labs
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.8288437Z ##[endgroup]
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.8289830Z ##[group]Disabling automatic garbage collection
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.8291036Z [command]/usr/bin/git config --local gc.auto 0
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.8327233Z ##[endgroup]
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.8328960Z ##[group]Setting up auth
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.8329778Z Removing SSH command configuration
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.8333684Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.8372748Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.8832300Z Removing HTTP extra header
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.8839182Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.8880123Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.9183909Z Removing includeIf entries pointing to credentials config files
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.9190839Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.9225879Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.9520435Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-f09a9ddd-092e-4d0c-a2a4-c6f3374fb13b.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.9587529Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/aie-devops-labs/aie-devops-labs/.git.path /home/runner/work/_temp/git-credentials-f09a9ddd-092e-4d0c-a2a4-c6f3374fb13b.config
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.9621046Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/aie-devops-labs/aie-devops-labs/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-f09a9ddd-092e-4d0c-a2a4-c6f3374fb13b.config
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.9658651Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-f09a9ddd-092e-4d0c-a2a4-c6f3374fb13b.config
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.9693746Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-f09a9ddd-092e-4d0c-a2a4-c6f3374fb13b.config
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.9726042Z ##[endgroup]
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.9727671Z ##[group]Fetching the repository
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:42.9733119Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +7c9902e16cf92ba1bd23d65dc30c42443ddd99bf:refs/remotes/pull/11/merge
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:43.1849966Z From https://github.com/tiagobrilhante/aie-devops-labs
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:43.1851111Z  * [new ref]         7c9902e16cf92ba1bd23d65dc30c42443ddd99bf -> pull/11/merge
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:43.1855784Z ##[endgroup]
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:43.1857085Z ##[group]Determining the checkout info
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:43.1858532Z ##[endgroup]
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:43.1860862Z [command]/usr/bin/git sparse-checkout disable
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:43.1918166Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:43.1949933Z ##[group]Checking out the ref
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:43.1955051Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/11/merge
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:43.2070859Z Note: switching to 'refs/remotes/pull/11/merge'.
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:43.2071629Z 
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:43.2072821Z You are in 'detached HEAD' state. You can look around, make experimental
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:43.2074242Z changes and commit them, and you can discard any commits you make in this
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:43.2075228Z state without impacting any branches by switching back to a branch.
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:43.2075835Z 
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:43.2076295Z If you want to create a new branch to retain commits you create, you may
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:43.2077226Z do so (now or later) by using -c with the switch command. Example:
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:43.2077763Z 
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:43.2077999Z   git switch -c <new-branch-name>
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:43.2078406Z 
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:43.2078641Z Or undo this operation with:
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:43.2078998Z 
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:43.2079236Z   git switch -
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:43.2079508Z 
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:43.2079944Z Turn off this advice by setting config variable advice.detachedHead to false
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:43.2080623Z 
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:43.2082065Z HEAD is now at 7c9902e Merge 75423097097ea603d4ab52eb03993544e2094f46 into e08a285ab258965ac82c9390fa2cf8e51f11f205
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:43.2085670Z ##[endgroup]
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:43.2129536Z [command]/usr/bin/git log -1 --format=%H
+Lint e testes unitários	Run actions/checkout@v7	2026-11-22T17:14:43.2156096Z 7c9902e16cf92ba1bd23d65dc30c42443ddd99bf
+Lint e testes unitários	Run actions/setup-python@v7	﻿2026-11-22T17:14:43.2566542Z ##[group]Run actions/setup-python@v7
+Lint e testes unitários	Run actions/setup-python@v7	2026-11-22T17:14:43.2567238Z with:
+Lint e testes unitários	Run actions/setup-python@v7	2026-11-22T17:14:43.2567693Z   python-version: 3.12
+Lint e testes unitários	Run actions/setup-python@v7	2026-11-22T17:14:43.2568212Z   cache: pip
+Lint e testes unitários	Run actions/setup-python@v7	2026-11-22T17:14:43.2568668Z   check-latest: false
+Lint e testes unitários	Run actions/setup-python@v7	2026-11-22T17:14:43.2572780Z   token: ***
+Lint e testes unitários	Run actions/setup-python@v7	2026-11-22T17:14:43.2573491Z   mirror: https://raw.githubusercontent.com/actions/python-versions/main
+Lint e testes unitários	Run actions/setup-python@v7	2026-11-22T17:14:43.2574292Z   update-environment: true
+Lint e testes unitários	Run actions/setup-python@v7	2026-11-22T17:14:43.2574829Z   allow-prereleases: false
+Lint e testes unitários	Run actions/setup-python@v7	2026-11-22T17:14:43.2575346Z   freethreaded: false
+Lint e testes unitários	Run actions/setup-python@v7	2026-11-22T17:14:43.2575836Z ##[endgroup]
+Lint e testes unitários	Run actions/setup-python@v7	2026-11-22T17:14:43.3728613Z ##[group]Installed versions
+Lint e testes unitários	Run actions/setup-python@v7	2026-11-22T17:14:43.3837949Z Successfully set up CPython (3.12.16)
+Lint e testes unitários	Run actions/setup-python@v7	2026-11-22T17:14:43.3839351Z ##[endgroup]
+Lint e testes unitários	Run actions/setup-python@v7	2026-11-22T17:14:43.4727785Z [command]/opt/hostedtoolcache/Python/3.12.16/x64/bin/pip cache dir
+Lint e testes unitários	Run actions/setup-python@v7	2026-11-22T17:14:43.7456044Z /home/runner/.cache/pip
+Lint e testes unitários	Run actions/setup-python@v7	2026-11-22T17:14:43.8297979Z Cache hit for: setup-python-Linux-x64-26.04-Ubuntu-python-3.12.16-pip-337acfd065a492e1a200542b79197916fbd58596bca44f667ffe4da54cf0f392
+Lint e testes unitários	Run actions/setup-python@v7	2026-11-22T17:14:44.6292055Z Received 124134567 of 124134567 (100.0%), 162.2 MBs/sec
+Lint e testes unitários	Run actions/setup-python@v7	2026-11-22T17:14:44.6293376Z Cache Size: ~118 MB (124134567 B)
+Lint e testes unitários	Run actions/setup-python@v7	2026-11-22T17:14:44.6333343Z [command]/usr/bin/tar -xf /home/runner/work/_temp/57123668-0b6d-4e88-9c8e-5441768919c0/cache.tzst -P -C /home/runner/work/aie-devops-labs/aie-devops-labs --use-compress-program unzstd
+Lint e testes unitários	Run actions/setup-python@v7	2026-11-22T17:14:44.8389605Z Cache restored successfully
+Lint e testes unitários	Run actions/setup-python@v7	2026-11-22T17:14:44.8448936Z Cache restored from key: setup-python-Linux-x64-26.04-Ubuntu-python-3.12.16-pip-337acfd065a492e1a200542b79197916fbd58596bca44f667ffe4da54cf0f392
+Lint e testes unitários	Run pip install -r requirements.txt	﻿2026-11-22T17:14:44.8766252Z ##[group]Run pip install -r requirements.txt
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:44.8766808Z ^[[36;1mpip install -r requirements.txt^[[0m
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:44.8807632Z shell: /usr/bin/bash -e {0}
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:44.8807985Z env:
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:44.8808330Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:44.8808857Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:44.8809647Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:44.8810109Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:44.8810581Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:44.8811036Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:44.8811464Z ##[endgroup]
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:45.5883272Z Collecting scikit-learn==1.6.1 (from -r requirements.txt (line 2))
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:45.5898956Z   Using cached scikit_learn-1.6.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (18 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:45.7228298Z Collecting pandas==2.2.3 (from -r requirements.txt (line 3))
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:45.7241539Z   Using cached pandas-2.2.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (89 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:45.7666791Z Collecting joblib==1.4.2 (from -r requirements.txt (line 4))
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:45.7678779Z   Using cached joblib-1.4.2-py3-none-any.whl.metadata (5.4 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:45.8860487Z Collecting scipy==1.15.3 (from -r requirements.txt (line 5))
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:45.8872970Z   Using cached scipy-1.15.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (61 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:45.9475416Z Collecting openai==1.82.0 (from -r requirements.txt (line 7))
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:45.9487708Z   Using cached openai-1.82.0-py3-none-any.whl.metadata (25 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:46.1261335Z Collecting boto3==1.38.23 (from -r requirements.txt (line 8))
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:46.1282775Z   Using cached boto3-1.38.23-py3-none-any.whl.metadata (6.6 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:46.1685026Z Collecting pyyaml==6.0.2 (from -r requirements.txt (line 9))
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:46.1697130Z   Using cached PyYAML-6.0.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (2.1 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:46.2113987Z Collecting fastapi==0.115.12 (from -r requirements.txt (line 10))
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:46.2125619Z   Using cached fastapi-0.115.12-py3-none-any.whl.metadata (27 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:46.2396156Z Collecting uvicorn==0.34.2 (from uvicorn[standard]==0.34.2->-r requirements.txt (line 11))
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:46.2412460Z   Using cached uvicorn-0.34.2-py3-none-any.whl.metadata (6.5 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:46.2774836Z Collecting gunicorn==23.0.0 (from -r requirements.txt (line 12))
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:46.2791409Z   Using cached gunicorn-23.0.0-py3-none-any.whl.metadata (4.4 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:46.3004769Z Collecting httpx==0.28.1 (from -r requirements.txt (line 13))
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:46.3021577Z   Using cached httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:46.3333890Z Collecting pytest==8.3.5 (from -r requirements.txt (line 15))
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:46.3351584Z   Using cached pytest-8.3.5-py3-none-any.whl.metadata (7.6 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:46.6671243Z Collecting ruff==0.11.11 (from -r requirements.txt (line 16))
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:46.6692943Z   Using cached ruff-0.11.11-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (25 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:46.8814209Z Collecting numpy>=1.19.5 (from scikit-learn==1.6.1->-r requirements.txt (line 2))
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:46.8828627Z   Using cached numpy-2.5.5-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:46.8999229Z Collecting threadpoolctl>=3.1.0 (from scikit-learn==1.6.1->-r requirements.txt (line 2))
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:46.9011083Z   Using cached threadpoolctl-3.8.0-py3-none-any.whl.metadata (29 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:46.9226937Z Collecting python-dateutil>=2.8.2 (from pandas==2.2.3->-r requirements.txt (line 3))
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:46.9238916Z   Using cached python_dateutil-4.0.0-py3-none-any.whl.metadata (7.3 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:46.9608197Z Collecting pytz>=2020.1 (from pandas==2.2.3->-r requirements.txt (line 3))
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:46.9620745Z   Using cached pytz-2026.6-py2.py3-none-any.whl.metadata (22 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:46.9813760Z Collecting tzdata>=2022.7 (from pandas==2.2.3->-r requirements.txt (line 3))
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:46.9825509Z   Using cached tzdata-2026.6-py2.py3-none-any.whl.metadata (1.4 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:46.9870898Z Collecting numpy>=1.19.5 (from scikit-learn==1.6.1->-r requirements.txt (line 2))
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:46.9882795Z   Using cached numpy-2.4.6-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:47.0105841Z Collecting anyio<5,>=3.5.0 (from openai==1.82.0->-r requirements.txt (line 7))
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:47.0117777Z   Using cached anyio-4.16.0-py3-none-any.whl.metadata (4.7 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:47.0293012Z Collecting distro<2,>=1.7.0 (from openai==1.82.0->-r requirements.txt (line 7))
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:47.0304867Z   Using cached distro-1.9.0-py3-none-any.whl.metadata (6.8 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:47.1504008Z Collecting jiter<1,>=0.4.0 (from openai==1.82.0->-r requirements.txt (line 7))
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:47.1517171Z   Using cached jiter-0.19.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (5.2 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:47.2523997Z Collecting pydantic<3,>=1.9.0 (from openai==1.82.0->-r requirements.txt (line 7))
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:47.2536660Z   Using cached pydantic-2.14.4-py3-none-any.whl.metadata (143 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:47.2732946Z Collecting sniffio (from openai==1.82.0->-r requirements.txt (line 7))
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:47.2744078Z   Using cached sniffio-1.3.1-py3-none-any.whl.metadata (3.9 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:47.3069491Z Collecting tqdm>4 (from openai==1.82.0->-r requirements.txt (line 7))
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:47.3080751Z   Using cached tqdm-4.70.1-py3-none-any.whl.metadata (57 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:47.3319980Z Collecting typing-extensions<5,>=4.11 (from openai==1.82.0->-r requirements.txt (line 7))
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:47.3331183Z   Using cached typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:47.3561512Z Collecting certifi (from httpx==0.28.1->-r requirements.txt (line 13))
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:47.3572707Z   Using cached certifi-2026.11.20-py3-none-any.whl.metadata (2.5 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:47.3761429Z Collecting httpcore==1.* (from httpx==0.28.1->-r requirements.txt (line 13))
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:47.3772690Z   Using cached httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:47.3966885Z Collecting idna (from httpx==0.28.1->-r requirements.txt (line 13))
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:47.3978331Z   Using cached idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:47.6000890Z Collecting botocore<1.39.0,>=1.38.23 (from boto3==1.38.23->-r requirements.txt (line 8))
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:47.6015123Z   Using cached botocore-1.38.46-py3-none-any.whl.metadata (5.7 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:47.6185384Z Collecting jmespath<2.0.0,>=0.7.1 (from boto3==1.38.23->-r requirements.txt (line 8))
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:47.6197206Z   Using cached jmespath-1.1.0-py3-none-any.whl.metadata (7.6 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:47.6395556Z Collecting s3transfer<0.14.0,>=0.13.0 (from boto3==1.38.23->-r requirements.txt (line 8))
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:47.6407373Z   Using cached s3transfer-0.13.1-py3-none-any.whl.metadata (1.7 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:47.6674474Z Collecting starlette<0.47.0,>=0.40.0 (from fastapi==0.115.12->-r requirements.txt (line 10))
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:47.6686327Z   Using cached starlette-0.46.2-py3-none-any.whl.metadata (6.2 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:47.6971055Z Collecting click>=7.0 (from uvicorn==0.34.2->uvicorn[standard]==0.34.2->-r requirements.txt (line 11))
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:47.6982762Z   Using cached click-8.5.1-py3-none-any.whl.metadata (2.6 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:47.7134308Z Collecting h11>=0.8 (from uvicorn==0.34.2->uvicorn[standard]==0.34.2->-r requirements.txt (line 11))
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:47.7146041Z   Using cached h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:47.7352358Z Collecting packaging (from gunicorn==23.0.0->-r requirements.txt (line 12))
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:47.7365061Z   Using cached packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:47.7530289Z Collecting iniconfig (from pytest==8.3.5->-r requirements.txt (line 15))
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:47.7542306Z   Using cached iniconfig-2.3.1-py3-none-any.whl.metadata (2.8 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:47.7706718Z Collecting pluggy<2,>=1.5 (from pytest==8.3.5->-r requirements.txt (line 15))
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:47.7718572Z   Using cached pluggy-1.7.0-py3-none-any.whl.metadata (5.0 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:47.8444946Z Collecting httptools>=0.6.3 (from uvicorn[standard]==0.34.2->-r requirements.txt (line 11))
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:47.8458768Z   Using cached httptools-0.9.0-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (3.5 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:47.8701550Z Collecting python-dotenv>=0.13 (from uvicorn[standard]==0.34.2->-r requirements.txt (line 11))
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:47.8713219Z   Using cached python_dotenv-1.2.4-py3-none-any.whl.metadata (29 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:47.9155655Z Collecting uvloop!=0.15.0,!=0.15.1,>=0.14.0 (from uvicorn[standard]==0.34.2->-r requirements.txt (line 11))
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:47.9168461Z   Using cached uvloop-0.23.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (5.1 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:47.9923261Z Collecting watchfiles>=0.13 (from uvicorn[standard]==0.34.2->-r requirements.txt (line 11))
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:47.9937080Z   Using cached watchfiles-1.3.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.9 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:48.1192068Z Collecting websockets>=10.4 (from uvicorn[standard]==0.34.2->-r requirements.txt (line 11))
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:48.1206268Z   Using cached websockets-17.4-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (6.3 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:48.1264948Z Collecting python-dateutil>=2.8.2 (from pandas==2.2.3->-r requirements.txt (line 3))
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:48.1276811Z   Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:48.1542493Z Collecting urllib3!=2.2.0,<3,>=1.25.4 (from botocore<1.39.0,>=1.38.23->boto3==1.38.23->-r requirements.txt (line 8))
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:48.1554137Z   Using cached urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:48.1750869Z Collecting annotated-types>=0.6.0 (from pydantic<3,>=1.9.0->openai==1.82.0->-r requirements.txt (line 7))
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:48.1762659Z   Using cached annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:48.8660240Z Collecting pydantic-core==2.50.5 (from pydantic<3,>=1.9.0->openai==1.82.0->-r requirements.txt (line 7))
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:48.8674352Z   Using cached pydantic_core-2.50.5-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (6.6 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:48.8844546Z Collecting typing-inspection>=0.4.4 (from pydantic<3,>=1.9.0->openai==1.82.0->-r requirements.txt (line 7))
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:48.8856080Z   Using cached typing_inspection-0.4.5-py3-none-any.whl.metadata (2.6 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:48.9035442Z Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas==2.2.3->-r requirements.txt (line 3))
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:48.9047972Z   Using cached six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:48.9277428Z Using cached scikit_learn-1.6.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (13.1 MB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:48.9337484Z Using cached pandas-2.2.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.7 MB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:48.9393204Z Using cached joblib-1.4.2-py3-none-any.whl (301 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:48.9405804Z Using cached scipy-1.15.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (37.3 MB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:48.9552684Z Using cached openai-1.82.0-py3-none-any.whl (720 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:48.9565878Z Using cached httpx-0.28.1-py3-none-any.whl (73 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:48.9577700Z Using cached boto3-1.38.23-py3-none-any.whl (139 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:48.9589942Z Using cached PyYAML-6.0.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (767 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:48.9604150Z Using cached fastapi-0.115.12-py3-none-any.whl (95 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:48.9615941Z Using cached uvicorn-0.34.2-py3-none-any.whl (62 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:48.9627656Z Using cached gunicorn-23.0.0-py3-none-any.whl (85 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:48.9639309Z Using cached pytest-8.3.5-py3-none-any.whl (343 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:48.9652314Z Using cached ruff-0.11.11-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (11.5 MB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:48.9707122Z Using cached anyio-4.16.0-py3-none-any.whl (134 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:48.9718856Z Using cached botocore-1.38.46-py3-none-any.whl (13.7 MB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:48.9778887Z Using cached distro-1.9.0-py3-none-any.whl (20 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:48.9790220Z Using cached httpcore-1.0.9-py3-none-any.whl (78 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:48.9802495Z Using cached jiter-0.19.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (338 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:48.9814656Z Using cached jmespath-1.1.0-py3-none-any.whl (20 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:48.9826284Z Using cached numpy-2.4.6-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.6 MB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:48.9896892Z Using cached pluggy-1.7.0-py3-none-any.whl (27 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:48.9908373Z Using cached pydantic-2.14.4-py3-none-any.whl (494 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:48.9921738Z Using cached pydantic_core-2.50.5-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (2.3 MB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:48.9940952Z Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:48.9953245Z Using cached s3transfer-0.13.1-py3-none-any.whl (85 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:48.9964793Z Using cached starlette-0.46.2-py3-none-any.whl (72 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:48.9976437Z Using cached typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:48.9988075Z Using cached urllib3-2.8.0-py3-none-any.whl (135 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:48.9999878Z Using cached annotated_types-0.8.0-py3-none-any.whl (13 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:49.0011323Z Using cached click-8.5.1-py3-none-any.whl (126 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:49.0023162Z Using cached h11-0.16.0-py3-none-any.whl (37 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:49.0035108Z Using cached httptools-0.9.0-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (552 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:49.0048490Z Using cached idna-3.20-py3-none-any.whl (69 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:49.0060172Z Using cached python_dotenv-1.2.4-py3-none-any.whl (23 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:49.0072631Z Using cached pytz-2026.6-py2.py3-none-any.whl (506 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:49.0086476Z Using cached six-1.17.0-py2.py3-none-any.whl (11 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:49.0098251Z Using cached threadpoolctl-3.8.0-py3-none-any.whl (32 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:49.0109904Z Using cached tqdm-4.70.1-py3-none-any.whl (80 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:49.0121567Z Using cached typing_inspection-0.4.5-py3-none-any.whl (14 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:49.0132877Z Using cached tzdata-2026.6-py2.py3-none-any.whl (348 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:49.0146107Z Using cached uvloop-0.23.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (4.5 MB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:49.0173488Z Using cached watchfiles-1.3.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (458 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:49.0186938Z Using cached websockets-17.4-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (226 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:49.0199118Z Using cached certifi-2026.11.20-py3-none-any.whl (127 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:49.0211063Z Using cached iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:49.0222675Z Using cached packaging-26.3-py3-none-any.whl (129 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:49.0235035Z Using cached sniffio-1.3.1-py3-none-any.whl (10 kB)
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:14:49.4795816Z Installing collected packages: pytz, websockets, uvloop, urllib3, tzdata, typing-extensions, tqdm, threadpoolctl, sniffio, six, ruff, pyyaml, python-dotenv, pluggy, packaging, numpy, joblib, jmespath, jiter, iniconfig, idna, httptools, h11, distro, click, certifi, annotated-types, uvicorn, typing-inspection, scipy, python-dateutil, pytest, pydantic-core, httpcore, gunicorn, anyio, watchfiles, starlette, scikit-learn, pydantic, pandas, httpx, botocore, s3transfer, openai, fastapi, boto3
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:15:05.9538460Z 
+Lint e testes unitários	Run pip install -r requirements.txt	2026-11-22T17:15:05.9581636Z Successfully installed annotated-types-0.8.0 anyio-4.16.0 boto3-1.38.23 botocore-1.38.46 certifi-2026.11.20 click-8.5.1 distro-1.9.0 fastapi-0.115.12 gunicorn-23.0.0 h11-0.16.0 httpcore-1.0.9 httptools-0.9.0 httpx-0.28.1 idna-3.20 iniconfig-2.3.1 jiter-0.19.0 jmespath-1.1.0 joblib-1.4.2 numpy-2.4.6 openai-1.82.0 packaging-26.3 pandas-2.2.3 pluggy-1.7.0 pydantic-2.14.4 pydantic-core-2.50.5 pytest-8.3.5 python-dateutil-2.9.0.post0 python-dotenv-1.2.4 pytz-2026.6 pyyaml-6.0.2 ruff-0.11.11 s3transfer-0.13.1 scikit-learn-1.6.1 scipy-1.15.3 six-1.17.0 sniffio-1.3.1 starlette-0.46.2 threadpoolctl-3.8.0 tqdm-4.70.1 typing-extensions-4.16.0 typing-inspection-0.4.5 tzdata-2026.6 urllib3-2.8.0 uvicorn-0.34.2 uvloop-0.23.0 watchfiles-1.3.0 websockets-17.4
+Lint e testes unitários	Run ruff check agente && ruff format --check agente	﻿2026-11-22T17:15:06.2318260Z ##[group]Run ruff check agente && ruff format --check agente
+Lint e testes unitários	Run ruff check agente && ruff format --check agente	2026-11-22T17:15:06.2318743Z ^[[36;1mruff check agente && ruff format --check agente^[[0m
+Lint e testes unitários	Run ruff check agente && ruff format --check agente	2026-11-22T17:15:06.2354226Z shell: /usr/bin/bash -e {0}
+Lint e testes unitários	Run ruff check agente && ruff format --check agente	2026-11-22T17:15:06.2354489Z env:
+Lint e testes unitários	Run ruff check agente && ruff format --check agente	2026-11-22T17:15:06.2354762Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+Lint e testes unitários	Run ruff check agente && ruff format --check agente	2026-11-22T17:15:06.2355204Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+Lint e testes unitários	Run ruff check agente && ruff format --check agente	2026-11-22T17:15:06.2355680Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+Lint e testes unitários	Run ruff check agente && ruff format --check agente	2026-11-22T17:15:06.2356073Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+Lint e testes unitários	Run ruff check agente && ruff format --check agente	2026-11-22T17:15:06.2356459Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+Lint e testes unitários	Run ruff check agente && ruff format --check agente	2026-11-22T17:15:06.2356849Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+Lint e testes unitários	Run ruff check agente && ruff format --check agente	2026-11-22T17:15:06.2357179Z ##[endgroup]
+Lint e testes unitários	Run ruff check agente && ruff format --check agente	2026-11-22T17:15:06.2495341Z All checks passed!
+Lint e testes unitários	Run ruff check agente && ruff format --check agente	2026-11-22T17:15:06.2579025Z 16 files already formatted
+Lint e testes unitários	Run pytest agente/tests -v	﻿2026-11-22T17:15:06.2622165Z ##[group]Run pytest agente/tests -v
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:06.2622570Z ^[[36;1mpytest agente/tests -v^[[0m
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:06.2657089Z shell: /usr/bin/bash -e {0}
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:06.2657343Z env:
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:06.2657617Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:06.2658164Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:06.2658603Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:06.2658980Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:06.2659375Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:06.2659758Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:06.2660092Z ##[endgroup]
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:06.8696988Z ============================= test session starts ==============================
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:06.8698074Z platform linux -- Python 3.12.16, pytest-8.3.5, pluggy-1.7.0 -- /opt/hostedtoolcache/Python/3.12.16/x64/bin/python
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:06.8698843Z cachedir: .pytest_cache
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:06.8699171Z rootdir: /home/runner/work/aie-devops-labs/aie-devops-labs
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:06.8699531Z configfile: pyproject.toml
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:06.8699791Z plugins: anyio-4.16.0
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:07.2431638Z collecting ... collected 37 items
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:07.2432745Z 
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:07.2440956Z agente/tests/test_agent_gate.py::test_categoria_piora_mesmo_com_media_melhor PASSED [  2%]
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:07.2448097Z agente/tests/test_agent_gate.py::test_dois_casos_a_menos_e_ruido PASSED  [  5%]
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:07.2455174Z agente/tests/test_agent_gate.py::test_tres_casos_a_menos_e_regressao PASSED [  8%]
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:07.2461585Z agente/tests/test_agent_gate.py::test_sem_baseline_so_vale_o_piso PASSED [ 10%]
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:07.2468743Z agente/tests/test_agent_gate.py::test_taxas_por_categoria_agrega_os_casos PASSED [ 13%]
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:07.2475442Z agente/tests/test_agent_gate.py::test_erro_de_execucao_conta_como_reprovado PASSED [ 16%]
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:07.2482422Z agente/tests/test_agent_gate.py::test_golden_de_roteamento_mede_so_o_roteamento PASSED [ 18%]
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:07.2501056Z agente/tests/test_agent_gate.py::test_golden_de_roteamento_tem_30_casos_por_categoria PASSED [ 21%]
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:07.2545485Z agente/tests/test_app.py::test_saude PASSED                              [ 24%]
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:07.2605669Z agente/tests/test_app.py::test_chamado PASSED                            [ 27%]
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:07.2614563Z agente/tests/test_atendimento.py::test_todas_as_categorias_tem_politica PASSED [ 29%]
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:07.2622765Z agente/tests/test_atendimento.py::test_prompts_tem_as_variaveis_esperadas PASSED [ 32%]
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:07.2630819Z agente/tests/test_atendimento.py::test_preencher_substitui_todas_as_variaveis PASSED [ 35%]
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:07.2641072Z agente/tests/test_atendimento.py::test_recuperacao_encontra_a_politica_certa PASSED [ 37%]
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:07.2649740Z agente/tests/test_atendimento.py::test_categoria_invalida_vira_indefinida[{"categoria": "xyz"}] PASSED [ 40%]
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:07.2658554Z agente/tests/test_atendimento.py::test_categoria_invalida_vira_indefinida[{"categoria": "outros"}] PASSED [ 43%]
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:07.2666926Z agente/tests/test_atendimento.py::test_categoria_invalida_vira_indefinida[n\xe3o sei] PASSED [ 45%]
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:07.2675223Z agente/tests/test_atendimento.py::test_categoria_invalida_vira_indefinida[] PASSED [ 48%]
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:07.2683236Z agente/tests/test_atendimento.py::test_categoria_com_texto_em_volta PASSED [ 51%]
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:07.2696146Z agente/tests/test_atendimento.py::test_atender_devolve_o_contrato_esperado PASSED [ 54%]
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:07.2703307Z agente/tests/test_busca.py::test_radical_por_truncamento_junta_as_flexoes PASSED [ 56%]
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:07.2709456Z agente/tests/test_busca.py::test_stopwords_e_acentos_saem PASSED         [ 59%]
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:07.2718763Z agente/tests/test_busca.py::test_acha_a_politica_so_pelo_texto[o rastreio est\xe1 parado h\xe1 mais de uma semana-entrega.md] PASSED [ 62%]
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:07.2727735Z agente/tests/test_busca.py::test_acha_a_politica_so_pelo_texto[quero devolver, me arrependi da compra-devolucao_ressarcimento.md] PASSED [ 64%]
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:07.2736302Z agente/tests/test_busca.py::test_acha_a_politica_so_pelo_texto[o vendedor pediu pix por fora e sumiu-fraude_vendedor.md] PASSED [ 67%]
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:07.2752343Z agente/tests/test_busca.py::test_reforco_de_area_favorece_a_politica_da_categoria PASSED [ 70%]
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:07.2825737Z agente/tests/test_busca.py::test_golden_de_politicas_com_a_categoria_certa PASSED [ 72%]
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:07.2832158Z agente/tests/test_juiz_resumo.py::test_fidelidade_por_categoria PASSED   [ 75%]
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:07.2838790Z agente/tests/test_juiz_resumo.py::test_erro_do_juiz_conta_como_reprovado PASSED [ 78%]
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:07.2846647Z agente/tests/test_juiz_resumo.py::test_avaliar_aponta_categorias_abaixo_do_piso PASSED [ 81%]
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:07.2854311Z agente/tests/test_lambda_handler.py::test_saude PASSED                   [ 83%]
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:07.2865352Z agente/tests/test_lambda_handler.py::test_chamado_valido PASSED          [ 86%]
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:07.2876286Z agente/tests/test_lambda_handler.py::test_post_na_raiz_tambem_atende PASSED [ 89%]
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:07.2884465Z agente/tests/test_lambda_handler.py::test_corpo_invalido[corpo0] PASSED  [ 91%]
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:07.2892374Z agente/tests/test_lambda_handler.py::test_corpo_invalido[corpo1] PASSED  [ 94%]
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:07.2899620Z agente/tests/test_lambda_handler.py::test_rota_inexistente PASSED        [ 97%]
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:07.2923014Z agente/tests/test_lambda_handler.py::test_falha_do_llm_vira_502 PASSED   [100%]
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:07.2923598Z 
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:07.2923839Z =============================== warnings summary ===============================
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:07.2924755Z ../../../../../opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/starlette/testclient.py:37
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:07.2926744Z   /opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/starlette/testclient.py:37: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:07.2928739Z     _PortalFactoryType = typing.Callable[[], typing.ContextManager[anyio.abc.BlockingPortal]]
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:07.2929223Z 
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:07.2929504Z -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+Lint e testes unitários	Run pytest agente/tests -v	2026-11-22T17:15:07.2930095Z ======================== 37 passed, 1 warning in 0.43s =========================
+Lint e testes unitários	Post Run actions/setup-python@v7	﻿2026-11-22T17:15:07.3634685Z Post job cleanup.
+Lint e testes unitários	Post Run actions/setup-python@v7	2026-11-22T17:15:07.4837831Z Cache hit occurred on the primary key setup-python-Linux-x64-26.04-Ubuntu-python-3.12.16-pip-337acfd065a492e1a200542b79197916fbd58596bca44f667ffe4da54cf0f392, not saving cache.
+Lint e testes unitários	Post Run actions/checkout@v7	﻿2026-11-22T17:15:07.4994664Z Post job cleanup.
+Lint e testes unitários	Post Run actions/checkout@v7	2026-11-22T17:15:07.5943633Z [command]/usr/bin/git version
+Lint e testes unitários	Post Run actions/checkout@v7	2026-11-22T17:15:07.5993816Z git version 2.56.1
+Lint e testes unitários	Post Run actions/checkout@v7	2026-11-22T17:15:07.6038760Z Temporarily overriding HOME='/home/runner/work/_temp/15abc65d-7c37-4a8f-b6b5-e55acee3a0eb' before making global git config changes
+Lint e testes unitários	Post Run actions/checkout@v7	2026-11-22T17:15:07.6040388Z Adding repository directory to the temporary git global config as a safe directory
+Lint e testes unitários	Post Run actions/checkout@v7	2026-11-22T17:15:07.6044902Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/aie-devops-labs/aie-devops-labs
+Lint e testes unitários	Post Run actions/checkout@v7	2026-11-22T17:15:07.6082957Z Removing SSH command configuration
+Lint e testes unitários	Post Run actions/checkout@v7	2026-11-22T17:15:07.6089658Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Lint e testes unitários	Post Run actions/checkout@v7	2026-11-22T17:15:07.6132443Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Lint e testes unitários	Post Run actions/checkout@v7	2026-11-22T17:15:07.6446292Z Removing HTTP extra header
+Lint e testes unitários	Post Run actions/checkout@v7	2026-11-22T17:15:07.6451758Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Lint e testes unitários	Post Run actions/checkout@v7	2026-11-22T17:15:07.6505928Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Lint e testes unitários	Post Run actions/checkout@v7	2026-11-22T17:15:07.6823133Z Removing includeIf entries pointing to credentials config files
+Lint e testes unitários	Post Run actions/checkout@v7	2026-11-22T17:15:07.6834827Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Lint e testes unitários	Post Run actions/checkout@v7	2026-11-22T17:15:07.6866620Z includeif.gitdir:/home/runner/work/aie-devops-labs/aie-devops-labs/.git.path
+Lint e testes unitários	Post Run actions/checkout@v7	2026-11-22T17:15:07.6867623Z includeif.gitdir:/home/runner/work/aie-devops-labs/aie-devops-labs/.git/worktrees/*.path
+Lint e testes unitários	Post Run actions/checkout@v7	2026-11-22T17:15:07.6868335Z includeif.gitdir:/github/workspace/.git.path
+Lint e testes unitários	Post Run actions/checkout@v7	2026-11-22T17:15:07.6868986Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+Lint e testes unitários	Post Run actions/checkout@v7	2026-11-22T17:15:07.6875408Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/aie-devops-labs/aie-devops-labs/.git.path
+Lint e testes unitários	Post Run actions/checkout@v7	2026-11-22T17:15:07.6903265Z /home/runner/work/_temp/git-credentials-f09a9ddd-092e-4d0c-a2a4-c6f3374fb13b.config
+Lint e testes unitários	Post Run actions/checkout@v7	2026-11-22T17:15:07.6916144Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/aie-devops-labs/aie-devops-labs/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-f09a9ddd\-092e\-4d0c\-a2a4\-c6f3374fb13b\.config
+Lint e testes unitários	Post Run actions/checkout@v7	2026-11-22T17:15:07.6963620Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/aie-devops-labs/aie-devops-labs/.git/worktrees/*.path
+Lint e testes unitários	Post Run actions/checkout@v7	2026-11-22T17:15:07.6988359Z /home/runner/work/_temp/git-credentials-f09a9ddd-092e-4d0c-a2a4-c6f3374fb13b.config
+Lint e testes unitários	Post Run actions/checkout@v7	2026-11-22T17:15:07.6998066Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/aie-devops-labs/aie-devops-labs/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-f09a9ddd\-092e\-4d0c\-a2a4\-c6f3374fb13b\.config
+Lint e testes unitários	Post Run actions/checkout@v7	2026-11-22T17:15:07.7032466Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+Lint e testes unitários	Post Run actions/checkout@v7	2026-11-22T17:15:07.7056538Z /github/runner_temp/git-credentials-f09a9ddd-092e-4d0c-a2a4-c6f3374fb13b.config
+Lint e testes unitários	Post Run actions/checkout@v7	2026-11-22T17:15:07.7064554Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-f09a9ddd\-092e\-4d0c\-a2a4\-c6f3374fb13b\.config
+Lint e testes unitários	Post Run actions/checkout@v7	2026-11-22T17:15:07.7097413Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+Lint e testes unitários	Post Run actions/checkout@v7	2026-11-22T17:15:07.7120537Z /github/runner_temp/git-credentials-f09a9ddd-092e-4d0c-a2a4-c6f3374fb13b.config
+Lint e testes unitários	Post Run actions/checkout@v7	2026-11-22T17:15:07.7130609Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-f09a9ddd\-092e\-4d0c\-a2a4\-c6f3374fb13b\.config
+Lint e testes unitários	Post Run actions/checkout@v7	2026-11-22T17:15:07.7190271Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Lint e testes unitários	Post Run actions/checkout@v7	2026-11-22T17:15:07.7471136Z Removing credentials config '/home/runner/work/_temp/git-credentials-f09a9ddd-092e-4d0c-a2a4-c6f3374fb13b.config'
+Lint e testes unitários	Complete job	﻿2026-11-22T17:15:07.7621526Z Cleaning up orphan processes
+Testes de comportamento + agent gate	Set up job	﻿2026-11-22T17:15:12.5093632Z Current runner version: '2.338.2'
+Testes de comportamento + agent gate	Set up job	2026-11-22T17:15:12.5123510Z ##[group]Runner Image Provisioner
+Testes de comportamento + agent gate	Set up job	2026-11-22T17:15:12.5124636Z Hosted Compute Agent
+Testes de comportamento + agent gate	Set up job	2026-11-22T17:15:12.5125506Z Version: 20261111.635
+Testes de comportamento + agent gate	Set up job	2026-11-22T17:15:12.5126528Z Commit: b8a594ea514ff44cadb5342986c68b1eac6e22ed
+Testes de comportamento + agent gate	Set up job	2026-11-22T17:15:12.5127606Z Build Date: 2026-11-11T01:49:01Z
+Testes de comportamento + agent gate	Set up job	2026-11-22T17:15:12.5128511Z Worker ID: {bc1759d2-7b80-4d03-aeae-48a2e9ce1184}
+Testes de comportamento + agent gate	Set up job	2026-11-22T17:15:12.5129530Z Region: eastus
+Testes de comportamento + agent gate	Set up job	2026-11-22T17:15:12.5130340Z Cloud: Azure
+Testes de comportamento + agent gate	Set up job	2026-11-22T17:15:12.5131092Z ##[endgroup]
+Testes de comportamento + agent gate	Set up job	2026-11-22T17:15:12.5132976Z ##[group]Operating System
+Testes de comportamento + agent gate	Set up job	2026-11-22T17:15:12.5133865Z Ubuntu
+Testes de comportamento + agent gate	Set up job	2026-11-22T17:15:12.5134706Z 26.04.1
+Testes de comportamento + agent gate	Set up job	2026-11-22T17:15:12.5135360Z LTS
+Testes de comportamento + agent gate	Set up job	2026-11-22T17:15:12.5136269Z ##[endgroup]
+Testes de comportamento + agent gate	Set up job	2026-11-22T17:15:12.5137027Z ##[group]Runner Image
+Testes de comportamento + agent gate	Set up job	2026-11-22T17:15:12.5137850Z Image: ubuntu-26.04
+Testes de comportamento + agent gate	Set up job	2026-11-22T17:15:12.5138599Z Version: 20261116.202.1
+Testes de comportamento + agent gate	Set up job	2026-11-22T17:15:12.5140114Z Included Software: https://github.com/actions/runner-images/blob/ubuntu26/20261116.202/images/ubuntu/Ubuntu2604-Readme.md
+Testes de comportamento + agent gate	Set up job	2026-11-22T17:15:12.5142297Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu26%2F20261116.202
+Testes de comportamento + agent gate	Set up job	2026-11-22T17:15:12.5143700Z ##[endgroup]
+Testes de comportamento + agent gate	Set up job	2026-11-22T17:15:12.5145318Z ##[group]GITHUB_TOKEN Permissions
+Testes de comportamento + agent gate	Set up job	2026-11-22T17:15:12.5147834Z Contents: read
+Testes de comportamento + agent gate	Set up job	2026-11-22T17:15:12.5148684Z Metadata: read
+Testes de comportamento + agent gate	Set up job	2026-11-22T17:15:12.5149398Z Packages: read
+Testes de comportamento + agent gate	Set up job	2026-11-22T17:15:12.5150112Z ##[endgroup]
+Testes de comportamento + agent gate	Set up job	2026-11-22T17:15:12.5152917Z Secret source: Actions
+Testes de comportamento + agent gate	Set up job	2026-11-22T17:15:12.5154115Z Cache mode: write
+Testes de comportamento + agent gate	Set up job	2026-11-22T17:15:12.5155435Z Prepare workflow directory
+Testes de comportamento + agent gate	Set up job	2026-11-22T17:15:12.5736201Z Prepare all required actions
+Testes de comportamento + agent gate	Set up job	2026-11-22T17:15:12.5777890Z Getting action download info
+Testes de comportamento + agent gate	Set up job	2026-11-22T17:15:12.7902161Z Download action repository 'actions/checkout@v7' (SHA:3d3c42e5aac5ba805825da76410c181273ba90b1)
+Testes de comportamento + agent gate	Set up job	2026-11-22T17:15:12.8750674Z Download action repository 'actions/setup-python@v7' (SHA:6d4fd22b20465ccc0f7354476588e8df7c9ca0e0)
+Testes de comportamento + agent gate	Set up job	2026-11-22T17:15:12.9629331Z Download action repository 'actions/setup-node@v7' (SHA:949feb2413d6458794dcd2491c4babbbce0c15c1)
+Testes de comportamento + agent gate	Set up job	2026-11-22T17:15:13.0442170Z Download action repository 'actions/cache@v6' (SHA:55cc8345863c7cc4c66a329aec7e433d2d1c52a9)
+Testes de comportamento + agent gate	Set up job	2026-11-22T17:15:13.1625275Z Download action repository 'aws-actions/configure-aws-credentials@v6' (SHA:e1253824e5c10ff9df46874f81ed3ec929e19cfd)
+Testes de comportamento + agent gate	Set up job	2026-11-22T17:15:13.2867748Z Download action repository 'actions/upload-artifact@v7' (SHA:cf430e030ddbb5b0abf93d22962f4752f3646cd9)
+Testes de comportamento + agent gate	Set up job	2026-11-22T17:15:13.4540049Z Complete job name: Testes de comportamento + agent gate
+Testes de comportamento + agent gate	Run actions/checkout@v7	﻿2026-11-22T17:15:13.5283922Z ##[group]Run actions/checkout@v7
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.5284629Z with:
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.5285051Z   repository: tiagobrilhante/aie-devops-labs
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.5288430Z   token: ***
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.5288803Z   ssh-strict: true
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.5289168Z   ssh-user: git
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.5289538Z   persist-credentials: true
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.5289945Z   clean: true
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.5290318Z   sparse-checkout-cone-mode: true
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.5290770Z   fetch-depth: 1
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.5291131Z   fetch-tags: false
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.5291498Z   show-progress: true
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.5291866Z   lfs: false
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.5292208Z   submodules: false
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.5292584Z   set-safe-directory: true
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.5292999Z   allow-unsafe-pr-checkout: false
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.5293603Z env:
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.5293954Z   LLM_PROVEDOR: openai
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.5294333Z   LLM_MODELO: 
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.5294717Z   LLM_BASE_URL: http://localhost:11434/v1
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.5295216Z   LLM_API_KEY: ollama
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.5295593Z   OLLAMA_MODELO: qwen2.5:3b
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.5296129Z   PROMPTFOO_DISABLE_TELEMETRY: 1
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.5296555Z ##[endgroup]
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.7787480Z Syncing repository: tiagobrilhante/aie-devops-labs
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.7790228Z ##[group]Getting Git version info
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.7791186Z Working directory is '/home/runner/work/aie-devops-labs/aie-devops-labs'
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.7793036Z [command]/usr/bin/git version
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.7793723Z git version 2.56.1
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.7798104Z ##[endgroup]
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.7806748Z Temporarily overriding HOME='/home/runner/work/_temp/948084b3-e349-4d3b-a2ba-cf7d85fc0f30' before making global git config changes
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.7812870Z Adding repository directory to the temporary git global config as a safe directory
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.7815539Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/aie-devops-labs/aie-devops-labs
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.7880411Z Deleting the contents of '/home/runner/work/aie-devops-labs/aie-devops-labs'
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.7883874Z ##[group]Determining repository object format
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.7886679Z ##[endgroup]
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.7888784Z ##[group]Initializing the repository
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.7890796Z [command]/usr/bin/git init /home/runner/work/aie-devops-labs/aie-devops-labs
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.7971946Z hint: Using 'master' as the name for the initial branch. This default branch name
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.7975034Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.7977688Z hint: to use in all of your new repositories, which will suppress this warning,
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.7979870Z hint: call:
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.7981345Z hint:
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.7982644Z hint: 	git config --global init.defaultBranch <name>
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.7983919Z hint:
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.7985102Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.7995876Z hint: 'development'. The just-created branch can be renamed via this command:
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.7997443Z hint:
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.7998271Z hint: 	git branch -m <name>
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.7999207Z hint:
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.8000452Z hint: Disable this message with "git config set advice.defaultBranchName false"
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.8002674Z Initialized empty Git repository in /home/runner/work/aie-devops-labs/aie-devops-labs/.git/
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.8007090Z [command]/usr/bin/git remote add origin https://github.com/tiagobrilhante/aie-devops-labs
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.8060769Z ##[endgroup]
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.8062959Z ##[group]Disabling automatic garbage collection
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.8064714Z [command]/usr/bin/git config --local gc.auto 0
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.8095867Z ##[endgroup]
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.8097868Z ##[group]Setting up auth
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.8099145Z Removing SSH command configuration
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.8101122Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.8129546Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.8541549Z Removing HTTP extra header
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.8546052Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.8577750Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.8806542Z Removing includeIf entries pointing to credentials config files
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.8810733Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.8840898Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.9080799Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-6b939c38-d749-4b0e-9b24-7979205c9140.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.9116876Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/aie-devops-labs/aie-devops-labs/.git.path /home/runner/work/_temp/git-credentials-6b939c38-d749-4b0e-9b24-7979205c9140.config
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.9147090Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/aie-devops-labs/aie-devops-labs/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-6b939c38-d749-4b0e-9b24-7979205c9140.config
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.9178321Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-6b939c38-d749-4b0e-9b24-7979205c9140.config
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.9207847Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-6b939c38-d749-4b0e-9b24-7979205c9140.config
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.9235576Z ##[endgroup]
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.9237741Z ##[group]Fetching the repository
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:13.9243241Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +7c9902e16cf92ba1bd23d65dc30c42443ddd99bf:refs/remotes/pull/11/merge
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:14.1120114Z From https://github.com/tiagobrilhante/aie-devops-labs
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:14.1121645Z  * [new ref]         7c9902e16cf92ba1bd23d65dc30c42443ddd99bf -> pull/11/merge
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:14.1124777Z ##[endgroup]
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:14.1125479Z ##[group]Determining the checkout info
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:14.1126465Z ##[endgroup]
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:14.1130025Z [command]/usr/bin/git sparse-checkout disable
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:14.1183482Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:14.1211790Z ##[group]Checking out the ref
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:14.1214789Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/11/merge
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:14.1306373Z Note: switching to 'refs/remotes/pull/11/merge'.
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:14.1306748Z 
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:14.1307010Z You are in 'detached HEAD' state. You can look around, make experimental
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:14.1307526Z changes and commit them, and you can discard any commits you make in this
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:14.1308104Z state without impacting any branches by switching back to a branch.
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:14.1308394Z 
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:14.1308660Z If you want to create a new branch to retain commits you create, you may
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:14.1309133Z do so (now or later) by using -c with the switch command. Example:
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:14.1309422Z 
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:14.1309633Z   git switch -c <new-branch-name>
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:14.1309892Z 
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:14.1310098Z Or undo this operation with:
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:14.1310350Z 
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:14.1310532Z   git switch -
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:14.1310791Z 
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:14.1311091Z Turn off this advice by setting config variable advice.detachedHead to false
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:14.1311687Z 
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:14.1312085Z HEAD is now at 7c9902e Merge 75423097097ea603d4ab52eb03993544e2094f46 into e08a285ab258965ac82c9390fa2cf8e51f11f205
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:14.1316954Z ##[endgroup]
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:14.1359982Z [command]/usr/bin/git log -1 --format=%H
+Testes de comportamento + agent gate	Run actions/checkout@v7	2026-11-22T17:15:14.1383500Z 7c9902e16cf92ba1bd23d65dc30c42443ddd99bf
+Testes de comportamento + agent gate	Run actions/setup-python@v7	﻿2026-11-22T17:15:14.1632793Z ##[group]Run actions/setup-python@v7
+Testes de comportamento + agent gate	Run actions/setup-python@v7	2026-11-22T17:15:14.1633293Z with:
+Testes de comportamento + agent gate	Run actions/setup-python@v7	2026-11-22T17:15:14.1633677Z   python-version: 3.12
+Testes de comportamento + agent gate	Run actions/setup-python@v7	2026-11-22T17:15:14.1634066Z   cache: pip
+Testes de comportamento + agent gate	Run actions/setup-python@v7	2026-11-22T17:15:14.1634423Z   check-latest: false
+Testes de comportamento + agent gate	Run actions/setup-python@v7	2026-11-22T17:15:14.1637077Z   token: ***
+Testes de comportamento + agent gate	Run actions/setup-python@v7	2026-11-22T17:15:14.1637565Z   mirror: https://raw.githubusercontent.com/actions/python-versions/main
+Testes de comportamento + agent gate	Run actions/setup-python@v7	2026-11-22T17:15:14.1638103Z   update-environment: true
+Testes de comportamento + agent gate	Run actions/setup-python@v7	2026-11-22T17:15:14.1638506Z   allow-prereleases: false
+Testes de comportamento + agent gate	Run actions/setup-python@v7	2026-11-22T17:15:14.1638898Z   freethreaded: false
+Testes de comportamento + agent gate	Run actions/setup-python@v7	2026-11-22T17:15:14.1639265Z env:
+Testes de comportamento + agent gate	Run actions/setup-python@v7	2026-11-22T17:15:14.1639615Z   LLM_PROVEDOR: openai
+Testes de comportamento + agent gate	Run actions/setup-python@v7	2026-11-22T17:15:14.1639975Z   LLM_MODELO: 
+Testes de comportamento + agent gate	Run actions/setup-python@v7	2026-11-22T17:15:14.1640352Z   LLM_BASE_URL: http://localhost:11434/v1
+Testes de comportamento + agent gate	Run actions/setup-python@v7	2026-11-22T17:15:14.1640769Z   LLM_API_KEY: ollama
+Testes de comportamento + agent gate	Run actions/setup-python@v7	2026-11-22T17:15:14.1641142Z   OLLAMA_MODELO: qwen2.5:3b
+Testes de comportamento + agent gate	Run actions/setup-python@v7	2026-11-22T17:15:14.1641537Z   PROMPTFOO_DISABLE_TELEMETRY: 1
+Testes de comportamento + agent gate	Run actions/setup-python@v7	2026-11-22T17:15:14.1641923Z ##[endgroup]
+Testes de comportamento + agent gate	Run actions/setup-python@v7	2026-11-22T17:15:14.2614493Z ##[group]Installed versions
+Testes de comportamento + agent gate	Run actions/setup-python@v7	2026-11-22T17:15:14.2698998Z Successfully set up CPython (3.12.16)
+Testes de comportamento + agent gate	Run actions/setup-python@v7	2026-11-22T17:15:14.2699927Z ##[endgroup]
+Testes de comportamento + agent gate	Run actions/setup-python@v7	2026-11-22T17:15:14.3274915Z [command]/opt/hostedtoolcache/Python/3.12.16/x64/bin/pip cache dir
+Testes de comportamento + agent gate	Run actions/setup-python@v7	2026-11-22T17:15:14.5905512Z /home/runner/.cache/pip
+Testes de comportamento + agent gate	Run actions/setup-python@v7	2026-11-22T17:15:14.6776912Z Cache hit for: setup-python-Linux-x64-26.04-Ubuntu-python-3.12.16-pip-337acfd065a492e1a200542b79197916fbd58596bca44f667ffe4da54cf0f392
+Testes de comportamento + agent gate	Run actions/setup-python@v7	2026-11-22T17:15:15.3011519Z Received 124134567 of 124134567 (100.0%), 209.9 MBs/sec
+Testes de comportamento + agent gate	Run actions/setup-python@v7	2026-11-22T17:15:15.3012604Z Cache Size: ~118 MB (124134567 B)
+Testes de comportamento + agent gate	Run actions/setup-python@v7	2026-11-22T17:15:15.3108711Z [command]/usr/bin/tar -xf /home/runner/work/_temp/e0856848-9940-45d7-a6c6-a040936a85b9/cache.tzst -P -C /home/runner/work/aie-devops-labs/aie-devops-labs --use-compress-program unzstd
+Testes de comportamento + agent gate	Run actions/setup-python@v7	2026-11-22T17:15:15.4712490Z Cache restored successfully
+Testes de comportamento + agent gate	Run actions/setup-python@v7	2026-11-22T17:15:15.4770853Z Cache restored from key: setup-python-Linux-x64-26.04-Ubuntu-python-3.12.16-pip-337acfd065a492e1a200542b79197916fbd58596bca44f667ffe4da54cf0f392
+Testes de comportamento + agent gate	Run actions/setup-node@v7	﻿2026-11-22T17:15:15.5022536Z ##[group]Run actions/setup-node@v7
+Testes de comportamento + agent gate	Run actions/setup-node@v7	2026-11-22T17:15:15.5022848Z with:
+Testes de comportamento + agent gate	Run actions/setup-node@v7	2026-11-22T17:15:15.5023091Z   node-version: 22
+Testes de comportamento + agent gate	Run actions/setup-node@v7	2026-11-22T17:15:15.5023330Z   check-latest: false
+Testes de comportamento + agent gate	Run actions/setup-node@v7	2026-11-22T17:15:15.5025380Z   token: ***
+Testes de comportamento + agent gate	Run actions/setup-node@v7	2026-11-22T17:15:15.5025632Z   package-manager-cache: true
+Testes de comportamento + agent gate	Run actions/setup-node@v7	2026-11-22T17:15:15.5026174Z env:
+Testes de comportamento + agent gate	Run actions/setup-node@v7	2026-11-22T17:15:15.5026394Z   LLM_PROVEDOR: openai
+Testes de comportamento + agent gate	Run actions/setup-node@v7	2026-11-22T17:15:15.5026674Z   LLM_MODELO: 
+Testes de comportamento + agent gate	Run actions/setup-node@v7	2026-11-22T17:15:15.5026933Z   LLM_BASE_URL: http://localhost:11434/v1
+Testes de comportamento + agent gate	Run actions/setup-node@v7	2026-11-22T17:15:15.5027260Z   LLM_API_KEY: ollama
+Testes de comportamento + agent gate	Run actions/setup-node@v7	2026-11-22T17:15:15.5027502Z   OLLAMA_MODELO: qwen2.5:3b
+Testes de comportamento + agent gate	Run actions/setup-node@v7	2026-11-22T17:15:15.5027770Z   PROMPTFOO_DISABLE_TELEMETRY: 1
+Testes de comportamento + agent gate	Run actions/setup-node@v7	2026-11-22T17:15:15.5028077Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+Testes de comportamento + agent gate	Run actions/setup-node@v7	2026-11-22T17:15:15.5028528Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+Testes de comportamento + agent gate	Run actions/setup-node@v7	2026-11-22T17:15:15.5028931Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+Testes de comportamento + agent gate	Run actions/setup-node@v7	2026-11-22T17:15:15.5029291Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+Testes de comportamento + agent gate	Run actions/setup-node@v7	2026-11-22T17:15:15.5029691Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+Testes de comportamento + agent gate	Run actions/setup-node@v7	2026-11-22T17:15:15.5030065Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+Testes de comportamento + agent gate	Run actions/setup-node@v7	2026-11-22T17:15:15.5030380Z ##[endgroup]
+Testes de comportamento + agent gate	Run actions/setup-node@v7	2026-11-22T17:15:15.6157044Z Found in cache @ /opt/hostedtoolcache/node/22.23.5/x64
+Testes de comportamento + agent gate	Run actions/setup-node@v7	2026-11-22T17:15:15.6948662Z ##[group]Environment details
+Testes de comportamento + agent gate	Run actions/setup-node@v7	2026-11-22T17:15:15.9686618Z node: v22.23.5
+Testes de comportamento + agent gate	Run actions/setup-node@v7	2026-11-22T17:15:15.9687063Z npm: 10.9.9
+Testes de comportamento + agent gate	Run actions/setup-node@v7	2026-11-22T17:15:15.9687357Z yarn: 1.22.22
+Testes de comportamento + agent gate	Run actions/setup-node@v7	2026-11-22T17:15:15.9688017Z ##[endgroup]
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	﻿2026-11-22T17:15:15.9813629Z ##[group]Run pip install -r requirements.txt
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:15.9814067Z ^[[36;1mpip install -r requirements.txt^[[0m
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:15.9856581Z shell: /usr/bin/bash -e {0}
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:15.9856886Z env:
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:15.9857113Z   LLM_PROVEDOR: openai
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:15.9857369Z   LLM_MODELO: 
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:15.9857644Z   LLM_BASE_URL: http://localhost:11434/v1
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:15.9857943Z   LLM_API_KEY: ollama
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:15.9858186Z   OLLAMA_MODELO: qwen2.5:3b
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:15.9858440Z   PROMPTFOO_DISABLE_TELEMETRY: 1
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:15.9858787Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:15.9859184Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:15.9859585Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:15.9859954Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:15.9860320Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:15.9860723Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:15.9861043Z ##[endgroup]
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:16.5834956Z Collecting scikit-learn==1.6.1 (from -r requirements.txt (line 2))
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:16.5842428Z   Using cached scikit_learn-1.6.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (18 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:16.6870718Z Collecting pandas==2.2.3 (from -r requirements.txt (line 3))
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:16.6881596Z   Using cached pandas-2.2.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (89 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:16.7213227Z Collecting joblib==1.4.2 (from -r requirements.txt (line 4))
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:16.7221629Z   Using cached joblib-1.4.2-py3-none-any.whl.metadata (5.4 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:16.8110065Z Collecting scipy==1.15.3 (from -r requirements.txt (line 5))
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:16.8121056Z   Using cached scipy-1.15.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (61 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:16.8574019Z Collecting openai==1.82.0 (from -r requirements.txt (line 7))
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:16.8585604Z   Using cached openai-1.82.0-py3-none-any.whl.metadata (25 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:16.9938516Z Collecting boto3==1.38.23 (from -r requirements.txt (line 8))
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:16.9949792Z   Using cached boto3-1.38.23-py3-none-any.whl.metadata (6.6 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:17.0261337Z Collecting pyyaml==6.0.2 (from -r requirements.txt (line 9))
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:17.0271142Z   Using cached PyYAML-6.0.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (2.1 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:17.0594049Z Collecting fastapi==0.115.12 (from -r requirements.txt (line 10))
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:17.0605170Z   Using cached fastapi-0.115.12-py3-none-any.whl.metadata (27 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:17.0828552Z Collecting uvicorn==0.34.2 (from uvicorn[standard]==0.34.2->-r requirements.txt (line 11))
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:17.0845381Z   Using cached uvicorn-0.34.2-py3-none-any.whl.metadata (6.5 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:17.1268541Z Collecting gunicorn==23.0.0 (from -r requirements.txt (line 12))
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:17.1278870Z   Using cached gunicorn-23.0.0-py3-none-any.whl.metadata (4.4 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:17.1454447Z Collecting httpx==0.28.1 (from -r requirements.txt (line 13))
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:17.1464845Z   Using cached httpx-0.28.1-py3-none-any.whl.metadata (7.1 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:17.1699102Z Collecting pytest==8.3.5 (from -r requirements.txt (line 15))
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:17.1710095Z   Using cached pytest-8.3.5-py3-none-any.whl.metadata (7.6 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:17.4045481Z Collecting ruff==0.11.11 (from -r requirements.txt (line 16))
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:17.4057494Z   Using cached ruff-0.11.11-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (25 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:17.5516494Z Collecting numpy>=1.19.5 (from scikit-learn==1.6.1->-r requirements.txt (line 2))
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:17.5527255Z   Using cached numpy-2.5.5-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:17.5679633Z Collecting threadpoolctl>=3.1.0 (from scikit-learn==1.6.1->-r requirements.txt (line 2))
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:17.5691428Z   Using cached threadpoolctl-3.8.0-py3-none-any.whl.metadata (29 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:17.5874426Z Collecting python-dateutil>=2.8.2 (from pandas==2.2.3->-r requirements.txt (line 3))
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:17.5883460Z   Using cached python_dateutil-4.0.0-py3-none-any.whl.metadata (7.3 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:17.6168951Z Collecting pytz>=2020.1 (from pandas==2.2.3->-r requirements.txt (line 3))
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:17.6178324Z   Using cached pytz-2026.6-py2.py3-none-any.whl.metadata (22 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:17.6338358Z Collecting tzdata>=2022.7 (from pandas==2.2.3->-r requirements.txt (line 3))
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:17.6346830Z   Using cached tzdata-2026.6-py2.py3-none-any.whl.metadata (1.4 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:17.6381862Z Collecting numpy>=1.19.5 (from scikit-learn==1.6.1->-r requirements.txt (line 2))
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:17.6390698Z   Using cached numpy-2.4.6-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (6.6 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:17.6569236Z Collecting anyio<5,>=3.5.0 (from openai==1.82.0->-r requirements.txt (line 7))
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:17.6578745Z   Using cached anyio-4.16.0-py3-none-any.whl.metadata (4.7 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:17.6711383Z Collecting distro<2,>=1.7.0 (from openai==1.82.0->-r requirements.txt (line 7))
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:17.6720228Z   Using cached distro-1.9.0-py3-none-any.whl.metadata (6.8 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:17.7791042Z Collecting jiter<1,>=0.4.0 (from openai==1.82.0->-r requirements.txt (line 7))
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:17.7802841Z   Using cached jiter-0.19.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (5.2 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:17.8573460Z Collecting pydantic<3,>=1.9.0 (from openai==1.82.0->-r requirements.txt (line 7))
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:17.8584502Z   Using cached pydantic-2.14.4-py3-none-any.whl.metadata (143 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:17.8749617Z Collecting sniffio (from openai==1.82.0->-r requirements.txt (line 7))
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:17.8758226Z   Using cached sniffio-1.3.1-py3-none-any.whl.metadata (3.9 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:17.9016153Z Collecting tqdm>4 (from openai==1.82.0->-r requirements.txt (line 7))
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:17.9025155Z   Using cached tqdm-4.70.1-py3-none-any.whl.metadata (57 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:17.9218605Z Collecting typing-extensions<5,>=4.11 (from openai==1.82.0->-r requirements.txt (line 7))
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:17.9228294Z   Using cached typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:17.9414093Z Collecting certifi (from httpx==0.28.1->-r requirements.txt (line 13))
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:17.9423775Z   Using cached certifi-2026.11.20-py3-none-any.whl.metadata (2.5 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:17.9579820Z Collecting httpcore==1.* (from httpx==0.28.1->-r requirements.txt (line 13))
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:17.9589119Z   Using cached httpcore-1.0.9-py3-none-any.whl.metadata (21 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:17.9747454Z Collecting idna (from httpx==0.28.1->-r requirements.txt (line 13))
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:17.9756410Z   Using cached idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:18.1284858Z Collecting botocore<1.39.0,>=1.38.23 (from boto3==1.38.23->-r requirements.txt (line 8))
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:18.1296157Z   Using cached botocore-1.38.46-py3-none-any.whl.metadata (5.7 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:18.1444552Z Collecting jmespath<2.0.0,>=0.7.1 (from boto3==1.38.23->-r requirements.txt (line 8))
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:18.1453728Z   Using cached jmespath-1.1.0-py3-none-any.whl.metadata (7.6 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:18.1620607Z Collecting s3transfer<0.14.0,>=0.13.0 (from boto3==1.38.23->-r requirements.txt (line 8))
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:18.1630345Z   Using cached s3transfer-0.13.1-py3-none-any.whl.metadata (1.7 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:18.1847655Z Collecting starlette<0.47.0,>=0.40.0 (from fastapi==0.115.12->-r requirements.txt (line 10))
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:18.1857466Z   Using cached starlette-0.46.2-py3-none-any.whl.metadata (6.2 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:18.2080535Z Collecting click>=7.0 (from uvicorn==0.34.2->uvicorn[standard]==0.34.2->-r requirements.txt (line 11))
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:18.2089182Z   Using cached click-8.5.1-py3-none-any.whl.metadata (2.6 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:18.2219955Z Collecting h11>=0.8 (from uvicorn==0.34.2->uvicorn[standard]==0.34.2->-r requirements.txt (line 11))
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:18.2228787Z   Using cached h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:18.2400715Z Collecting packaging (from gunicorn==23.0.0->-r requirements.txt (line 12))
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:18.2411825Z   Using cached packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:18.2544340Z Collecting iniconfig (from pytest==8.3.5->-r requirements.txt (line 15))
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:18.2553148Z   Using cached iniconfig-2.3.1-py3-none-any.whl.metadata (2.8 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:18.2689969Z Collecting pluggy<2,>=1.5 (from pytest==8.3.5->-r requirements.txt (line 15))
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:18.2698892Z   Using cached pluggy-1.7.0-py3-none-any.whl.metadata (5.0 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:18.3431627Z Collecting httptools>=0.6.3 (from uvicorn[standard]==0.34.2->-r requirements.txt (line 11))
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:18.3442446Z   Using cached httptools-0.9.0-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (3.5 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:18.3604817Z Collecting python-dotenv>=0.13 (from uvicorn[standard]==0.34.2->-r requirements.txt (line 11))
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:18.3613907Z   Using cached python_dotenv-1.2.4-py3-none-any.whl.metadata (29 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:18.3950848Z Collecting uvloop!=0.15.0,!=0.15.1,>=0.14.0 (from uvicorn[standard]==0.34.2->-r requirements.txt (line 11))
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:18.3960651Z   Using cached uvloop-0.23.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (5.1 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:18.4812103Z Collecting watchfiles>=0.13 (from uvicorn[standard]==0.34.2->-r requirements.txt (line 11))
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:18.4823544Z   Using cached watchfiles-1.3.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.9 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:18.5738297Z Collecting websockets>=10.4 (from uvicorn[standard]==0.34.2->-r requirements.txt (line 11))
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:18.5750379Z   Using cached websockets-17.4-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (6.3 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:18.5796558Z Collecting python-dateutil>=2.8.2 (from pandas==2.2.3->-r requirements.txt (line 3))
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:18.5805915Z   Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:18.6005653Z Collecting urllib3!=2.2.0,<3,>=1.25.4 (from botocore<1.39.0,>=1.38.23->boto3==1.38.23->-r requirements.txt (line 8))
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:18.6014679Z   Using cached urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:18.6173084Z Collecting annotated-types>=0.6.0 (from pydantic<3,>=1.9.0->openai==1.82.0->-r requirements.txt (line 7))
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:18.6181968Z   Using cached annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:19.1750450Z Collecting pydantic-core==2.50.5 (from pydantic<3,>=1.9.0->openai==1.82.0->-r requirements.txt (line 7))
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:19.1761527Z   Using cached pydantic_core-2.50.5-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (6.6 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:19.1900624Z Collecting typing-inspection>=0.4.4 (from pydantic<3,>=1.9.0->openai==1.82.0->-r requirements.txt (line 7))
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:19.1910286Z   Using cached typing_inspection-0.4.5-py3-none-any.whl.metadata (2.6 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:19.2067306Z Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas==2.2.3->-r requirements.txt (line 3))
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:19.2077442Z   Using cached six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:19.2259245Z Using cached scikit_learn-1.6.1-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (13.1 MB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:19.2308053Z Using cached pandas-2.2.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.7 MB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:19.2352300Z Using cached joblib-1.4.2-py3-none-any.whl (301 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:19.2361536Z Using cached scipy-1.15.3-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (37.3 MB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:19.2481622Z Using cached openai-1.82.0-py3-none-any.whl (720 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:19.2491992Z Using cached httpx-0.28.1-py3-none-any.whl (73 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:19.2500166Z Using cached boto3-1.38.23-py3-none-any.whl (139 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:19.2508756Z Using cached PyYAML-6.0.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (767 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:19.2518711Z Using cached fastapi-0.115.12-py3-none-any.whl (95 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:19.2527310Z Using cached uvicorn-0.34.2-py3-none-any.whl (62 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:19.2535410Z Using cached gunicorn-23.0.0-py3-none-any.whl (85 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:19.2543620Z Using cached pytest-8.3.5-py3-none-any.whl (343 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:19.2552823Z Using cached ruff-0.11.11-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (11.5 MB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:19.2596670Z Using cached anyio-4.16.0-py3-none-any.whl (134 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:19.2604687Z Using cached botocore-1.38.46-py3-none-any.whl (13.7 MB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:19.2655258Z Using cached distro-1.9.0-py3-none-any.whl (20 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:19.2663278Z Using cached httpcore-1.0.9-py3-none-any.whl (78 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:19.2671855Z Using cached jiter-0.19.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (338 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:19.2680745Z Using cached jmespath-1.1.0-py3-none-any.whl (20 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:19.2688991Z Using cached numpy-2.4.6-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.6 MB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:19.2753288Z Using cached pluggy-1.7.0-py3-none-any.whl (27 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:19.2761553Z Using cached pydantic-2.14.4-py3-none-any.whl (494 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:19.2771505Z Using cached pydantic_core-2.50.5-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (2.3 MB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:19.2785373Z Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:19.2793892Z Using cached s3transfer-0.13.1-py3-none-any.whl (85 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:19.2802215Z Using cached starlette-0.46.2-py3-none-any.whl (72 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:19.2810425Z Using cached typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:19.2818458Z Using cached urllib3-2.8.0-py3-none-any.whl (135 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:19.2826730Z Using cached annotated_types-0.8.0-py3-none-any.whl (13 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:19.2834333Z Using cached click-8.5.1-py3-none-any.whl (126 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:19.2842636Z Using cached h11-0.16.0-py3-none-any.whl (37 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:19.2851277Z Using cached httptools-0.9.0-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (552 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:19.2860666Z Using cached idna-3.20-py3-none-any.whl (69 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:19.2868877Z Using cached python_dotenv-1.2.4-py3-none-any.whl (23 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:19.2876686Z Using cached pytz-2026.6-py2.py3-none-any.whl (506 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:19.2885855Z Using cached six-1.17.0-py2.py3-none-any.whl (11 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:19.2896261Z Using cached threadpoolctl-3.8.0-py3-none-any.whl (32 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:19.2904310Z Using cached tqdm-4.70.1-py3-none-any.whl (80 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:19.2912633Z Using cached typing_inspection-0.4.5-py3-none-any.whl (14 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:19.2920795Z Using cached tzdata-2026.6-py2.py3-none-any.whl (348 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:19.2930320Z Using cached uvloop-0.23.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (4.5 MB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:19.2952461Z Using cached watchfiles-1.3.0-cp310-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (458 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:19.2961919Z Using cached websockets-17.4-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (226 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:19.2970290Z Using cached certifi-2026.11.20-py3-none-any.whl (127 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:19.2978636Z Using cached iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:19.2986474Z Using cached packaging-26.3-py3-none-any.whl (129 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:19.2994492Z Using cached sniffio-1.3.1-py3-none-any.whl (10 kB)
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:19.6586581Z Installing collected packages: pytz, websockets, uvloop, urllib3, tzdata, typing-extensions, tqdm, threadpoolctl, sniffio, six, ruff, pyyaml, python-dotenv, pluggy, packaging, numpy, joblib, jmespath, jiter, iniconfig, idna, httptools, h11, distro, click, certifi, annotated-types, uvicorn, typing-inspection, scipy, python-dateutil, pytest, pydantic-core, httpcore, gunicorn, anyio, watchfiles, starlette, scikit-learn, pydantic, pandas, httpx, botocore, s3transfer, openai, fastapi, boto3
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:32.7530663Z 
+Testes de comportamento + agent gate	Run pip install -r requirements.txt	2026-11-22T17:15:32.7563598Z Successfully installed annotated-types-0.8.0 anyio-4.16.0 boto3-1.38.23 botocore-1.38.46 certifi-2026.11.20 click-8.5.1 distro-1.9.0 fastapi-0.115.12 gunicorn-23.0.0 h11-0.16.0 httpcore-1.0.9 httptools-0.9.0 httpx-0.28.1 idna-3.20 iniconfig-2.3.1 jiter-0.19.0 jmespath-1.1.0 joblib-1.4.2 numpy-2.4.6 openai-1.82.0 packaging-26.3 pandas-2.2.3 pluggy-1.7.0 pydantic-2.14.4 pydantic-core-2.50.5 pytest-8.3.5 python-dateutil-2.9.0.post0 python-dotenv-1.2.4 pytz-2026.6 pyyaml-6.0.2 ruff-0.11.11 s3transfer-0.13.1 scikit-learn-1.6.1 scipy-1.15.3 six-1.17.0 sniffio-1.3.1 starlette-0.46.2 threadpoolctl-3.8.0 tqdm-4.70.1 typing-extensions-4.16.0 typing-inspection-0.4.5 tzdata-2026.6 urllib3-2.8.0 uvicorn-0.34.2 uvloop-0.23.0 watchfiles-1.3.0 websockets-17.4
+Testes de comportamento + agent gate	Cache dos modelos do Ollama	﻿2026-11-22T17:15:33.0015644Z ##[group]Run actions/cache@v6
+Testes de comportamento + agent gate	Cache dos modelos do Ollama	2026-11-22T17:15:33.0016151Z with:
+Testes de comportamento + agent gate	Cache dos modelos do Ollama	2026-11-22T17:15:33.0016343Z   path: ~/.ollama/models
+Testes de comportamento + agent gate	Cache dos modelos do Ollama	2026-11-22T17:15:33.0016550Z   key: ollama-qwen2.5:3b
+Testes de comportamento + agent gate	Cache dos modelos do Ollama	2026-11-22T17:15:33.0016750Z   enableCrossOsArchive: false
+Testes de comportamento + agent gate	Cache dos modelos do Ollama	2026-11-22T17:15:33.0016980Z   fail-on-cache-miss: false
+Testes de comportamento + agent gate	Cache dos modelos do Ollama	2026-11-22T17:15:33.0017183Z   lookup-only: false
+Testes de comportamento + agent gate	Cache dos modelos do Ollama	2026-11-22T17:15:33.0017554Z   save-always: false
+Testes de comportamento + agent gate	Cache dos modelos do Ollama	2026-11-22T17:15:33.0017733Z env:
+Testes de comportamento + agent gate	Cache dos modelos do Ollama	2026-11-22T17:15:33.0017911Z   LLM_PROVEDOR: openai
+Testes de comportamento + agent gate	Cache dos modelos do Ollama	2026-11-22T17:15:33.0018104Z   LLM_MODELO: 
+Testes de comportamento + agent gate	Cache dos modelos do Ollama	2026-11-22T17:15:33.0018308Z   LLM_BASE_URL: http://localhost:11434/v1
+Testes de comportamento + agent gate	Cache dos modelos do Ollama	2026-11-22T17:15:33.0018565Z   LLM_API_KEY: ollama
+Testes de comportamento + agent gate	Cache dos modelos do Ollama	2026-11-22T17:15:33.0018757Z   OLLAMA_MODELO: qwen2.5:3b
+Testes de comportamento + agent gate	Cache dos modelos do Ollama	2026-11-22T17:15:33.0019009Z   PROMPTFOO_DISABLE_TELEMETRY: 1
+Testes de comportamento + agent gate	Cache dos modelos do Ollama	2026-11-22T17:15:33.0019279Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+Testes de comportamento + agent gate	Cache dos modelos do Ollama	2026-11-22T17:15:33.0019642Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+Testes de comportamento + agent gate	Cache dos modelos do Ollama	2026-11-22T17:15:33.0019992Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+Testes de comportamento + agent gate	Cache dos modelos do Ollama	2026-11-22T17:15:33.0020349Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+Testes de comportamento + agent gate	Cache dos modelos do Ollama	2026-11-22T17:15:33.0020667Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+Testes de comportamento + agent gate	Cache dos modelos do Ollama	2026-11-22T17:15:33.0020975Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+Testes de comportamento + agent gate	Cache dos modelos do Ollama	2026-11-22T17:15:33.0021249Z ##[endgroup]
+Testes de comportamento + agent gate	Cache dos modelos do Ollama	2026-11-22T17:15:33.1682795Z Cache hit for: ollama-qwen2.5:3b
+Testes de comportamento + agent gate	Cache dos modelos do Ollama	2026-11-22T17:15:34.2286809Z Received 268435456 of 1881707863 (14.3%), 251.5 MBs/sec
+Testes de comportamento + agent gate	Cache dos modelos do Ollama	2026-11-22T17:15:35.2284630Z Received 536870912 of 1881707863 (28.5%), 253.7 MBs/sec
+Testes de comportamento + agent gate	Cache dos modelos do Ollama	2026-11-22T17:15:36.2327385Z Received 809500672 of 1881707863 (43.0%), 255.9 MBs/sec
+Testes de comportamento + agent gate	Cache dos modelos do Ollama	2026-11-22T17:15:37.2337311Z Received 1090519040 of 1881707863 (58.0%), 258.7 MBs/sec
+Testes de comportamento + agent gate	Cache dos modelos do Ollama	2026-11-22T17:15:38.2327664Z Received 1400897536 of 1881707863 (74.4%), 266.0 MBs/sec
+Testes de comportamento + agent gate	Cache dos modelos do Ollama	2026-11-22T17:15:39.2372287Z Received 1677721600 of 1881707863 (89.2%), 265.5 MBs/sec
+Testes de comportamento + agent gate	Cache dos modelos do Ollama	2026-11-22T17:15:39.9280140Z Received 1881707863 of 1881707863 (100.0%), 267.3 MBs/sec
+Testes de comportamento + agent gate	Cache dos modelos do Ollama	2026-11-22T17:15:39.9280830Z Cache Size: ~1795 MB (1881707863 B)
+Testes de comportamento + agent gate	Cache dos modelos do Ollama	2026-11-22T17:15:39.9325060Z [command]/usr/bin/tar -xf /home/runner/work/_temp/cfc28576-0d4f-4946-9f52-20ff71f53181/cache.tzst -P -C /home/runner/work/aie-devops-labs/aie-devops-labs --use-compress-program unzstd
+Testes de comportamento + agent gate	Cache dos modelos do Ollama	2026-11-22T17:15:46.8828110Z Cache restored successfully
+Testes de comportamento + agent gate	Cache dos modelos do Ollama	2026-11-22T17:15:46.9640695Z Cache restored from key: ollama-qwen2.5:3b
+Testes de comportamento + agent gate	Subir o Ollama no runner	﻿2026-11-22T17:15:47.0350300Z ##[group]Run curl -fsSL https://ollama.com/install.sh | sh
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:47.0350747Z ^[[36;1mcurl -fsSL https://ollama.com/install.sh | sh^[[0m
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:47.0351183Z ^[[36;1m(OLLAMA_MODELS=~/.ollama/models ollama serve > ollama.log 2>&1 &)^[[0m
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:47.0351519Z ^[[36;1msleep 5^[[0m
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:47.0351805Z ^[[36;1mOLLAMA_MODELS=~/.ollama/models ollama pull "$OLLAMA_MODELO"^[[0m
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:47.0352159Z ^[[36;1mecho "LLM_MODELO=$OLLAMA_MODELO" >> "$GITHUB_ENV"^[[0m
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:47.0385366Z shell: /usr/bin/bash -e {0}
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:47.0385620Z env:
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:47.0386000Z   LLM_PROVEDOR: openai
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:47.0386222Z   LLM_MODELO: 
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:47.0386436Z   LLM_BASE_URL: http://localhost:11434/v1
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:47.0386698Z   LLM_API_KEY: ollama
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:47.0386912Z   OLLAMA_MODELO: qwen2.5:3b
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:47.0387137Z   PROMPTFOO_DISABLE_TELEMETRY: 1
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:47.0387430Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:47.0387849Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:47.0388226Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:47.0388553Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:47.0388882Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:47.0389210Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:47.0389507Z ##[endgroup]
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:47.5917038Z >>> Installing ollama to /usr/local
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:47.8487215Z >>> Downloading ollama-linux-amd64.tar.zst
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:47.9553803Z 
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:48.0560116Z #=#=#                                                                          
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:48.1703868Z                                                                            0.5%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:48.2759694Z                                                                            1.4%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:48.4022688Z #                                                                          2.7%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:48.5023959Z ##                                                                         4.1%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:48.6710337Z ###                                                                        5.2%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:48.7856286Z ####                                                                       6.8%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:48.8981484Z #####                                                                      8.1%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:49.0180980Z ######                                                                     9.5%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:49.1256001Z #######                                                                   10.9%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:49.2254281Z ########                                                                  12.2%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:49.3384409Z #########                                                                 13.5%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:49.4384080Z ##########                                                                14.2%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:49.5753729Z ##########                                                                15.1%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:49.7219171Z ###########                                                               16.3%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:49.8780152Z ############                                                              17.0%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:49.9780371Z #############                                                             18.3%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:50.0815040Z ##############                                                            20.1%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:50.1818516Z ###############                                                           21.0%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:50.2946772Z ###############                                                           21.8%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:50.4156911Z ################                                                          23.1%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:50.5179827Z #################                                                         24.4%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:50.6181738Z ##################                                                        25.7%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:50.7370810Z ###################                                                       26.7%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:50.8373873Z ####################                                                      27.8%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:50.9392722Z #####################                                                     29.4%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:51.0411835Z #####################                                                     30.4%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:51.1411168Z ######################                                                    30.8%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:51.2597780Z #######################                                                   32.3%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:51.3599064Z ########################                                                  33.9%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:51.4676465Z #########################                                                 35.4%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:51.5676778Z ##########################                                                36.6%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:51.6821979Z ###########################                                               38.0%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:51.7825419Z ###########################                                               38.7%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:51.8861544Z ############################                                              40.1%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:51.9884020Z #############################                                             41.4%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:52.0913030Z ##############################                                            42.7%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:52.2212916Z ###############################                                           43.6%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:52.3330662Z ###############################                                           44.1%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:52.4330453Z ################################                                          44.6%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:52.5335278Z ################################                                          44.9%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:52.6337247Z ################################                                          45.8%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:52.7563423Z #################################                                         47.2%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:52.8566785Z ##################################                                        48.2%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:52.9569737Z ###################################                                       49.0%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:53.0699801Z ####################################                                      50.1%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:53.1699619Z ####################################                                      50.9%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:53.2701599Z #####################################                                     51.9%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:53.3991193Z #####################################                                     52.8%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:53.5066405Z ######################################                                    53.6%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:53.6324934Z #######################################                                   55.0%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:53.7316178Z ########################################                                  56.3%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:53.8442387Z #########################################                                 57.5%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:53.9448739Z ##########################################                                58.4%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:54.0448785Z ##########################################                                59.5%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:54.1709645Z ###########################################                               59.9%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:54.2759366Z ############################################                              61.7%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:54.3902834Z #############################################                             62.7%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:54.4902934Z #############################################                             63.1%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:54.5903584Z ##############################################                            64.0%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:54.6924401Z ##############################################                            64.4%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:54.7969626Z ##############################################                            64.9%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:54.9040465Z ##############################################                            65.2%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:55.0050814Z ###############################################                           65.3%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:55.1517217Z ###############################################                           65.6%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:55.2787769Z ###############################################                           66.5%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:55.3787833Z ################################################                          67.9%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:55.4793275Z #################################################                         68.9%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:55.5987082Z #################################################                         69.3%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:55.7114585Z ##################################################                        70.6%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:55.8187734Z ###################################################                       71.9%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:55.9518887Z ####################################################                      73.3%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:56.0528059Z #####################################################                     74.6%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:56.1615891Z ######################################################                    76.0%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:56.2896336Z #######################################################                   77.4%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:56.4000492Z ########################################################                  78.7%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:56.5001551Z #########################################################                 80.1%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:56.6426292Z ##########################################################                81.2%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:56.7446756Z ###########################################################               82.1%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:56.8746916Z ############################################################              83.5%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:56.9782338Z #############################################################             84.8%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:57.1018613Z #############################################################             85.5%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:57.2019319Z ##############################################################            86.8%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:57.3096957Z ###############################################################           88.0%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:57.4291769Z ###############################################################           88.9%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:57.5293924Z ################################################################          90.2%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:57.6427021Z #################################################################         91.4%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:57.7594044Z ##################################################################        92.3%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:57.8599615Z ###################################################################       93.6%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:57.9605452Z ####################################################################      94.8%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:58.0607739Z ####################################################################      95.1%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:58.1619253Z #####################################################################     96.3%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:58.2622924Z ######################################################################    97.2%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:58.3623325Z ######################################################################    98.5%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:58.4085932Z #######################################################################   99.6%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:58.4086959Z ######################################################################## 100.0%
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:15:58.4339020Z >>> Creating ollama user...
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:16:53.7525491Z >>> Adding ollama user to render group...
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:16:53.7908312Z >>> Adding ollama user to video group...
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:16:53.8029595Z >>> Adding current user to ollama group...
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:16:53.8178285Z >>> Creating ollama systemd service...
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:16:53.8287059Z >>> Enabling and starting ollama service...
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:16:54.1079325Z Created symlink '/etc/systemd/system/default.target.wants/ollama.service' → '/etc/systemd/system/ollama.service'.
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:16:56.3109868Z >>> The Ollama API is now available at 127.0.0.1:11434.
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:16:56.3110365Z >>> Install complete. Run "ollama" from the command line.
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:16:56.3111073Z WARNING: No NVIDIA/AMD GPU detected. Ollama will run in CPU-only mode.
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:17:01.5647926Z ^[[?2026h^[[?25l^[[1Gpulling manifest ⠋ ^[[K^[[?25h^[[?2026l^[[?2026h^[[?25l^[[1Gpulling manifest ⠙ ^[[K^[[?25h^[[?2026l^[[?2026h^[[?25l^[[1Gpulling manifest ^[[K
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:17:01.5649268Z pulling 5ee4f07cdb9b: 100% ▕██████████████████▏ 1.9 GB                         ^[[K
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:17:01.5650243Z pulling 66b9ea09bd5b: 100% ▕██████████████████▏   68 B                         ^[[K
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:17:01.5651173Z pulling eb4402837c78: 100% ▕██████████████████▏ 1.5 KB                         ^[[K
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:17:01.5652088Z pulling b5c0e5cf74cf: 100% ▕██████████████████▏ 7.4 KB                         ^[[K
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:17:01.5652970Z pulling 161ddde4c9cd: 100% ▕██████████████████▏  487 B                         ^[[K
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:17:01.5653623Z verifying sha256 digest ^[[K
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:17:01.5654355Z writing manifest ^[[K
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:17:01.5654660Z removing unused layers ^[[K
+Testes de comportamento + agent gate	Subir o Ollama no runner	2026-11-22T17:17:01.5654941Z success ^[[K^[[?25h^[[?2026l
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	﻿2026-11-22T17:17:01.5920462Z ##[group]Run npx -y promptfoo@0.123.1 eval -c agente/promptfooconfig.yaml \
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:17:01.5921149Z ^[[36;1mnpx -y promptfoo@0.123.1 eval -c agente/promptfooconfig.yaml \^[[0m
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:17:01.5921760Z ^[[36;1m  -o resultado-eval.json --no-progress-bar --no-table || true^[[0m
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:17:01.5956919Z shell: /usr/bin/bash -e {0}
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:17:01.5957338Z env:
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:17:01.5957523Z   LLM_PROVEDOR: openai
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:17:01.5957739Z   LLM_MODELO: qwen2.5:3b
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:17:01.5957981Z   LLM_BASE_URL: http://localhost:11434/v1
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:17:01.5958237Z   LLM_API_KEY: ollama
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:17:01.5958439Z   OLLAMA_MODELO: qwen2.5:3b
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:17:01.5958658Z   PROMPTFOO_DISABLE_TELEMETRY: 1
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:17:01.5958942Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:17:01.5959298Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:17:01.5959652Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:17:01.5960006Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:17:01.5960332Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:17:01.5960649Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:17:01.5960929Z ##[endgroup]
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:17:25.0502594Z npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:17:25.3911682Z npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:17:28.1528751Z npm warn deprecated node-domexception@1.0.0: Use your platform's native DOMException instead
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:17:28.2982764Z npm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:17:31.5615661Z npm warn deprecated glob@10.5.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:17:54.9547211Z (node:3023) ExperimentalWarning: DecompressInterceptor is experimental and subject to change
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:17:54.9556642Z (Use `node --trace-warnings ...` to show where the warning was created)
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:17:54.9981486Z Starting evaluation eval-ksp-2026-11-22T17:17:54
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:17:55.0093039Z [Evaluation] Starting 36 test cases...
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:17:55.0093857Z Running 36 test cases (up to 2 at a time)...
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:17:55.1877081Z Creating cache folder at /home/runner/.promptfoo/cache.
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:18:55.0328041Z [CI Progress] Evaluation running for 1m 0s - Completed 6/36 tests (16%)
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:18:55.0330377Z [CI Progress] Rate: ~6 tests/minute, ETA: 5 minutes
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:19:22.7574535Z [Evaluation] ✓ 25% complete (9/36) - 1m 27s elapsed
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:19:22.7600263Z ##[notice]Evaluation 25% complete
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:19:25.0345473Z [CI Progress] Evaluation running for 1m 30s - Completed 9/36 tests (25%)
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:19:25.0347723Z [CI Progress] Rate: ~6 tests/minute, ETA: 5 minutes
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:19:55.0354653Z [CI Progress] Evaluation running for 2m 0s - Completed 13/36 tests (36%)
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:19:55.0356537Z [CI Progress] Rate: ~6 tests/minute, ETA: 4 minutes
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:20:22.1382456Z [Evaluation] ✓ 50% complete (18/36) - 2m 27s elapsed
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:20:22.1387884Z ##[notice]Evaluation 50% complete
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:20:25.0381444Z [CI Progress] Evaluation running for 2m 30s - Completed 18/36 tests (50%)
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:20:25.0382692Z [CI Progress] Rate: ~7 tests/minute, ETA: 3 minutes
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:20:55.0406218Z [CI Progress] Evaluation running for 3m 0s - Completed 22/36 tests (61%)
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:20:55.0410068Z [CI Progress] Rate: ~7 tests/minute, ETA: 2 minutes
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:21:25.0414141Z [CI Progress] Evaluation running for 3m 30s - Completed 26/36 tests (72%)
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:21:25.0428181Z [CI Progress] Rate: ~7 tests/minute, ETA: 1 minute
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:21:31.6471234Z [Evaluation] ✓ 75% complete (27/36) - 3m 36s elapsed
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:21:31.6491396Z ##[notice]Evaluation 75% complete
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:21:55.0443329Z [CI Progress] Evaluation running for 4m 0s - Completed 30/36 tests (83%)
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:21:55.0447601Z [CI Progress] Rate: ~7 tests/minute, ETA: 1 minute
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:22:25.0450588Z [CI Progress] Evaluation running for 4m 30s - Completed 34/36 tests (94%)
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:22:25.0454272Z [CI Progress] Rate: ~8 tests/minute, ETA: 0 minutes
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:22:37.2985874Z [Evaluation] ✓ Complete! 36/36 tests in 4m 42s
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:22:37.2990024Z ##[notice]Evaluation completed: 36/36 tests in 4m 42s
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:22:37.4234603Z ✓ Eval complete (ID: eval-ksp-2026-11-22T17:17:54)
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:22:37.4235083Z 
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:22:37.4236007Z » View results: promptfoo view
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:22:37.4236649Z » Share with your team: https://promptfoo.app
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:22:37.4237275Z » Feedback: https://promptfoo.dev/feedback
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:22:37.4237585Z 
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:22:37.4237664Z 
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:22:37.4238301Z Results:
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:22:37.4238823Z   ✓ 24 passed (66.67%)
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:22:37.4239212Z   ✗ 12 failed (33.33%)
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:22:37.4239544Z   0 errors (0%)
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:22:37.4239934Z Duration: 4m 42s (concurrency: 2)
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:22:37.4240193Z 
+Testes de comportamento + agent gate	Rodar o golden dataset (promptfoo)	2026-11-22T17:22:37.4366654Z Writing output to resultado-eval.json
+Testes de comportamento + agent gate	Agent gate	﻿2026-11-22T17:22:37.5565264Z ##[group]Run python agente/agent_gate.py resultado-eval.json
+Testes de comportamento + agent gate	Agent gate	2026-11-22T17:22:37.5565673Z ^[[36;1mpython agente/agent_gate.py resultado-eval.json^[[0m
+Testes de comportamento + agent gate	Agent gate	2026-11-22T17:22:37.5774606Z shell: /usr/bin/bash -e {0}
+Testes de comportamento + agent gate	Agent gate	2026-11-22T17:22:37.5774861Z env:
+Testes de comportamento + agent gate	Agent gate	2026-11-22T17:22:37.5775060Z   LLM_PROVEDOR: openai
+Testes de comportamento + agent gate	Agent gate	2026-11-22T17:22:37.5775270Z   LLM_MODELO: qwen2.5:3b
+Testes de comportamento + agent gate	Agent gate	2026-11-22T17:22:37.5775516Z   LLM_BASE_URL: http://localhost:11434/v1
+Testes de comportamento + agent gate	Agent gate	2026-11-22T17:22:37.5775972Z   LLM_API_KEY: ollama
+Testes de comportamento + agent gate	Agent gate	2026-11-22T17:22:37.5776183Z   OLLAMA_MODELO: qwen2.5:3b
+Testes de comportamento + agent gate	Agent gate	2026-11-22T17:22:37.5776399Z   PROMPTFOO_DISABLE_TELEMETRY: 1
+Testes de comportamento + agent gate	Agent gate	2026-11-22T17:22:37.5776682Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+Testes de comportamento + agent gate	Agent gate	2026-11-22T17:22:37.5777066Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+Testes de comportamento + agent gate	Agent gate	2026-11-22T17:22:37.5777410Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+Testes de comportamento + agent gate	Agent gate	2026-11-22T17:22:37.5777732Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+Testes de comportamento + agent gate	Agent gate	2026-11-22T17:22:37.5778053Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+Testes de comportamento + agent gate	Agent gate	2026-11-22T17:22:37.5778415Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+Testes de comportamento + agent gate	Agent gate	2026-11-22T17:22:37.5778691Z   OVERRIDE_AGENT_GATE: 
+Testes de comportamento + agent gate	Agent gate	2026-11-22T17:22:37.5778894Z ##[endgroup]
+Testes de comportamento + agent gate	Agent gate	2026-11-22T17:22:37.6375963Z ## Agent gate
+Testes de comportamento + agent gate	Agent gate	2026-11-22T17:22:37.6376233Z 
+Testes de comportamento + agent gate	Agent gate	2026-11-22T17:22:37.6376852Z | Categoria | Roteamento | Recuperação | Resposta |
+Testes de comportamento + agent gate	Agent gate	2026-11-22T17:22:37.6377310Z |---|---|---|---|
+Testes de comportamento + agent gate	Agent gate	2026-11-22T17:22:37.6377723Z | artigo_proibido | 83% (+17%) | 83% (+17%) | 67% |
+Testes de comportamento + agent gate	Agent gate	2026-11-22T17:22:37.6378246Z | devolucao_ressarcimento | 100% | 100% | 83% (+17%) |
+Testes de comportamento + agent gate	Agent gate	2026-11-22T17:22:37.6378743Z | divergente_defeito | 83% | 83% | 83% (-17%) |
+Testes de comportamento + agent gate	Agent gate	2026-11-22T17:22:37.6379077Z | entrega | 100% (+17%) | 100% (+17%) | 83% (-17%) |
+Testes de comportamento + agent gate	Agent gate	2026-11-22T17:22:37.6379432Z | falsificado | 50% (-50%) | 50% (-50%) | 67% (-33%) |
+Testes de comportamento + agent gate	Agent gate	2026-11-22T17:22:37.6379736Z | fraude_vendedor | 83% | 83% | 67% (-17%) |
+Testes de comportamento + agent gate	Agent gate	2026-11-22T17:22:37.6380082Z | **média** | **83%** | **83%** | **75%** |
+Testes de comportamento + agent gate	Agent gate	2026-11-22T17:22:37.6380242Z 
+Testes de comportamento + agent gate	Agent gate	2026-11-22T17:22:37.6380365Z **❌ Reprovado**
+Testes de comportamento + agent gate	Agent gate	2026-11-22T17:22:37.6380666Z - falsificado/roteamento: regrediu de 100% para 50%
+Testes de comportamento + agent gate	Agent gate	2026-11-22T17:22:37.6381024Z - falsificado/recuperacao: regrediu de 100% para 50%
+Testes de comportamento + agent gate	Agent gate	2026-11-22T17:22:37.6381213Z 
+Testes de comportamento + agent gate	Agent gate	2026-11-22T17:22:37.6427640Z ##[error]Process completed with exit code 1.
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	﻿2026-11-22T17:22:37.6469079Z ##[group]Run npx -y promptfoo@0.123.1 eval -c agente/promptfooconfig-roteamento.yaml \
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:22:37.6469606Z ^[[36;1mnpx -y promptfoo@0.123.1 eval -c agente/promptfooconfig-roteamento.yaml \^[[0m
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:22:37.6470049Z ^[[36;1m  -o resultado-roteamento.json --no-progress-bar --no-table || true^[[0m
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:22:37.6500413Z shell: /usr/bin/bash -e {0}
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:22:37.6500840Z env:
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:22:37.6501038Z   LLM_PROVEDOR: openai
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:22:37.6501253Z   LLM_MODELO: qwen2.5:3b
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:22:37.6501496Z   LLM_BASE_URL: http://localhost:11434/v1
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:22:37.6501740Z   LLM_API_KEY: ollama
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:22:37.6501950Z   OLLAMA_MODELO: qwen2.5:3b
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:22:37.6502176Z   PROMPTFOO_DISABLE_TELEMETRY: 1
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:22:37.6502466Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:22:37.6502829Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:22:37.6503181Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:22:37.6503535Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:22:37.6503869Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:22:37.6504190Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:22:37.6504466Z ##[endgroup]
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:22:39.3911584Z (node:3773) ExperimentalWarning: DecompressInterceptor is experimental and subject to change
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:22:39.3912287Z (Use `node --trace-warnings ...` to show where the warning was created)
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:22:39.4640417Z Starting evaluation eval-zde-2026-11-22T17:22:39
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:22:39.5031096Z [Evaluation] Starting 180 test cases...
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:22:39.5034128Z Running 180 test cases (up to 2 at a time)...
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:23:09.5045146Z [CI Progress] Evaluation running for 30s - Completed 11/180 tests (6%)
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:23:09.5046561Z [CI Progress] Rate: ~22 tests/minute, ETA: 8 minutes
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:23:39.5054484Z [CI Progress] Evaluation running for 1m 0s - Completed 20/180 tests (11%)
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:23:39.5060448Z [CI Progress] Rate: ~20 tests/minute, ETA: 8 minutes
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:24:09.5070253Z [CI Progress] Evaluation running for 1m 30s - Completed 32/180 tests (17%)
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:24:09.5071465Z [CI Progress] Rate: ~21 tests/minute, ETA: 7 minutes
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:24:39.5078996Z [CI Progress] Evaluation running for 2m 0s - Completed 42/180 tests (23%)
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:24:39.5080590Z [CI Progress] Rate: ~21 tests/minute, ETA: 7 minutes
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:24:47.4716338Z [Evaluation] ✓ 25% complete (45/180) - 2m 7s elapsed
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:24:47.4720418Z ##[notice]Evaluation 25% complete
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:25:09.5103881Z [CI Progress] Evaluation running for 2m 30s - Completed 53/180 tests (29%)
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:25:09.5107099Z [CI Progress] Rate: ~21 tests/minute, ETA: 6 minutes
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:25:39.5104519Z [CI Progress] Evaluation running for 3m 0s - Completed 63/180 tests (35%)
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:25:39.5108575Z [CI Progress] Rate: ~21 tests/minute, ETA: 6 minutes
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:26:09.5113014Z [CI Progress] Evaluation running for 3m 30s - Completed 75/180 tests (41%)
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:26:09.5114436Z [CI Progress] Rate: ~21 tests/minute, ETA: 5 minutes
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:26:39.5162891Z [CI Progress] Evaluation running for 4m 0s - Completed 85/180 tests (47%)
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:26:39.5168169Z [CI Progress] Rate: ~21 tests/minute, ETA: 4 minutes
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:26:49.2354022Z [Evaluation] ✓ 50% complete (90/180) - 4m 9s elapsed
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:26:49.2358861Z ##[notice]Evaluation 50% complete
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:27:09.5190323Z [CI Progress] Evaluation running for 4m 30s - Completed 96/180 tests (53%)
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:27:09.5191544Z [CI Progress] Rate: ~21 tests/minute, ETA: 4 minutes
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:27:39.5222946Z [CI Progress] Evaluation running for 5m 0s - Completed 108/180 tests (60%)
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:27:39.5224367Z [CI Progress] Rate: ~22 tests/minute, ETA: 3 minutes
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:28:09.5234437Z [CI Progress] Evaluation running for 5m 30s - Completed 119/180 tests (66%)
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:28:09.5235868Z [CI Progress] Rate: ~22 tests/minute, ETA: 3 minutes
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:28:39.5254943Z [CI Progress] Evaluation running for 6m 0s - Completed 128/180 tests (71%)
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:28:39.5282992Z [CI Progress] Rate: ~21 tests/minute, ETA: 2 minutes
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:28:56.1518244Z [Evaluation] ✓ 75% complete (135/180) - 6m 16s elapsed
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:28:56.1521714Z ##[notice]Evaluation 75% complete
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:29:09.5272548Z [CI Progress] Evaluation running for 6m 30s - Completed 139/180 tests (77%)
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:29:09.5274260Z [CI Progress] Rate: ~21 tests/minute, ETA: 2 minutes
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:29:39.5282765Z [CI Progress] Evaluation running for 7m 0s - Completed 151/180 tests (83%)
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:29:39.5287348Z [CI Progress] Rate: ~22 tests/minute, ETA: 1 minute
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:30:09.5298310Z [CI Progress] Evaluation running for 7m 30s - Completed 163/180 tests (90%)
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:30:09.5300506Z [CI Progress] Rate: ~22 tests/minute, ETA: 1 minute
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:30:39.5300732Z [CI Progress] Evaluation running for 8m 0s - Completed 174/180 tests (96%)
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:30:39.5305428Z [CI Progress] Rate: ~22 tests/minute, ETA: 0 minutes
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:30:53.7303376Z [Evaluation] ✓ Complete! 180/180 tests in 8m 14s
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:30:53.7306793Z ##[notice]Evaluation completed: 180/180 tests in 8m 14s
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:30:53.8491586Z ✓ Eval complete (ID: eval-zde-2026-11-22T17:22:39)
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:30:53.8492065Z 
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:30:53.8492634Z » View results: promptfoo view
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:30:53.8493127Z » Share with your team: https://promptfoo.app
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:30:53.8497872Z » Feedback: https://promptfoo.dev/feedback
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:30:53.8498141Z 
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:30:53.8498149Z 
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:30:53.8498535Z Results:
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:30:53.8498885Z   ✓ 165 passed (91.67%)
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:30:53.8499267Z   ✗ 15 failed (8.33%)
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:30:53.8499575Z   0 errors (0%)
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:30:53.8499918Z Duration: 8m 14s (concurrency: 2)
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:30:53.8500078Z 
+Testes de comportamento + agent gate	Rodar o golden de roteamento (promptfoo)	2026-11-22T17:30:53.8918826Z Writing output to resultado-roteamento.json
+Testes de comportamento + agent gate	Agent gate · roteamento	﻿2026-11-22T17:30:53.9366544Z ##[group]Run python agente/agent_gate.py resultado-roteamento.json --golden roteamento
+Testes de comportamento + agent gate	Agent gate · roteamento	2026-11-22T17:30:53.9367462Z ^[[36;1mpython agente/agent_gate.py resultado-roteamento.json --golden roteamento^[[0m
+Testes de comportamento + agent gate	Agent gate · roteamento	2026-11-22T17:30:53.9412601Z shell: /usr/bin/bash -e {0}
+Testes de comportamento + agent gate	Agent gate · roteamento	2026-11-22T17:30:53.9412960Z env:
+Testes de comportamento + agent gate	Agent gate · roteamento	2026-11-22T17:30:53.9413240Z   LLM_PROVEDOR: openai
+Testes de comportamento + agent gate	Agent gate · roteamento	2026-11-22T17:30:53.9413563Z   LLM_MODELO: qwen2.5:3b
+Testes de comportamento + agent gate	Agent gate · roteamento	2026-11-22T17:30:53.9413934Z   LLM_BASE_URL: http://localhost:11434/v1
+Testes de comportamento + agent gate	Agent gate · roteamento	2026-11-22T17:30:53.9414326Z   LLM_API_KEY: ollama
+Testes de comportamento + agent gate	Agent gate · roteamento	2026-11-22T17:30:53.9414625Z   OLLAMA_MODELO: qwen2.5:3b
+Testes de comportamento + agent gate	Agent gate · roteamento	2026-11-22T17:30:53.9414973Z   PROMPTFOO_DISABLE_TELEMETRY: 1
+Testes de comportamento + agent gate	Agent gate · roteamento	2026-11-22T17:30:53.9415412Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+Testes de comportamento + agent gate	Agent gate · roteamento	2026-11-22T17:30:53.9416218Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+Testes de comportamento + agent gate	Agent gate · roteamento	2026-11-22T17:30:53.9416806Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+Testes de comportamento + agent gate	Agent gate · roteamento	2026-11-22T17:30:53.9417324Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+Testes de comportamento + agent gate	Agent gate · roteamento	2026-11-22T17:30:53.9417876Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+Testes de comportamento + agent gate	Agent gate · roteamento	2026-11-22T17:30:53.9418383Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+Testes de comportamento + agent gate	Agent gate · roteamento	2026-11-22T17:30:53.9418834Z   OVERRIDE_AGENT_GATE: 
+Testes de comportamento + agent gate	Agent gate · roteamento	2026-11-22T17:30:53.9419143Z ##[endgroup]
+Testes de comportamento + agent gate	Agent gate · roteamento	2026-11-22T17:30:53.9938803Z ## Agent gate · roteamento (180 reclamações)
+Testes de comportamento + agent gate	Agent gate · roteamento	2026-11-22T17:30:53.9939181Z 
+Testes de comportamento + agent gate	Agent gate · roteamento	2026-11-22T17:30:53.9939338Z | Categoria | Roteamento |
+Testes de comportamento + agent gate	Agent gate · roteamento	2026-11-22T17:30:53.9939676Z |---|---|
+Testes de comportamento + agent gate	Agent gate · roteamento	2026-11-22T17:30:53.9939959Z | artigo_proibido | 97% |
+Testes de comportamento + agent gate	Agent gate · roteamento	2026-11-22T17:30:53.9940311Z | devolucao_ressarcimento | 83% |
+Testes de comportamento + agent gate	Agent gate · roteamento	2026-11-22T17:30:53.9940660Z | divergente_defeito | 93% |
+Testes de comportamento + agent gate	Agent gate · roteamento	2026-11-22T17:30:53.9940954Z | entrega | 100% |
+Testes de comportamento + agent gate	Agent gate · roteamento	2026-11-22T17:30:53.9941160Z | falsificado | 87% |
+Testes de comportamento + agent gate	Agent gate · roteamento	2026-11-22T17:30:53.9941374Z | fraude_vendedor | 90% |
+Testes de comportamento + agent gate	Agent gate · roteamento	2026-11-22T17:30:53.9941680Z | **média** | **92%** |
+Testes de comportamento + agent gate	Agent gate · roteamento	2026-11-22T17:30:53.9941813Z 
+Testes de comportamento + agent gate	Agent gate · roteamento	2026-11-22T17:30:53.9941928Z **✅ Aprovado**
+Testes de comportamento + agent gate	Agent gate · roteamento	2026-11-22T17:30:53.9942050Z 
+Testes de comportamento + agent gate	Veredito dos dois goldens	﻿2026-11-22T17:30:54.0027734Z ##[group]Run echo "❌ agent gate reprovado: políticas=failure · roteamento=success"
+Testes de comportamento + agent gate	Veredito dos dois goldens	2026-11-22T17:30:54.0028283Z ^[[36;1mecho "❌ agent gate reprovado: políticas=failure · roteamento=success"^[[0m
+Testes de comportamento + agent gate	Veredito dos dois goldens	2026-11-22T17:30:54.0028624Z ^[[36;1mexit 1^[[0m
+Testes de comportamento + agent gate	Veredito dos dois goldens	2026-11-22T17:30:54.0059543Z shell: /usr/bin/bash -e {0}
+Testes de comportamento + agent gate	Veredito dos dois goldens	2026-11-22T17:30:54.0059785Z env:
+Testes de comportamento + agent gate	Veredito dos dois goldens	2026-11-22T17:30:54.0059976Z   LLM_PROVEDOR: openai
+Testes de comportamento + agent gate	Veredito dos dois goldens	2026-11-22T17:30:54.0060197Z   LLM_MODELO: qwen2.5:3b
+Testes de comportamento + agent gate	Veredito dos dois goldens	2026-11-22T17:30:54.0060432Z   LLM_BASE_URL: http://localhost:11434/v1
+Testes de comportamento + agent gate	Veredito dos dois goldens	2026-11-22T17:30:54.0060888Z   LLM_API_KEY: ollama
+Testes de comportamento + agent gate	Veredito dos dois goldens	2026-11-22T17:30:54.0061090Z   OLLAMA_MODELO: qwen2.5:3b
+Testes de comportamento + agent gate	Veredito dos dois goldens	2026-11-22T17:30:54.0061313Z   PROMPTFOO_DISABLE_TELEMETRY: 1
+Testes de comportamento + agent gate	Veredito dos dois goldens	2026-11-22T17:30:54.0061602Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+Testes de comportamento + agent gate	Veredito dos dois goldens	2026-11-22T17:30:54.0061967Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+Testes de comportamento + agent gate	Veredito dos dois goldens	2026-11-22T17:30:54.0062324Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+Testes de comportamento + agent gate	Veredito dos dois goldens	2026-11-22T17:30:54.0062648Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+Testes de comportamento + agent gate	Veredito dos dois goldens	2026-11-22T17:30:54.0062997Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+Testes de comportamento + agent gate	Veredito dos dois goldens	2026-11-22T17:30:54.0063318Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+Testes de comportamento + agent gate	Veredito dos dois goldens	2026-11-22T17:30:54.0063600Z ##[endgroup]
+Testes de comportamento + agent gate	Veredito dos dois goldens	2026-11-22T17:30:54.0117546Z ❌ agent gate reprovado: políticas=failure · roteamento=success
+Testes de comportamento + agent gate	Veredito dos dois goldens	2026-11-22T17:30:54.0120509Z ##[error]Process completed with exit code 1.
+Testes de comportamento + agent gate	Run actions/upload-artifact@v7	﻿2026-11-22T17:30:54.0177162Z ##[group]Run actions/upload-artifact@v7
+Testes de comportamento + agent gate	Run actions/upload-artifact@v7	2026-11-22T17:30:54.0177440Z with:
+Testes de comportamento + agent gate	Run actions/upload-artifact@v7	2026-11-22T17:30:54.0177659Z   name: resultado-agent-gate
+Testes de comportamento + agent gate	Run actions/upload-artifact@v7	2026-11-22T17:30:54.0177980Z   path: resultado-eval.json
+Testes de comportamento + agent gate	Run actions/upload-artifact@v7	resultado-roteamento.json
+Testes de comportamento + agent gate	Run actions/upload-artifact@v7	resultado-juiz.json
+Testes de comportamento + agent gate	Run actions/upload-artifact@v7	
+Testes de comportamento + agent gate	Run actions/upload-artifact@v7	2026-11-22T17:30:54.0178321Z   if-no-files-found: ignore
+Testes de comportamento + agent gate	Run actions/upload-artifact@v7	2026-11-22T17:30:54.0178543Z   compression-level: 6
+Testes de comportamento + agent gate	Run actions/upload-artifact@v7	2026-11-22T17:30:54.0178751Z   overwrite: false
+Testes de comportamento + agent gate	Run actions/upload-artifact@v7	2026-11-22T17:30:54.0178954Z   include-hidden-files: false
+Testes de comportamento + agent gate	Run actions/upload-artifact@v7	2026-11-22T17:30:54.0179168Z   archive: true
+Testes de comportamento + agent gate	Run actions/upload-artifact@v7	2026-11-22T17:30:54.0179356Z env:
+Testes de comportamento + agent gate	Run actions/upload-artifact@v7	2026-11-22T17:30:54.0179531Z   LLM_PROVEDOR: openai
+Testes de comportamento + agent gate	Run actions/upload-artifact@v7	2026-11-22T17:30:54.0179734Z   LLM_MODELO: qwen2.5:3b
+Testes de comportamento + agent gate	Run actions/upload-artifact@v7	2026-11-22T17:30:54.0179959Z   LLM_BASE_URL: http://localhost:11434/v1
+Testes de comportamento + agent gate	Run actions/upload-artifact@v7	2026-11-22T17:30:54.0180205Z   LLM_API_KEY: ollama
+Testes de comportamento + agent gate	Run actions/upload-artifact@v7	2026-11-22T17:30:54.0180406Z   OLLAMA_MODELO: qwen2.5:3b
+Testes de comportamento + agent gate	Run actions/upload-artifact@v7	2026-11-22T17:30:54.0180631Z   PROMPTFOO_DISABLE_TELEMETRY: 1
+Testes de comportamento + agent gate	Run actions/upload-artifact@v7	2026-11-22T17:30:54.0180916Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+Testes de comportamento + agent gate	Run actions/upload-artifact@v7	2026-11-22T17:30:54.0181273Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+Testes de comportamento + agent gate	Run actions/upload-artifact@v7	2026-11-22T17:30:54.0181664Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+Testes de comportamento + agent gate	Run actions/upload-artifact@v7	2026-11-22T17:30:54.0181990Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+Testes de comportamento + agent gate	Run actions/upload-artifact@v7	2026-11-22T17:30:54.0182329Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+Testes de comportamento + agent gate	Run actions/upload-artifact@v7	2026-11-22T17:30:54.0182660Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+Testes de comportamento + agent gate	Run actions/upload-artifact@v7	2026-11-22T17:30:54.0182945Z ##[endgroup]
+Testes de comportamento + agent gate	Run actions/upload-artifact@v7	2026-11-22T17:30:54.1413520Z Multiple search paths detected. Calculating the least common ancestor of all paths
+Testes de comportamento + agent gate	Run actions/upload-artifact@v7	2026-11-22T17:30:54.1423133Z The least common ancestor is /home/runner/work/aie-devops-labs/aie-devops-labs. This will be the root directory of the artifact
+Testes de comportamento + agent gate	Run actions/upload-artifact@v7	2026-11-22T17:30:54.1424276Z With the provided path, there will be 2 files uploaded
+Testes de comportamento + agent gate	Run actions/upload-artifact@v7	2026-11-22T17:30:54.1425266Z Artifact name is valid!
+Testes de comportamento + agent gate	Run actions/upload-artifact@v7	2026-11-22T17:30:54.1425936Z Root directory input is valid!
+Testes de comportamento + agent gate	Run actions/upload-artifact@v7	2026-11-22T17:30:54.3575108Z Uploading artifact: resultado-agent-gate.zip
+Testes de comportamento + agent gate	Run actions/upload-artifact@v7	2026-11-22T17:30:54.3619996Z Beginning upload of artifact content to blob storage
+Testes de comportamento + agent gate	Run actions/upload-artifact@v7	2026-11-22T17:30:54.4604413Z Uploaded bytes 85125
+Testes de comportamento + agent gate	Run actions/upload-artifact@v7	2026-11-22T17:30:54.4749662Z Finished uploading artifact content to blob storage!
+Testes de comportamento + agent gate	Run actions/upload-artifact@v7	2026-11-22T17:30:54.4750655Z SHA256 digest of uploaded artifact is b18a210e4247bee3bd7e1d019c0615bd4861f11900661fdd9397f2699c7de787
+Testes de comportamento + agent gate	Run actions/upload-artifact@v7	2026-11-22T17:30:54.4751438Z Finalizing artifact upload
+Testes de comportamento + agent gate	Run actions/upload-artifact@v7	2026-11-22T17:30:54.8307154Z Artifact resultado-agent-gate successfully finalized. Artifact ID 14764639418
+Testes de comportamento + agent gate	Run actions/upload-artifact@v7	2026-11-22T17:30:54.8307973Z Artifact resultado-agent-gate has been successfully uploaded! Final size is 85125 bytes. Artifact ID is 14764639418
+Testes de comportamento + agent gate	Run actions/upload-artifact@v7	2026-11-22T17:30:54.8308779Z Artifact download URL: https://github.com/tiagobrilhante/aie-devops-labs/actions/runs/45048329304/artifacts/14764639418
+Testes de comportamento + agent gate	Post Run actions/checkout@v7	﻿2026-11-22T17:30:54.8485483Z Post job cleanup.
+Testes de comportamento + agent gate	Post Run actions/checkout@v7	2026-11-22T17:30:54.9248179Z [command]/usr/bin/git version
+Testes de comportamento + agent gate	Post Run actions/checkout@v7	2026-11-22T17:30:54.9296631Z git version 2.56.1
+Testes de comportamento + agent gate	Post Run actions/checkout@v7	2026-11-22T17:30:54.9322184Z Temporarily overriding HOME='/home/runner/work/_temp/3548973d-b3c2-4bda-9914-5cbf4e80911c' before making global git config changes
+Testes de comportamento + agent gate	Post Run actions/checkout@v7	2026-11-22T17:30:54.9323327Z Adding repository directory to the temporary git global config as a safe directory
+Testes de comportamento + agent gate	Post Run actions/checkout@v7	2026-11-22T17:30:54.9326724Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/aie-devops-labs/aie-devops-labs
+Testes de comportamento + agent gate	Post Run actions/checkout@v7	2026-11-22T17:30:54.9359699Z Removing SSH command configuration
+Testes de comportamento + agent gate	Post Run actions/checkout@v7	2026-11-22T17:30:54.9365431Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+Testes de comportamento + agent gate	Post Run actions/checkout@v7	2026-11-22T17:30:54.9398001Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Testes de comportamento + agent gate	Post Run actions/checkout@v7	2026-11-22T17:30:54.9722155Z Removing HTTP extra header
+Testes de comportamento + agent gate	Post Run actions/checkout@v7	2026-11-22T17:30:54.9723122Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+Testes de comportamento + agent gate	Post Run actions/checkout@v7	2026-11-22T17:30:54.9754569Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Testes de comportamento + agent gate	Post Run actions/checkout@v7	2026-11-22T17:30:55.0009558Z Removing includeIf entries pointing to credentials config files
+Testes de comportamento + agent gate	Post Run actions/checkout@v7	2026-11-22T17:30:55.0015617Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+Testes de comportamento + agent gate	Post Run actions/checkout@v7	2026-11-22T17:30:55.0039456Z includeif.gitdir:/home/runner/work/aie-devops-labs/aie-devops-labs/.git.path
+Testes de comportamento + agent gate	Post Run actions/checkout@v7	2026-11-22T17:30:55.0040205Z includeif.gitdir:/home/runner/work/aie-devops-labs/aie-devops-labs/.git/worktrees/*.path
+Testes de comportamento + agent gate	Post Run actions/checkout@v7	2026-11-22T17:30:55.0040666Z includeif.gitdir:/github/workspace/.git.path
+Testes de comportamento + agent gate	Post Run actions/checkout@v7	2026-11-22T17:30:55.0041053Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+Testes de comportamento + agent gate	Post Run actions/checkout@v7	2026-11-22T17:30:55.0045982Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/aie-devops-labs/aie-devops-labs/.git.path
+Testes de comportamento + agent gate	Post Run actions/checkout@v7	2026-11-22T17:30:55.0066400Z /home/runner/work/_temp/git-credentials-6b939c38-d749-4b0e-9b24-7979205c9140.config
+Testes de comportamento + agent gate	Post Run actions/checkout@v7	2026-11-22T17:30:55.0073933Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/aie-devops-labs/aie-devops-labs/.git.path \/home\/runner\/work\/_temp\/git\-credentials\-6b939c38\-d749\-4b0e\-9b24\-7979205c9140\.config
+Testes de comportamento + agent gate	Post Run actions/checkout@v7	2026-11-22T17:30:55.0112876Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/aie-devops-labs/aie-devops-labs/.git/worktrees/*.path
+Testes de comportamento + agent gate	Post Run actions/checkout@v7	2026-11-22T17:30:55.0133031Z /home/runner/work/_temp/git-credentials-6b939c38-d749-4b0e-9b24-7979205c9140.config
+Testes de comportamento + agent gate	Post Run actions/checkout@v7	2026-11-22T17:30:55.0140245Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/aie-devops-labs/aie-devops-labs/.git/worktrees/*.path \/home\/runner\/work\/_temp\/git\-credentials\-6b939c38\-d749\-4b0e\-9b24\-7979205c9140\.config
+Testes de comportamento + agent gate	Post Run actions/checkout@v7	2026-11-22T17:30:55.0168095Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+Testes de comportamento + agent gate	Post Run actions/checkout@v7	2026-11-22T17:30:55.0188409Z /github/runner_temp/git-credentials-6b939c38-d749-4b0e-9b24-7979205c9140.config
+Testes de comportamento + agent gate	Post Run actions/checkout@v7	2026-11-22T17:30:55.0194251Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path \/github\/runner_temp\/git\-credentials\-6b939c38\-d749\-4b0e\-9b24\-7979205c9140\.config
+Testes de comportamento + agent gate	Post Run actions/checkout@v7	2026-11-22T17:30:55.0222030Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+Testes de comportamento + agent gate	Post Run actions/checkout@v7	2026-11-22T17:30:55.0241494Z /github/runner_temp/git-credentials-6b939c38-d749-4b0e-9b24-7979205c9140.config
+Testes de comportamento + agent gate	Post Run actions/checkout@v7	2026-11-22T17:30:55.0247688Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path \/github\/runner_temp\/git\-credentials\-6b939c38\-d749\-4b0e\-9b24\-7979205c9140\.config
+Testes de comportamento + agent gate	Post Run actions/checkout@v7	2026-11-22T17:30:55.0276385Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Testes de comportamento + agent gate	Post Run actions/checkout@v7	2026-11-22T17:30:55.0508716Z Removing credentials config '/home/runner/work/_temp/git-credentials-6b939c38-d749-4b0e-9b24-7979205c9140.config'
+Testes de comportamento + agent gate	Complete job	﻿2026-11-22T17:30:55.0652112Z Cleaning up orphan processes
+Testes de comportamento + agent gate	Complete job	2026-11-22T17:30:55.0908237Z Terminate orphan process: pid (2747) (ollama)
+Testes de comportamento + agent gate	Complete job	2026-11-22T17:30:55.0941578Z Terminate orphan process: pid (3052) (llama-server)

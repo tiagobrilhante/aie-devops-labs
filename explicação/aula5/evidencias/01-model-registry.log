@@ -1,0 +1,31 @@
+$ python mlops/registrar_modelo.py
+Successfully registered model 'classificador-avaliacoes'.
+Created version '1' of model 'classificador-avaliacoes'.
+Run 55b271a8da924e719d59ed7a361be3f5 · F1 macro 0.8295 · {'positiva': 0.8835, 'negativa': 0.8125, 'neutra': 0.7925}
+Registrado: classificador-avaliacoes versão 1 → alias @candidato
+$ python mlops/promover.py
+✅ Versão 1 promovida a @producao
+   Carregar em produção: mlflow.sklearn.load_model("models:/classificador-avaliacoes@producao")
+exit=0
+$ python mlops/registrar_modelo.py --dados classificador/dados/lote-novo.csv
+Registered model 'classificador-avaliacoes' already exists. Creating a new version of this model...
+Created version '2' of model 'classificador-avaliacoes'.
+Run 597b3278d70345e3a682b1131108903a · F1 macro 0.731 · {'positiva': 0.8291, 'negativa': 0.7805, 'neutra': 0.5833}
+Registrado: classificador-avaliacoes versão 2 → alias @candidato
+$ python mlops/promover.py
+❌ Versão 2 NÃO promovida:
+   - F1 macro 0.731 < 0.8
+   - F1 da classe 'neutra' 0.5833 < 0.7
+   - piora de 0.0985 no F1 macro em relação à produção (0.8295)
+exit=1
+$ python mlops/registrar_modelo.py --C 8 && python mlops/promover.py
+Registered model 'classificador-avaliacoes' already exists. Creating a new version of this model...
+Created version '3' of model 'classificador-avaliacoes'.
+Run ce3bc90f5a454ceeb1e1309ba25b9111 · F1 macro 0.8331 · {'positiva': 0.8845, 'negativa': 0.8148, 'neutra': 0.8}
+Registrado: classificador-avaliacoes versão 3 → alias @candidato
+✅ Versão 3 promovida a @producao (@anterior = 1)
+   Carregar em produção: mlflow.sklearn.load_model("models:/classificador-avaliacoes@producao")
+exit=0
+$ python mlops/promover.py --rollback
+↩️  Rollback: @producao agora é a versão 1 (era 3)
+exit=0
