@@ -1,20 +1,21 @@
-"""Agente de atendimento da Quantum Commerce (versão mínima para os laboratórios).
+"""Agente de atendimento da Quantum Commerce, com as peças do Quantum Atende.
 
-Roteador (LLM) → recuperação (RAG por palavras sobre politicas/) → especialista (LLM).
+Roteador (LLM) → recuperação (BM25 sobre politicas/) → especialista (LLM).
 
-É um substituto simples do multiagente LangGraph/CrewAI construído nas outras
-disciplinas do MBA: o que importa aqui é a ESTEIRA que testa o agente, não o
-agente em si. Para plugar o agente do seu grupo, mantenha a função atender()
-devolvendo o mesmo dicionário.
+O roteador usa o prompt do classificador do Quantum Atende (o multiagente LangGraph do grupo
+"Tenho Medo de Grupos", disciplina Agents, Multi-Agents & Interoperability) e a recuperação usa a
+busca BM25 dele (busca.py). O grafo completo não roda aqui: custa ~4,5 chamadas de LLM e ~32 mil
+tokens por chamado, o que não cabe no agent gate de um runner gratuito. A função atender() devolve
+o mesmo dicionário de sempre, que é o contrato com a esteira.
 """
 
 import json
 import os
 import re
-import unicodedata
 from functools import cache
 from pathlib import Path
 
+import busca
 import llm
 
 PASTA = Path(__file__).parent
@@ -28,14 +29,6 @@ CATEGORIAS = [
 ]
 # Versão do prompt ativa — no GitOps (Aula 3) ela vem do inference-config
 PROMPT_VERSAO = os.environ.get("PROMPT_VERSAO", "arquivo")
-_STOPWORDS = set(
-    "a o e de da do das dos em no na nos nas um uma para por com que se eu me meu minha ja ou".split()
-)
-
-
-def normalizar(texto: str) -> set[str]:
-    texto = "".join(c for c in unicodedata.normalize("NFKD", texto.lower()) if not unicodedata.combining(c))
-    return {p for p in re.findall(r"[a-z0-9]+", texto) if len(p) > 2 and p not in _STOPWORDS}
 
 
 @cache
@@ -44,20 +37,13 @@ def politicas() -> dict[str, str]:
 
 
 def recuperar(chamado: str, categoria: str) -> dict:
-    """RAG mínimo: o documento de política com mais palavras em comum com o chamado.
+    """RAG: BM25 sobre radicais, portado do Quantum Atende (busca.py).
 
-    O documento da categoria escolhida pelo roteador ganha bônus — é o
+    A política da categoria escolhida pelo roteador ganha reforço de área: é o
     sub-agente especialista consultando primeiro a sua própria política.
-    Troque por embeddings + base vetorial quando a base crescer.
     """
-    palavras = normalizar(chamado)
-
-    def pontos(documento: str) -> float:
-        bonus = 3 if documento == f"{categoria}.md" else 0
-        return len(palavras & normalizar(politicas()[documento])) + bonus
-
-    melhor = max(politicas(), key=pontos)
-    return {"documento": melhor, "texto": politicas()[melhor]}
+    trecho = busca.buscar(chamado, categoria, politicas())
+    return {"documento": trecho["documento"], "texto": trecho["texto"]}
 
 
 @cache

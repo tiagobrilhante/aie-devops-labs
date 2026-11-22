@@ -42,7 +42,7 @@ jobs:
     name: "Testes de comportamento + agent gate"
     needs: testes
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45   # dois goldens: 36 dúvidas (2 chamadas cada) + 180 reclamações (1 chamada cada)
     env:
       LLM_PROVEDOR: ${{ vars.LLM_PROVEDOR || 'openai' }}
       LLM_MODELO: ${{ vars.LLM_MODELO }}
@@ -90,12 +90,36 @@ jobs:
             -o resultado-eval.json --no-progress-bar --no-table || true
 
       - name: Agent gate
+        id: gate
+        continue-on-error: true   # o golden de roteamento roda mesmo assim; o job falha no fim
         env:
           OVERRIDE_AGENT_GATE: >-
             ${{ contains(github.event.pull_request.labels.*.name, 'override-agent-gate')
                 && format('rótulo override-agent-gate no PR #{0}, aplicado com {1} como autor da execução',
                           github.event.pull_request.number, github.actor) || '' }}
         run: python agente/agent_gate.py resultado-eval.json
+
+      # Golden de roteamento: 180 reclamações reais do Quantum Atende, 1 chamada de LLM por caso (só o roteador)
+      - name: Rodar o golden de roteamento (promptfoo)
+        run: |
+          npx -y promptfoo@0.123.1 eval -c agente/promptfooconfig-roteamento.yaml \
+            -o resultado-roteamento.json --no-progress-bar --no-table || true
+
+      - name: Agent gate · roteamento
+        id: gate-roteamento
+        continue-on-error: true
+        env:
+          OVERRIDE_AGENT_GATE: >-
+            ${{ contains(github.event.pull_request.labels.*.name, 'override-agent-gate')
+                && format('rótulo override-agent-gate no PR #{0}, aplicado com {1} como autor da execução',
+                          github.event.pull_request.number, github.actor) || '' }}
+        run: python agente/agent_gate.py resultado-roteamento.json --golden roteamento
+
+      - name: Veredito dos dois goldens
+        if: steps.gate.outcome == 'failure' || steps.gate-roteamento.outcome == 'failure'
+        run: |
+          echo "❌ agent gate reprovado: políticas=${{ steps.gate.outcome }} · roteamento=${{ steps.gate-roteamento.outcome }}"
+          exit 1
 
       # Extra opcional: o gate acima só confere se o fato foi citado; o juiz pega a resposta que
       # contradiz a política. Juiz padrão = o mesmo Ollama (fraco); configure LLM_JUIZ_BASE_URL,
@@ -118,5 +142,6 @@ jobs:
           name: resultado-agent-gate
           path: |
             resultado-eval.json
+            resultado-roteamento.json
             resultado-juiz.json
           if-no-files-found: ignore
