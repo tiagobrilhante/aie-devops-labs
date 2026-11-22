@@ -21,11 +21,13 @@ juiz:
   piso_fidelidade: 0.66
 
 # Golden de roteamento (--golden roteamento): 180 reclamações reais do Quantum Atende (dados/chamados-200.csv do
-# grupo, sem a classe "outros"), 30 por categoria: cada caso vale ~3,3 p.p., então dá para apertar mais que no golden
-# de 6 casos. Medido no runner do GitHub, 3 execuções do mesmo código (runs 45048329304, 45050007716 e 45055797316):
-# média de 89% a 92%, pior categoria 77% (devolucao_ressarcimento) e variação máxima de 2 casos (7 p.p.) numa categoria.
-# O piso de 60% e a tolerância de 15 p.p. (~5 casos) deixam folga de ~2x sobre esse ruído.
+# grupo, sem a classe "outros"), 30 por categoria: cada caso vale ~3,3 p.p.
+# Calibrado para o Claude Haiku 5.5 (variáveis LLM_PROVEDOR=anthropic e LLM_MODELO=claude-haiku-5-5), 3 execuções do
+# mesmo código no runner (runs 45061750891, 45062220165 e 45062227053): média de 98% a 99%, pior categoria 97% e
+# variação máxima de 1 caso (3 p.p.). Piso de 85% e tolerância de 10 p.p. (3 casos) deixam ~3x de folga sobre o ruído.
+# Ao TROCAR DE MODELO, recalibre: com o qwen2.5:3b a pior categoria ficou em 77% e este piso o reprovaria
+# (os valores do qwen eram piso 0.6 e tolerância 0.15; ver o PR #12).
 golden_roteamento:
   piso:
-    roteamento: 0.6
-  tolerancia_ruido: 0.15
+    roteamento: 0.85
+  tolerancia_ruido: 0.10

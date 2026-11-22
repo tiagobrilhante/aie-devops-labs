@@ -3,18 +3,18 @@
     "roteamento": 0.967
   },
   "devolucao_ressarcimento": {
-    "roteamento": 0.767
+    "roteamento": 1.0
   },
   "divergente_defeito": {
-    "roteamento": 0.9
+    "roteamento": 1.0
   },
   "entrega": {
     "roteamento": 1.0
   },
   "falsificado": {
-    "roteamento": 0.833
+    "roteamento": 1.0
   },
   "fraude_vendedor": {
-    "roteamento": 0.9
+    "roteamento": 1.0
   }
 }
